@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "components": {
+    "databases": {
+      "status": "ready",
+      "description": "G1 parkour motion databases and terrain metadata for all supported scenarios.",
+      "archive": {
+        "url": "https://github.com/amazon-far/php-parkour/releases/download/motion-matching-assets-v1/php-motion-matching-database-v1.tar.gz",
+        "size": 39876439,
+        "sha256": "df645d933fff5415714d26748537c6662713db580ee0746f1c4141931d4d09c5"
+      },
+      "files": [
+        {
+          "path": "database_g1_cat_vault.bin",
+          "size": 1291392,
+          "sha256": "17fb2997fb120230f251ccf4616f2711707fac87c52efb0409e3b77b56e76531"
+        },
+        {
+          "path": "database_g1_climb_134.bin",
+          "size": 1936992,
+          "sha256": "645283992e2a554bfff89be95aa8710a1ce67d6d335d4a5de8ffd5eec79f26da"
+        },
+        {
+          "path": "database_g1_climb_58.bin",
+          "size": 4296692,
+          "sha256": "fe50b70a74c0e0a800ff5f14ad1ff5a2c9394bfedaa5503f0a8857d5fd73fc76"
+        },
+        {
+          "path": "database_g1_climb_76.bin",
+          "size": 2175864,
+          "sha256": "b40e96416b5c2b49dc1cdb5518a27e7a653594268e253dd98ab51ed16804e986"
+        },
+        {
+          "path": "database_g1_climb_76_high_speed_down.bin",
+          "size": 1811100,
+          "sha256": "9be7ddd29130074016b3612d86bf7199967870e0f7257170790dcb11bdfb49b1"
+        },
+        {
+          "path": "database_g1_climb_76_high_speed_up.bin",
+          "size": 1020240,
+          "sha256": "1d2d80f4ad5b5a6826ada9dd92314f7625e0fc30ae2707ed96f57db7d25625d7"
+        },
+        {
+          "path": "database_g1_climb_94.bin",
+          "size": 2001552,
+          "sha256": "61b2b43b7508ffaa0497def6f2dbd5750b2289fdb56afa7ed4684961bbd3e4a9"
+        },
+        {
+          "path": "database_g1_climb_94_high_speed.bin",
+          "size": 1000872,
+          "sha256": "62f41f3991098f48b8a885fb0f3b041fd71a1928f8df95d3cae2bce25f392834"
+        },
+        {
+          "path": "database_g1_dash_vault_76_0.75x.bin",
+          "size": 991188,
+          "sha256": "cd4fd625f9a232322a4d68075379dcd35a1ef7e2961ad4c3651ed422315316d9"
+        },
+        {
+          "path": "database_g1_drop_92.bin",
+          "size": 516672,
+          "sha256": "202f43682c28c31c29d00489223589c6ba8cf0462b3733c297b6f61d1a8b6bb3"
+        },
+        {
+          "path": "database_g1_hurdle.bin",
+          "size": 500532,
+          "sha256": "1cadcf4d0df6172bb2336f8b26e55cb01b811d8f8db4930a77c76e702443f104"
+        },
+        {
+          "path": "database_g1_jump_35.bin",
+          "size": 109944,
+          "sha256": "9823a3b074c21a6310c87bfe3c5303d155b705c23ce6c0bac9637246b19b1df4"
+        },
+        {
+          "path": "database_g1_locomotion.bin",
+          "size": 95962208,
+          "sha256": "4d34975a9b2e2c455d0f1328af119f6287493e0d58dcffdc74f77efc926a1056"
+        },
+        {
+          "path": "database_g1_roll_136_high_speed.bin",
+          "size": 439200,
+          "sha256": "ac57b3337b70411aa808f19973c243d9b0d0701738a1941059133979555f1fe7"
+        },
+        {
+          "path": "database_g1_roll_78.bin",
+          "size": 697440,
+          "sha256": "57fd1902424da60d0bb3169eee57f21ca53297f85d62ed0e03d794e63b1cf867"
+        },
+        {
+          "path": "database_g1_roll_90.bin",
+          "size": 690984,
+          "sha256": "40df8bd32fb305dec43b3138061e5628093cbdebb4303763771715542910f750"
+        },
+        {
+          "path": "database_g1_speed_vault_0.7x.bin",
+          "size": 565092,
+          "sha256": "6cce7c796c6c8dcf72d530d7b50e49410d55119b02c7c2fceccab735946ab5a6"
+        },
+        {
+          "path": "database_g1_step.bin",
+          "size": 6778992,
+          "sha256": "539dd64f34c4f6bac4089abd1b99842464ec7e5ef8e8d13fbf7168beacb7e890"
+        },
+        {
+          "path": "database_g1_step_high_speed.bin",
+          "size": 5649192,
+          "sha256": "eaadb98167a3f5e9920c2ff62f68a463268a568ac55e4943d8cfbd4407023547"
+        },
+        {
+          "path": "terrain/cat_vault/box.json",
+          "size": 293,
+          "sha256": "1a04af8b33307e9f1136fc580b84e24128ddfef090606bf824ff49c314528d0a"
+        },
+        {
+          "path": "terrain/cat_vault/box.obj",
+          "size": 378,
+          "sha256": "38d544f9cac424a6c5cca93d7c67ff0e6713a25a4e282b1f82a388e64c7e8ab2"
+        },
+        {
+          "path": "terrain/cat_vault/box_mirror.json",
+          "size": 294,
+          "sha256": "aec93d7ce91f2d720e51dcd278d38044cbe4eefdc7e97b31f3ea2e0f333cfbd6"
+        },
+        {
+          "path": "terrain/cat_vault/box_mirror.obj",
+          "size": 346,
+          "sha256": "33a255a2a37c4252cf3fd1f095bde572f933cc265623249998cae657bcc67768"
+        },
+        {
+          "path": "terrain/climb_134/box.json",
+          "size": 286,
+          "sha256": "63fcb679f9d0a482cf381d0c5d43cbcd9509ecaceffdc841180317a12448a3c3"
+        },
+        {
+          "path": "terrain/climb_134/box.obj",
+          "size": 388,
+          "sha256": "11ac67702c0f1419fc3bb0ef3e89bef2313dceb002c172fbe17a81d73fd2267c"
+        },
+        {
+          "path": "terrain/climb_134/box_mirror.json",
+          "size": 287,
+          "sha256": "6a249c76923e4647da87a3e8f8e1b0b6ff0d3bb39394663d2c9df1d3cc2d1784"
+        },
+        {
+          "path": "terrain/climb_134/box_mirror.obj",
+          "size": 332,
+          "sha256": "1fee08a9c1fb4fba27cbdcdca2f7a18e2b734464a3eee96f65a57cea951944cc"
+        },
+        {
+          "path": "terrain/climb_58/box.json",
+          "size": 290,
+          "sha256": "da91eb9e208bd41b39893efe3ddae9cd0c9222e71e2a902bb2067e4ef2ffff53"
+        },
+        {
+          "path": "terrain/climb_58/box.obj",
+          "size": 378,
+          "sha256": "9f534834a68fe51ea291f6089474795f1e656a85434f00e46f4b73537a49b1e8"
+        },
+        {
+          "path": "terrain/climb_58/box_mirror.json",
+          "size": 282,
+          "sha256": "cafe81a8cd26b90a0accdf1d295459613185116d4f3da912c25e211b7d254902"
+        },
+        {
+          "path": "terrain/climb_58/box_mirror.obj",
+          "size": 407,
+          "sha256": "0278e30dc94a3b9a4ffa0d58278caff69a49e71b2c5bf3326ff89ef62fdd2c21"
+        },
+        {
+          "path": "terrain/climb_76/box.json",
+          "size": 284,
+          "sha256": "fe3b36dce36ba4de52e4688e93cd369184baf4e9bddfade7ad61f01d7a00ce38"
+        },
+        {
+          "path": "terrain/climb_76/box.obj",
+          "size": 421,
+          "sha256": "d12c74b6312a2bf9d8190dce0334afa9a611b81b3c137184d0887e872c18ac08"
+        },
+        {
+          "path": "terrain/climb_76/box_mirror.json",
+          "size": 287,
+          "sha256": "bf4da2cf6327b40b8fc14c045caff1d404ae9c89de6054a14b38d70434942379"
+        },
+        {
+          "path": "terrain/climb_76/box_mirror.obj",
+          "size": 391,
+          "sha256": "4541536f492136090c86918b0f4aa5f3211b8fb30b87a3e7b9eb6641fc1afcb8"
+        },
+        {
+          "path": "terrain/climb_76_high_speed/box.json",
+          "size": 298,
+          "sha256": "9d7b0ace43b24346a87d779b6ea7cb9593de44314db086e4194f95140eb33165"
+        },
+        {
+          "path": "terrain/climb_76_high_speed/box.obj",
+          "size": 429,
+          "sha256": "8f514279c1528d3f5a4b885ab97c57f34cda0879e7a8c857b9dc4341c4c1c0f6"
+        },
+        {
+          "path": "terrain/climb_76_high_speed/box_mirror.json",
+          "size": 301,
+          "sha256": "8cac464b977606b64412c21f82c3e22cb1c121ea4fddedc41bd131f056bbd617"
+        },
+        {
+          "path": "terrain/climb_76_high_speed/box_mirror.obj",
+          "size": 405,
+          "sha256": "e7e11128235b1ff5b61d1140ca5a97531c30401e59714bfe8fe4c758a4ac7f39"
+        },
+        {
+          "path": "terrain/climb_94/box.json",
+          "size": 289,
+          "sha256": "360fda217d59e5913b4779a5bb3d209c0723425c2a8c3e8c5b9dcf24008991c1"
+        },
+        {
+          "path": "terrain/climb_94/box.obj",
+          "size": 425,
+          "sha256": "d965be5ecbd26eb2d7b819391edcb736e39954465c4e5a9a20ad5767500c1a27"
+        },
+        {
+          "path": "terrain/climb_94/box_mirror.json",
+          "size": 291,
+          "sha256": "c0a34f4ec65c1103ecf8535a9505eaf3d25ffa23c316ca0d1d66faf61bab0326"
+        },
+        {
+          "path": "terrain/climb_94/box_mirror.obj",
+          "size": 395,
+          "sha256": "13727502497a9d1ef040d86c50465dbe2b32dfb8089672e695139067fbc49420"
+        },
+        {
+          "path": "terrain/climb_94/box_xy_swapped.json",
+          "size": 291,
+          "sha256": "f872fe6de5f1b06f7d03b026a75c71d47e1d2016a1d279298e990639d5f33b45"
+        },
+        {
+          "path": "terrain/climb_94/box_xy_swapped.obj",
+          "size": 425,
+          "sha256": "d965be5ecbd26eb2d7b819391edcb736e39954465c4e5a9a20ad5767500c1a27"
+        },
+        {
+          "path": "terrain/climb_94/box_xy_swapped_mirror.json",
+          "size": 292,
+          "sha256": "dc91305a220ff2f4b8f7b2e78bf73c266087ded8865861949dbb531f63e0b390"
+        },
+        {
+          "path": "terrain/climb_94/box_xy_swapped_mirror.obj",
+          "size": 395,
+          "sha256": "13727502497a9d1ef040d86c50465dbe2b32dfb8089672e695139067fbc49420"
+        },
+        {
+          "path": "terrain/dash_vault/box.json",
+          "size": 256,
+          "sha256": "7ef9d2db89256245d8ad6a75116b67d766d20984ed19e92d9a7bef866735c643"
+        },
+        {
+          "path": "terrain/dash_vault/box.obj",
+          "size": 413,
+          "sha256": "9c628b46ddb3777d70b6b58df36a6ea9afad0cde895bd5baf872dbf0979b7b80"
+        },
+        {
+          "path": "terrain/dash_vault/box_mirror.json",
+          "size": 258,
+          "sha256": "c3ba94577509c62186d3e3076c59ff333910610b0041d921a0e762553e3785e5"
+        },
+        {
+          "path": "terrain/dash_vault/box_mirror.obj",
+          "size": 321,
+          "sha256": "0138fc312dbb42b618e3ebad12ed09702f3697ec842174ef41b74f7f4189a6b5"
+        },
+        {
+          "path": "terrain/drop_92/box.json",
+          "size": 223,
+          "sha256": "856020572d22ea443dc2de4d2d2dc596236b7a41742fe4adc0fe37824afe15f8"
+        },
+        {
+          "path": "terrain/drop_92/box.obj",
+          "size": 421,
+          "sha256": "5516b0d58aca47f03f1fa9e3b9170354ae762c40c5f8fd87c6cdd4b84243ee35"
+        },
+        {
+          "path": "terrain/drop_92/box_mirror.json",
+          "size": 225,
+          "sha256": "98df7db041b838fe94da27fb461aad616a680f8e2ad3a6ac5550dc266e1f9f2d"
+        },
+        {
+          "path": "terrain/drop_92/box_mirror.obj",
+          "size": 321,
+          "sha256": "2cf41040b4198091038115e767def44c4d5bb99dbe9c3f0352aec5f17a4cfd51"
+        },
+        {
+          "path": "terrain/hurdle/box.json",
+          "size": 261,
+          "sha256": "08c0ea4c5870daec571a557805fbeef638149687a006b5112c572d1fc396b0d9"
+        },
+        {
+          "path": "terrain/hurdle/box.obj",
+          "size": 284,
+          "sha256": "3094ff2d1daac5fada307bea0433a06e57c867a9db7d80843dc20c3729d85d08"
+        },
+        {
+          "path": "terrain/hurdle/box_mirror.json",
+          "size": 264,
+          "sha256": "d5ff25638cb102a97a66e3a2813f60cfaf46e87d69121b49d452c2d59bec1cf2"
+        },
+        {
+          "path": "terrain/hurdle/box_mirror.obj",
+          "size": 284,
+          "sha256": "9830b9d3ad2ed7779d4896b9bc62f7535b7f184cf7efaa770ed6f5fe1970bc94"
+        },
+        {
+          "path": "terrain/jump/box.json",
+          "size": 230,
+          "sha256": "884cde4101b19025556a012d4051ce5767cf9d6140420b63a67f72b1e922e03b"
+        },
+        {
+          "path": "terrain/jump/box.obj",
+          "size": 284,
+          "sha256": "5be2fc25c57e18258864f9c49ddb99ae8ddb0301d9cf37b88920844e130ccf46"
+        },
+        {
+          "path": "terrain/jump/box_mirror.json",
+          "size": 233,
+          "sha256": "320f3bf13e1ae05c37db83588d54e041cb6f53a2c99295e675fc058833f1b10b"
+        },
+        {
+          "path": "terrain/jump/box_mirror.obj",
+          "size": 268,
+          "sha256": "1f300c74e063ade0c0719920d4ad2e1149590cd6d71670dd08922f4f06c70cba"
+        },
+        {
+          "path": "terrain/roll_136/box.json",
+          "size": 255,
+          "sha256": "efa0fd2d0ba9cf0dbbb3316d0a91760d5d5ea21a0fc9c3705ca885a05ed8b170"
+        },
+        {
+          "path": "terrain/roll_136/box.obj",
+          "size": 425,
+          "sha256": "45fddb81e6eb8be3bb82878a961612026948ef445369c2fb8d3b27699a114cbb"
+        },
+        {
+          "path": "terrain/roll_136/box_mirror.json",
+          "size": 253,
+          "sha256": "536f8303eec61116943dd6d55eced99009c09d6253a8d2fdf924133751385fc4"
+        },
+        {
+          "path": "terrain/roll_136/box_mirror.obj",
+          "size": 407,
+          "sha256": "5c32a1f0600862adb0630c4abcbe83bb2504d601d08c8163d7122b13e096fa51"
+        },
+        {
+          "path": "terrain/roll_78/box.json",
+          "size": 291,
+          "sha256": "77e04b566511a919fc0886f92bc908a5f2b604189e03440e446fe7651dd5937d"
+        },
+        {
+          "path": "terrain/roll_78/box.obj",
+          "size": 425,
+          "sha256": "3525d22ce0e9841bce7753b9317dfacd4a4f07b871a7db916743f72d0988f195"
+        },
+        {
+          "path": "terrain/roll_78/box_mirror.json",
+          "size": 290,
+          "sha256": "b7baf96ab1f979c61ea549d52bb09dea0b59c38a8b1136a078f9424532d3ec80"
+        },
+        {
+          "path": "terrain/roll_78/box_mirror.obj",
+          "size": 413,
+          "sha256": "8c2923521addf185b5542ca3b6dfb303a4a8705672ef588b87f24d7b0126c8b9"
+        },
+        {
+          "path": "terrain/roll_90/box.json",
+          "size": 282,
+          "sha256": "a61da6ec83c92af20c8eab14aeec1a5fb01bd91645d578345576a99e92739ce9"
+        },
+        {
+          "path": "terrain/roll_90/box.obj",
+          "size": 421,
+          "sha256": "9f120ac9333b3b2c92c8fb390f957364bb183bc631e2f243c6844ada664b565a"
+        },
+        {
+          "path": "terrain/roll_90/box_mirror.json",
+          "size": 281,
+          "sha256": "c4b71b5a62f88245eff7b3af5751e5e720b089f05af67b3d18fb36de435e36dd"
+        },
+        {
+          "path": "terrain/roll_90/box_mirror.obj",
+          "size": 381,
+          "sha256": "0053767a11a19e4f7d59bcd7e549a29d1f3df7f2bb4e96996cbd78bf5a931079"
+        },
+        {
+          "path": "terrain/speed_vault/box.json",
+          "size": 259,
+          "sha256": "92f2af23f62483cbedacd35e3c62f19d86697856b165ba53c4927b96f1916a89"
+        },
+        {
+          "path": "terrain/speed_vault/box.obj",
+          "size": 405,
+          "sha256": "5d6cfbd52af0ad53bc17165d9ee698c57f94681a9374e0d10df652b73e015369"
+        },
+        {
+          "path": "terrain/speed_vault/box_mirror.json",
+          "size": 260,
+          "sha256": "f315eae718b5117600840ceeac8ea4ffdb63d6ba9c94fbaa3bc84e763bce866d"
+        },
+        {
+          "path": "terrain/speed_vault/box_mirror.obj",
+          "size": 322,
+          "sha256": "d52842675b49d8a70625fb369dcea47960775534add6ac460b9c49a2858cd008"
+        },
+        {
+          "path": "terrain/step/box.json",
+          "size": 266,
+          "sha256": "01c2fc5f642551eda7b323c41673fb6bc3346be6332e8171091d534e40db0d8d"
+        },
+        {
+          "path": "terrain/step/box.obj",
+          "size": 428,
+          "sha256": "58cb8d55a5b5bfb801ce2db7f77aabc0224d08438de10b1b1799c941028c99c7"
+        },
+        {
+          "path": "terrain/step/box_mirror.json",
+          "size": 267,
+          "sha256": "fc11ca229b5969ffbdc75dae2ee8a145957ceeeafd64e311ee743f9cd890346e"
+        },
+        {
+          "path": "terrain/step/box_mirror.obj",
+          "size": 420,
+          "sha256": "c4a07616396119e6f34488878d98e24e2175a1b5af21deca81c8dbbc1dba5542"
+        }
+      ]
+    },
+    "student": {
+      "status": "pending",
+      "message": "The final demo student is still training or awaiting validation. No intermediate model is substituted."
+    }
+  }
+}

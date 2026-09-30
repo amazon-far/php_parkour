@@ -1,0 +1,3 @@
+# Robot geometry is source data, not reviewable text.
+motion_matching/**/assets/robots/**/*.obj binary
+motion_matching/**/assets/robots/**/*.STL binary

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wbt-training"
+version = "0.1.0"
+description = "Perceptive Humanoid Parkour (RSS 2026): expert training and depth distillation for G1 29-DOF."
+requires-python = ">=3.10"
+dependencies = ["holosoma"]
+authors = [{ name = "Amazon FAR Team" }]
+urls = { Homepage = "https://php-parkour.github.io/", Paper = "https://arxiv.org/abs/2602.15827" }
+
+[project.optional-dependencies]
+export = ["onnx"]
+test = ["pytest"]
+
+# The import name stays ``wbt_training`` regardless of where this repo lives:
+# checkpoints serialize dotted paths into their saved ExperimentConfig, and
+# ``wbt_training/utils/compat.py`` rewrites the ones that moved. Renaming the
+# package would strand every checkpoint trained so far.
+[tool.setuptools.packages.find]
+include = ["wbt_training*"]
+
+[tool.setuptools.package-data]
+wbt_training = ["training_runs/*.sh"]

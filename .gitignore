@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+build/
+dist/
+
+# Training artifacts
+logs/
+wandb/
+outputs/
+*.pt
+*.onnx
+
+# Motion / terrain data — pulled from a registry, not versioned
+motions/
+*.npz
+*.npy
+*.obj
+
+# Editors / tooling
+.vscode/
+.idea/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Motion matching ships a small source motion and G1 robot geometry. Keep
+# these intentional assets even though generated motion/mesh files are ignored.
+!motion_matching/assets/robot_motions/
+!motion_matching/assets/robot_motions/*.npz
+!motion_matching/assets/robots/
+!motion_matching/assets/robots/**
+
+# User-specific optional service configuration
+.env.local

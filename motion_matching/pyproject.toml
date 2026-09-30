@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motion-matching"
+version = "0.1.0"
+description = "Database-driven motion matching pipeline for the Unitree G1 humanoid."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy==2.2.6",
+    "scipy==1.15.3",
+    "viser==1.0.27",
+    "yourdfpy==0.0.60",
+    "trimesh==4.12.2",
+    "tyro==1.0.13",
+    "tqdm==4.67.3",
+    "rich==14.3.4",
+    "pillow==12.2.0",
+    "pycollada==0.9.3",
+    "shapely==2.1.2",
+    "networkx==3.4.2",
+    "matplotlib==3.10.9",
+    "mujoco==3.8.1",
+]
+authors = [{ name = "Amazon FAR Team" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.3"]
+registry = ["wandb>=0.22.1,<1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["motion_matching*"]
+
+[tool.setuptools.package-data]
+motion_matching = [
+    "assets/robot_motions/*.npz",
+    "assets/robots/unitree_description/package.xml",
+    "assets/robots/unitree_description/mjcf/*.xml",
+    "assets/robots/unitree_description/urdf/g1/*.urdf",
+    "assets/robots/unitree_description/meshes/g1/*.STL",
+    "assets/robots/unitree_description/meshes/g1/*.obj",
+]

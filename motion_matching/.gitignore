@@ -1,0 +1,20 @@
+# Local environments and build/test state
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Downloaded databases and generated trajectories
+motion_matching_results/
+motion_matching/motion_matching_results/
+motion_matching/recorded_motion/
+reports/
+
+# Local dependency lock and wheel-build artifacts
+uv.lock
+build/
+dist/
+.release-validation/
+
+# Public source clip and the URDF hand mesh are package data.
+!motion_matching/assets/robot_motions/*.npz
+!motion_matching/assets/robots/unitree_description/meshes/g1/*.obj
