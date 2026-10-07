@@ -31,6 +31,7 @@ python "$HOLOSOMA_ROOT/src/holosoma/holosoma/run_sim.py" robot:g1-29dof \
     terrain:terrain-load-step \
     --robot.asset.xml-file g1/g1_29dof_halfspherehand.xml \
     --simulator.config.bridge.enabled=True \
+    --simulator.config.sim.fps=500 \
     "$@"
 
 # The sim creates depth_img_shm with shape (1, 1, 58, 87). Start
