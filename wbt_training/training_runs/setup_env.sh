@@ -106,7 +106,7 @@ php_setup_environment() {
         git submodule update --init --recursive
     fi
     [[ -f "$holosoma_dir/scripts/setup_isaacsim.sh" ]] || { php_error "Holosoma setup not found in $holosoma_dir"; return 1; }
-    ENV_NAME="${ENV_NAME:-php}" bash "$holosoma_dir/scripts/setup_isaacsim.sh"
+    CONDA_ENV_NAME="${ENV_NAME:-php}" bash "$holosoma_dir/scripts/setup_isaacsim.sh"
     php_activate_sim
     "$HSSIM_PYTHON" -m pip install -e "$PHP_REPO_ROOT"
     echo '[setup] Done. Set REGISTRY=file:///absolute/bundle and run wbt_training/training_runs/run_terrain_teacher.sh.'

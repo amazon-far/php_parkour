@@ -23,7 +23,8 @@ if conda run -n "$ENV_NAME" python --version >/dev/null 2>&1; then
     echo "[setup] Reusing conda env: $ENV_NAME"
 else
     echo "[setup] Creating conda env: $ENV_NAME (Python $PYTHON_VERSION)"
-    conda create --yes --name "$ENV_NAME" "python=$PYTHON_VERSION" pip
+    conda create --yes --name "$ENV_NAME" "python=$PYTHON_VERSION" pip \
+        --override-channels --channel conda-forge
 fi
 
 echo "[setup] Installing motion matching and its test dependencies"

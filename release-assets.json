@@ -5,7 +5,7 @@
       "status": "ready",
       "description": "G1 parkour motion databases and terrain metadata for all supported scenarios.",
       "archive": {
-        "url": "https://github.com/amazon-far/php-parkour/releases/download/motion-matching-assets-v1/php-motion-matching-database-v1.tar.gz",
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/motion-matching-assets-v1/php-motion-matching-database-v1.tar.gz",
         "size": 39876439,
         "sha256": "df645d933fff5415714d26748537c6662713db580ee0746f1c4141931d4d09c5"
       },
@@ -429,7 +429,25 @@
     },
     "student": {
       "status": "pending",
-      "message": "The final demo student is still training or awaiting validation. No intermediate model is substituted."
+      "description": "Validated RealSense D435i depth locomotion ONNX pair.",
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/student-assets-v1/php-student-v1.tar.gz",
+        "size": 12732802,
+        "sha256": "e772504b0b54035e401bcbb752f4f19b6c74f560561c8369e28b9f77c5e6ae5c"
+      },
+      "files": [
+        {
+          "path": "depth_backbone.onnx",
+          "size": 105240,
+          "sha256": "5b22466a218944e3b0ab0f4f82a910e3eec35375ee03e7fb94eb65fa88431b56"
+        },
+        {
+          "path": "student.onnx",
+          "size": 13841549,
+          "sha256": "e426c4206181d511b838c76efc48e43636299b76cb5a15183977011589931628"
+        }
+      ],
+      "message": "The selected student archive is prepared but awaiting release upload."
     },
     "motions-locomotion": {
       "status": "ready",

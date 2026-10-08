@@ -21,6 +21,16 @@ source scripts/source_isaacsim_setup.sh
 The default Conda environment is `php`. To use another name, export
 `ENV_NAME=<name>` before setup and subsequent launches.
 
+The setup script passes this name to Holosoma's environment installer. Bootstrap
+uses Conda with conda-forge explicitly and does not upgrade the base environment
+to install Mamba. IsaacSim setup applies the tested constraints in
+`thirdparty/holosoma/scripts/constraints/isaacsim-5.1.txt` throughout installation.
+
+One upstream metadata conflict remains: IsaacSim 5.1 pins
+`typing_extensions==4.12.2`, while Holosoma's `tyro>=1.0` requires `>=4.13`.
+The tested runtime uses the newer version; `pip check` can report that conflict.
+The installer does not modify third-party metadata to conceal it.
+
 The training and evaluation launchers default to W&B logging (`LOGGER=wandb`).
 Authenticate with your own account using `wandb login`. Set `LOGGER=disabled`
 for local-only logging; checkpoints go under `logs/`. The Python training
