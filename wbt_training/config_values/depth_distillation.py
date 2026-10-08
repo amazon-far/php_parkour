@@ -195,11 +195,7 @@ g1_29dof_wbt_terrain_distill_curriculum = _replace(
 # distribution of motion frames so Loss/behavior is comparable across the
 # two codebases.
 wbt_distill_motion_config = replace(
-    wbt_terrain_motion_config,
-    use_adaptive_timesteps_sampler=False,
-    # PHP combines source clips into one file. Preserve the legacy behavior:
-    # resample at each clip's motion_ends marker, not only at the whole file's end.
-    resample_on_motion_end=True,
+    wbt_terrain_motion_config, use_adaptive_timesteps_sampler=False
 )
 
 g1_29dof_wbt_terrain_distill_command = replace(

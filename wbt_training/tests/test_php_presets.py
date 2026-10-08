@@ -181,6 +181,8 @@ def test_cli_selects_presets_with_wandb_logging_by_default(name):
     )
     assert cfg == experiment.DEFAULTS[name]
     assert cfg.logger == wandb
+    motion_config = cfg.command.setup_terms["motion_command"].params["motion_config"]
+    assert motion_config.resample_on_motion_end is True
 
 
 @pytest.mark.parametrize("name", PHP_PRESETS)

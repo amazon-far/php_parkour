@@ -69,6 +69,8 @@ wbt_terrain_init_pose_config = replace(
 
 wbt_terrain_motion_config = replace(
     terrain_adaptive_motion_config,
+    # Teachers and students retain the compatibility branch's source-clip resets.
+    resample_on_motion_end=True,
     enable_default_pose_prepend=False,
     enable_default_pose_append=False,
     adaptive_uniform_ratio=1e-6,
