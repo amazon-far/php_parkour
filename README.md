@@ -29,14 +29,18 @@ The framework has three steps:
 For sim2sim with an existing ONNX pair, use the PHP launchers and pinned
 [Holosoma setup](wbt_training/DEPLOY.md#get-holosoma-and-install-the-runtimes).
 
-For motion matching and training, use this PHP checkout. The public clone
-command below will be usable once the PHP repository and its pinned Holosoma
-commit are published:
+For motion matching and training, clone PHP with its pinned Holosoma submodule:
 
 ```bash
-git clone --recurse-submodules https://github.com/amazon-far/php-parkour.git
-cd php-parkour
+git clone --recurse-submodules https://github.com/amazon-far/php_parkour.git
+cd php_parkour
 ```
+
+PHP pins Holosoma to commit
+[`deeab803`](https://github.com/amazon-far/holosoma/commit/deeab8038ab76097a23fb90c1f6a31914c49f883)
+from the
+[`jinkunc/php-release-port`](https://github.com/amazon-far/holosoma/tree/jinkunc/php-release-port)
+branch. The recursive clone checks out that exact revision.
 
 Choose a guide below for environment setup and commands. For the full pipeline,
 generate a dataset first, then train and evaluate a policy. If you already have

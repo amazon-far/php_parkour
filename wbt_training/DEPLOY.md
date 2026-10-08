@@ -6,7 +6,7 @@ Run the exported PHP depth policy in MuJoCo with the PHP-owned
 [run_php_sim.sh](../run_php_sim.sh) and
 [run_php_inference.sh](../run_php_inference.sh) launchers. They select the
 RealSense D435i simulation and inference presets from this checkout's pinned
-Holosoma submodule.
+[Holosoma submodule](../README.md#get-started).
 A student consists of two local files, `depth_backbone.onnx` and `student.onnx`.
 The depth backbone encodes the camera image; the student combines that latent
 with proprioception and a direction command to produce joint targets.
@@ -20,7 +20,7 @@ under `~/.holosoma_deps/miniconda3` by default. Initialize the pinned submodule;
 skip the two setup commands if these environments are already installed:
 
 ```bash
-git submodule update --init thirdparty/holosoma
+git submodule update --init --recursive thirdparty/holosoma
 bash thirdparty/holosoma/scripts/setup_mujoco.sh
 bash thirdparty/holosoma/scripts/setup_inference.sh
 ```
@@ -35,7 +35,7 @@ into them so imports resolve here. This replaces their existing editable install
     -m pip install --no-deps -e ./thirdparty/holosoma/src/holosoma_inference
 ```
 
-See the [Holosoma inference guide](https://github.com/amazon-far/holosoma/blob/9ec952a6790536f040d5cdaf0aeb4affd3be300e/src/holosoma_inference/README.md)
+See the [Holosoma inference guide](https://github.com/amazon-far/holosoma/blob/deeab8038ab76097a23fb90c1f6a31914c49f883/src/holosoma_inference/README.md)
 for supported systems and runtime dependencies. This standalone route uses
 Holosoma's local simulator bridge and depth shared memory; it does not require
 FAR-pi.
@@ -121,6 +121,6 @@ Press `Backspace` in the MuJoCo window to reset the environment.
 | 90° left / right | `q` / `e` |
 | Toggle speed mode | `=` |
 
-The [Holosoma sim2sim workflow](https://github.com/amazon-far/holosoma/blob/9ec952a6790536f040d5cdaf0aeb4affd3be300e/src/holosoma_inference/docs/workflows/sim-to-sim-depth-distillation.md)
-describes shared-memory settings, camera latency, and additional inference
-options.
+The [Sim-to-Sim Depth Locomotion workflow](https://github.com/amazon-far/holosoma/blob/deeab8038ab76097a23fb90c1f6a31914c49f883/src/holosoma_inference/docs/workflows/sim-to-sim-depth-locomotion.md)
+shows the underlying Holosoma commands, depth image configuration, and
+keyboard controls.

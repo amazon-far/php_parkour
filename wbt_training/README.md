@@ -10,6 +10,9 @@ Run all commands below from the PHP checkout root.
 
 ## Setup
 
+Setup uses the [Holosoma revision pinned by PHP](../README.md#get-started)
+from `jinkunc/php-release-port`.
+
 ```bash
 bash wbt_training/training_runs/setup_env.sh
 source scripts/source_isaacsim_setup.sh
