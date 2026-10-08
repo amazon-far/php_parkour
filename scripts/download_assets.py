@@ -14,6 +14,13 @@ from pathlib import Path, PurePosixPath
 from urllib.request import urlopen
 
 MANIFEST = Path(__file__).resolve().parents[1] / "release-assets.json"
+MOTION_COMPONENTS = (
+    "motions-locomotion",
+    "motions-low-step",
+    "motions-high-step",
+    "motions-low-climb-76",
+    "motions-high-climb-76",
+)
 
 
 def sha256(path: Path) -> str:
@@ -154,7 +161,7 @@ def fetch(component: dict, destination: Path) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("component", choices=("databases", "student"))
+    parser.add_argument("component", choices=("databases", "student", *MOTION_COMPONENTS))
     parser.add_argument("--destination", type=Path)
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
     parser.add_argument(

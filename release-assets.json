@@ -430,6 +430,3061 @@
     "student": {
       "status": "pending",
       "message": "The final demo student is still training or awaiting validation. No intermediate model is substituted."
+    },
+    "motions-locomotion": {
+      "status": "ready",
+      "description": "Locomotion: 100 prepared G1 motion/terrain pairs at 50 FPS.",
+      "motion_count": 100,
+      "fps": 50,
+      "total_frames": 71042,
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-locomotion-v1.tar.gz",
+        "size": 118303924,
+        "sha256": "2397220209b5ce32cd886340f5b12f62821f17e40bff0d2958b1a70295a08dcf"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1068,
+          "sha256": "34b62833e1e7435ab0bc788b004054f582935d1ce84b3b8b4429360854ecb81c"
+        },
+        {
+          "path": "cfg0000_stand_2.0s_left_45_1.4s_forward_2.3s_right_90_0.9s_right_45_0.6s_right_45_2.0s_left_90_0.6s_left_45_2.6s_run_right_45_1.2s_left_45_1.3s_run_right_90_1.6s_stand_2.0s_motion.npz",
+          "size": 3648282,
+          "sha256": "fef9f7ce29d01c8e1441ab7f99a142bf13a76a26cc7598361d927626d96c3ecc"
+        },
+        {
+          "path": "cfg0000_stand_2.0s_left_45_1.4s_forward_2.3s_right_90_0.9s_right_45_0.6s_right_45_2.0s_left_90_0.6s_left_45_2.6s_run_right_45_1.2s_left_45_1.3s_run_right_90_1.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0001_stand_2.0s_run_left_45_2.0s_stand_2.0s_motion.npz",
+          "size": 1195562,
+          "sha256": "c6654d7f37fd8b56af9c3404751ec05bd750659e289c6bb666650e533f6809db"
+        },
+        {
+          "path": "cfg0001_stand_2.0s_run_left_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 4128,
+          "sha256": "9fa8379526393959e8f4a8ee4baf772be6dbfc5405013d6fae0643296db0e466"
+        },
+        {
+          "path": "cfg0002_stand_2.0s_forward_1.2s_forward_1.6s_left_45_1.0s_right_45_2.0s_stand_2.0s_motion.npz",
+          "size": 1947202,
+          "sha256": "26ce6eb495c7e9dbb4cd15748d2294a3a4c0d445653af8658eca29d6319a5e63"
+        },
+        {
+          "path": "cfg0002_stand_2.0s_forward_1.2s_forward_1.6s_left_45_1.0s_right_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0003_stand_2.0s_right_45_2.0s_run_right_45_1.2s_run_right_90_2.9s_forward_1.3s_stand_2.0s_motion.npz",
+          "size": 2255770,
+          "sha256": "3893af21e7729a349b2d6279e90c683ea37e41574312d702bb151b95f90fb7e6"
+        },
+        {
+          "path": "cfg0003_stand_2.0s_right_45_2.0s_run_right_45_1.2s_run_right_90_2.9s_forward_1.3s_stand_2.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "6704684b7d37014144a9512663d446a4aa5339db1f57e7d1f044d205d286924f"
+        },
+        {
+          "path": "cfg0004_stand_2.0s_run_right_45_2.2s_right_45_0.8s_run_right_45_1.2s_run_left_45_1.2s_right_45_1.3s_run_left_90_1.9s_run_right_90_2.9s_right_90_2.8s_forward_2.0s_left_90_0.7s_stand_2.0s_motion.npz",
+          "size": 4158606,
+          "sha256": "195e3e5db8ca4ceb2c4c1f5398ba230cca9c396465dc3e272be54af3ef4970af"
+        },
+        {
+          "path": "cfg0004_stand_2.0s_run_right_45_2.2s_right_45_0.8s_run_right_45_1.2s_run_left_45_1.2s_right_45_1.3s_run_left_90_1.9s_run_right_90_2.9s_right_90_2.8s_forward_2.0s_left_90_0.7s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0005_stand_2.0s_run_left_45_1.2s_run_forward_1.5s_right_90_2.6s_left_90_1.2s_right_45_0.9s_run_forward_1.2s_left_45_2.4s_left_45_0.5s_run_left_45_2.3s_left_45_2.4s_stand_2.0s_motion.npz",
+          "size": 3980586,
+          "sha256": "af35cc1318deea6bf1f8ccf6d00380e53b87e18756ce9bbf4246033a89885170"
+        },
+        {
+          "path": "cfg0005_stand_2.0s_run_left_45_1.2s_run_forward_1.5s_right_90_2.6s_left_90_1.2s_right_45_0.9s_run_forward_1.2s_left_45_2.4s_left_45_0.5s_run_left_45_2.3s_left_45_2.4s_stand_2.0s_terrain.npy",
+          "size": 10528,
+          "sha256": "449ddb8235087567376dbab0a8555d97444ad852db3c1231908ab42673235b12"
+        },
+        {
+          "path": "cfg0006_stand_2.0s_run_forward_1.4s_stand_2.0s_motion.npz",
+          "size": 1072926,
+          "sha256": "e33fe0fd5838b6fd7f5ef681ee9b3e4d603a54e811415628819e1b4045225636"
+        },
+        {
+          "path": "cfg0006_stand_2.0s_run_forward_1.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0007_stand_2.0s_run_forward_2.7s_run_right_90_1.3s_stand_2.0s_motion.npz",
+          "size": 1583250,
+          "sha256": "0647fac82409756caacdd36cbec6370bf2a2c53b4670c5f13190890f5ad14435"
+        },
+        {
+          "path": "cfg0007_stand_2.0s_run_forward_2.7s_run_right_90_1.3s_stand_2.0s_terrain.npy",
+          "size": 9728,
+          "sha256": "a8dc2f4a0b1407076ba36eba6805852d9ea7b3f1ef31475b24614433bfc97fdd"
+        },
+        {
+          "path": "cfg0008_stand_2.0s_right_90_1.3s_forward_2.3s_run_left_90_2.7s_run_right_45_1.2s_left_45_2.4s_run_left_45_2.4s_left_45_1.8s_run_right_45_1.2s_stand_2.0s_motion.npz",
+          "size": 3826302,
+          "sha256": "f5e21f974948bdb14bbfec140b52a91b5138a35c2c1bb966a5d1f77128bd411f"
+        },
+        {
+          "path": "cfg0008_stand_2.0s_right_90_1.3s_forward_2.3s_run_left_90_2.7s_run_right_45_1.2s_left_45_2.4s_run_left_45_2.4s_left_45_1.8s_run_right_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0009_stand_2.0s_right_90_0.6s_run_right_90_1.3s_run_forward_2.8s_run_right_90_1.5s_right_45_1.1s_stand_2.0s_motion.npz",
+          "size": 2224122,
+          "sha256": "31a240ca9536eb3fd5a504a7e9e611c52899336efc390ce4722488c90b3ed9dd"
+        },
+        {
+          "path": "cfg0009_stand_2.0s_right_90_0.6s_run_right_90_1.3s_run_forward_2.8s_run_right_90_1.5s_right_45_1.1s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "4618d410d86d0eb6617fa12b0d2e9a3ccc152fc81e8f13eb0f243a3c902e8357"
+        },
+        {
+          "path": "cfg0010_stand_2.0s_left_45_1.2s_forward_2.8s_right_45_2.1s_right_90_2.5s_left_45_2.7s_right_45_2.5s_left_45_1.3s_stand_2.0s_motion.npz",
+          "size": 3790698,
+          "sha256": "19fd75093df3ea187f0c40e57354d3259f9cbc31fb16350558a5b1efe415236c"
+        },
+        {
+          "path": "cfg0010_stand_2.0s_left_45_1.2s_forward_2.8s_right_45_2.1s_right_90_2.5s_left_45_2.7s_right_45_2.5s_left_45_1.3s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0011_stand_2.0s_run_left_45_1.2s_right_90_2.5s_run_left_90_1.2s_run_forward_1.5s_left_90_0.8s_run_forward_2.9s_run_forward_1.8s_right_45_1.4s_right_90_2.9s_left_45_1.7s_stand_2.0s_motion.npz",
+          "size": 4340582,
+          "sha256": "fe92069d0b41f84ba1ead78297de1d3b10e52da166c0256149d56dc61a51c034"
+        },
+        {
+          "path": "cfg0011_stand_2.0s_run_left_45_1.2s_right_90_2.5s_run_left_90_1.2s_run_forward_1.5s_left_90_0.8s_run_forward_2.9s_run_forward_1.8s_right_45_1.4s_right_90_2.9s_left_45_1.7s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "918033075fb3e283dba1426ea1a8f3f07d841cf174dc8ff3c028ba67dd3496ff"
+        },
+        {
+          "path": "cfg0012_stand_2.0s_run_right_90_1.2s_stand_2.0s_motion.npz",
+          "size": 1037322,
+          "sha256": "23f024e37883cecfb655bd9f6c2fa9e4793feaabdbf443b8a90b94bf6794b412"
+        },
+        {
+          "path": "cfg0012_stand_2.0s_run_right_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0013_stand_2.0s_left_90_2.0s_run_right_45_1.2s_right_45_2.8s_left_90_0.9s_run_left_90_3.0s_run_left_45_2.2s_right_90_1.1s_run_right_45_1.4s_right_45_2.1s_run_forward_1.2s_stand_2.0s_motion.npz",
+          "size": 4304978,
+          "sha256": "1069eac994f33521688fa09048965f8c87794a32e5bae0b176b8b72da086f4ac"
+        },
+        {
+          "path": "cfg0013_stand_2.0s_left_90_2.0s_run_right_45_1.2s_right_45_2.8s_left_90_0.9s_run_left_90_3.0s_run_left_45_2.2s_right_90_1.1s_run_right_45_1.4s_right_45_2.1s_run_forward_1.2s_stand_2.0s_terrain.npy",
+          "size": 4128,
+          "sha256": "a9792a3f41176145c7799102a6538a15ecaca6400dc7dd4f6acb70d4da51a53e"
+        },
+        {
+          "path": "cfg0014_stand_2.0s_forward_1.3s_right_45_0.6s_forward_2.2s_stand_2.0s_motion.npz",
+          "size": 1606986,
+          "sha256": "82d417627d95a5b073e107f28368cce1e56a8656f599ff918481e281bcd8178c"
+        },
+        {
+          "path": "cfg0014_stand_2.0s_forward_1.3s_right_45_0.6s_forward_2.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0015_stand_2.0s_run_forward_1.8s_run_left_45_2.1s_right_90_2.2s_left_45_2.8s_stand_2.0s_motion.npz",
+          "size": 2560382,
+          "sha256": "c64370b3fe48898d974fa29d1d00e7936facc38c4d109fcc7fdba79ff914982e"
+        },
+        {
+          "path": "cfg0015_stand_2.0s_run_forward_1.8s_run_left_45_2.1s_right_90_2.2s_left_45_2.8s_stand_2.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "84a7457f4c99aa65ff9fab0845f20e630510dc80928ebc0c0f714b30773231ed"
+        },
+        {
+          "path": "cfg0016_stand_2.0s_right_45_1.4s_stand_2.0s_motion.npz",
+          "size": 1065014,
+          "sha256": "a041f1d4b0ad08e3038b5ec39adfa2e5d6fa511330214c33b7e59ab26cf6e6e5"
+        },
+        {
+          "path": "cfg0016_stand_2.0s_right_45_1.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0017_stand_2.0s_run_right_90_2.8s_run_forward_1.2s_right_45_2.5s_run_left_90_1.8s_run_left_45_1.2s_run_left_90_2.8s_left_90_1.3s_right_90_2.3s_left_90_2.7s_right_45_2.1s_stand_2.0s_motion.npz",
+          "size": 4902334,
+          "sha256": "620583406f4c682b6219a54b419318912e93e6b2077b9c0a046fc8b36a4a9106"
+        },
+        {
+          "path": "cfg0017_stand_2.0s_run_right_90_2.8s_run_forward_1.2s_right_45_2.5s_run_left_90_1.8s_run_left_45_1.2s_run_left_90_2.8s_left_90_1.3s_right_90_2.3s_left_90_2.7s_right_45_2.1s_stand_2.0s_terrain.npy",
+          "size": 10528,
+          "sha256": "6a8f62e0b25671d4730b2e6ecb4a0e75c253123f333d84c5088d15423e6905e4"
+        },
+        {
+          "path": "cfg0018_stand_2.0s_run_right_45_1.2s_run_right_45_2.0s_stand_2.0s_motion.npz",
+          "size": 1432922,
+          "sha256": "683c3b21be79d91d1652073ede6d8a41363816cd824ee0a3920e2a296416094f"
+        },
+        {
+          "path": "cfg0018_stand_2.0s_run_right_45_1.2s_run_right_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0019_stand_2.0s_right_90_0.8s_run_right_90_1.2s_run_left_45_1.9s_run_right_90_2.1s_run_left_45_2.3s_run_forward_1.3s_right_45_2.1s_left_90_2.1s_run_right_45_1.2s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 3992454,
+          "sha256": "a75b111b406407f1a3f0a981bdc7d335328997e44c96595e4c5ac50a55de83e2"
+        },
+        {
+          "path": "cfg0019_stand_2.0s_right_90_0.8s_run_right_90_1.2s_run_left_45_1.9s_run_right_90_2.1s_run_left_45_2.3s_run_forward_1.3s_right_45_2.1s_left_90_2.1s_run_right_45_1.2s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 10528,
+          "sha256": "d52bf39ef0ab24e223097a9660e4651b87079a1d08e522590d3c6d19d26225e3"
+        },
+        {
+          "path": "cfg0020_stand_2.0s_left_45_2.9s_forward_2.7s_left_45_2.5s_left_90_1.9s_left_90_1.0s_run_left_45_1.2s_stand_2.0s_motion.npz",
+          "size": 3217078,
+          "sha256": "cd01948ee66e17b50aa73be1771949a637a816b09c0688b5cb59b2aae9889c4b"
+        },
+        {
+          "path": "cfg0020_stand_2.0s_left_45_2.9s_forward_2.7s_left_45_2.5s_left_90_1.9s_left_90_1.0s_run_left_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0021_stand_2.0s_run_right_90_2.1s_left_45_2.9s_run_left_45_2.8s_run_left_45_1.2s_run_right_90_1.6s_run_left_90_2.9s_run_right_45_1.2s_right_90_2.6s_run_right_45_1.2s_forward_2.8s_stand_2.0s_motion.npz",
+          "size": 5009146,
+          "sha256": "c40aa01aea190d071e198806adffd6ca550ce12864aae7b310cb9768a44349f2"
+        },
+        {
+          "path": "cfg0021_stand_2.0s_run_right_90_2.1s_left_45_2.9s_run_left_45_2.8s_run_left_45_1.2s_run_right_90_1.6s_run_left_90_2.9s_run_right_45_1.2s_right_90_2.6s_run_right_45_1.2s_forward_2.8s_stand_2.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "a0ea658503a013906a4ccfddb42dba5f7e7f493bb3bdd1a8cdf978d8e02c5b82"
+        },
+        {
+          "path": "cfg0022_stand_2.0s_left_45_1.9s_stand_2.0s_motion.npz",
+          "size": 1175782,
+          "sha256": "d2f6257a63da9da7d05b220bb2e214bb202fe44d5e161f42397c2f3a5973133e"
+        },
+        {
+          "path": "cfg0022_stand_2.0s_left_45_1.9s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0023_stand_2.0s_run_right_45_2.0s_right_90_0.9s_run_forward_2.7s_left_45_2.2s_right_90_1.4s_run_left_45_2.5s_left_90_2.7s_run_left_90_1.8s_forward_2.5s_right_90_2.3s_stand_2.0s_motion.npz",
+          "size": 4926070,
+          "sha256": "b0394f84eca3ce86dd9fe7f262eb0a0fae17899bc717e560aea41c5140624ae5"
+        },
+        {
+          "path": "cfg0023_stand_2.0s_run_right_45_2.0s_right_90_0.9s_run_forward_2.7s_left_45_2.2s_right_90_1.4s_run_left_45_2.5s_left_90_2.7s_run_left_90_1.8s_forward_2.5s_right_90_2.3s_stand_2.0s_terrain.npy",
+          "size": 6528,
+          "sha256": "1e69ce37100227bb62bbb8b7a97327664c831ff5102bb40671bd0ecb79714426"
+        },
+        {
+          "path": "cfg0024_stand_2.0s_run_right_45_2.7s_left_90_1.4s_stand_2.0s_motion.npz",
+          "size": 1618854,
+          "sha256": "df37fbd410e291c049e76251bda81e8e57f199b9c542ff3bf9b7731e225ed243"
+        },
+        {
+          "path": "cfg0024_stand_2.0s_run_right_45_2.7s_left_90_1.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0025_stand_2.0s_run_right_45_1.9s_stand_2.0s_motion.npz",
+          "size": 1179738,
+          "sha256": "d7252e86079e49b9ed76fa7e36849d912133e082689455a146ab46ee3458cef2"
+        },
+        {
+          "path": "cfg0025_stand_2.0s_run_right_45_1.9s_stand_2.0s_terrain.npy",
+          "size": 4128,
+          "sha256": "193ce163b5a9a0af2e59e64a65e2e368f04561f3b8d8010ff3bb6f30d5f7d7ee"
+        },
+        {
+          "path": "cfg0026_stand_2.0s_left_45_1.7s_right_90_1.2s_run_right_45_1.2s_stand_2.0s_motion.npz",
+          "size": 1599074,
+          "sha256": "06f6f46091b67dc2f43f4c9248d1a2ba7ab885a4222c7f94e76c13f34dbeeed4"
+        },
+        {
+          "path": "cfg0026_stand_2.0s_left_45_1.7s_right_90_1.2s_run_right_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0027_stand_2.0s_run_right_90_2.6s_right_45_0.8s_left_90_2.4s_run_forward_2.1s_stand_2.0s_motion.npz",
+          "size": 2346758,
+          "sha256": "dce0650abb321ee5f7cd5efd0c8190508aa914c9e2d3133049ddd66b93dd45d6"
+        },
+        {
+          "path": "cfg0027_stand_2.0s_run_right_90_2.6s_right_45_0.8s_left_90_2.4s_run_forward_2.1s_stand_2.0s_terrain.npy",
+          "size": 7328,
+          "sha256": "f25d406ce1a5352432cd21b58bd60516f315e669dd612c41c9e0042cbc996aa3"
+        },
+        {
+          "path": "cfg0028_stand_2.0s_left_90_0.6s_run_right_45_1.9s_run_right_45_2.3s_forward_1.8s_run_right_90_2.5s_run_forward_1.6s_stand_2.0s_motion.npz",
+          "size": 2896642,
+          "sha256": "a89892a1b4b72ae5035fc9af0e9f5629ecd3c5ed88f68e50a8fa55367d34c278"
+        },
+        {
+          "path": "cfg0028_stand_2.0s_left_90_0.6s_run_right_45_1.9s_run_right_45_2.3s_forward_1.8s_run_right_90_2.5s_run_forward_1.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0029_stand_2.0s_run_left_90_1.2s_forward_2.6s_left_45_1.5s_run_forward_1.2s_right_90_1.9s_right_45_2.2s_forward_2.9s_right_45_1.9s_run_right_90_1.5s_left_45_1.4s_stand_2.0s_motion.npz",
+          "size": 4399922,
+          "sha256": "76a4b7bc1bdd575c862fa40370e579a2415ee0fe1c95a1d508e6251101ae4fad"
+        },
+        {
+          "path": "cfg0029_stand_2.0s_run_left_90_1.2s_forward_2.6s_left_45_1.5s_run_forward_1.2s_right_90_1.9s_right_45_2.2s_forward_2.9s_right_45_1.9s_run_right_90_1.5s_left_45_1.4s_stand_2.0s_terrain.npy",
+          "size": 10528,
+          "sha256": "02825af8a6f79d899ca336dfbdeae41fd5f29060b28082271c239b79d3b24276"
+        },
+        {
+          "path": "cfg0030_stand_2.0s_left_45_0.5s_stand_2.0s_motion.npz",
+          "size": 902818,
+          "sha256": "8dceb6646941ab5b16cc6a51143455b37dbf29aac597fec19de2e8ea2a27c3d3"
+        },
+        {
+          "path": "cfg0030_stand_2.0s_left_45_0.5s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0031_stand_2.0s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 1037322,
+          "sha256": "72b4358599cf9c3723e6610e903f0f91a9bb3e8bf4564ddaf72e66ef6d249162"
+        },
+        {
+          "path": "cfg0031_stand_2.0s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "74184126072de8155df8ea19e21636f887a65c11f522a8c866fa061bf23fb90f"
+        },
+        {
+          "path": "cfg0032_stand_2.0s_left_45_2.6s_run_right_45_1.7s_stand_2.0s_motion.npz",
+          "size": 1650502,
+          "sha256": "33e1f405a591c7f501b16fd968d9129da1cc1c534ff541046566e7e474c23df1"
+        },
+        {
+          "path": "cfg0032_stand_2.0s_left_45_2.6s_run_right_45_1.7s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0033_stand_2.0s_left_90_1.7s_left_90_0.9s_run_left_90_1.5s_run_right_45_2.1s_stand_2.0s_motion.npz",
+          "size": 2026322,
+          "sha256": "f323758b528d3a6fe8715bc6a90957ecdf5948990544f1fe549a368516325865"
+        },
+        {
+          "path": "cfg0033_stand_2.0s_left_90_1.7s_left_90_0.9s_run_left_90_1.5s_run_right_45_2.1s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "0652f2a9f28ba4b2e02955737de832f3a97dd23dcb7973fc3f2bb1eba3880eb7"
+        },
+        {
+          "path": "cfg0034_stand_2.0s_left_90_1.4s_right_90_1.8s_run_right_45_2.1s_run_right_90_1.2s_run_left_45_1.2s_right_45_2.9s_run_right_45_1.5s_right_45_1.6s_right_90_2.9s_run_left_45_2.9s_stand_2.0s_motion.npz",
+          "size": 4637282,
+          "sha256": "cc17935ec4e7b398f955f37f77211a2f06b1c64ca52c6133948aec2e5cd051dc"
+        },
+        {
+          "path": "cfg0034_stand_2.0s_left_90_1.4s_right_90_1.8s_run_right_45_2.1s_run_right_90_1.2s_run_left_45_1.2s_right_45_2.9s_run_right_45_1.5s_right_45_1.6s_right_90_2.9s_run_left_45_2.9s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0035_stand_2.0s_run_forward_1.2s_stand_2.0s_motion.npz",
+          "size": 1037322,
+          "sha256": "0c913d32fe45341bc01a9fc0bbf4ed061cbe0b8dd7e55a51c1b5f8e46cece34a"
+        },
+        {
+          "path": "cfg0035_stand_2.0s_run_forward_1.2s_stand_2.0s_terrain.npy",
+          "size": 7328,
+          "sha256": "4dd475a10db6270edb4db0ad2ed3e92c8e5e396369cbd0ea34dfedb036cb90b3"
+        },
+        {
+          "path": "cfg0036_stand_2.0s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 1037322,
+          "sha256": "72b4358599cf9c3723e6610e903f0f91a9bb3e8bf4564ddaf72e66ef6d249162"
+        },
+        {
+          "path": "cfg0036_stand_2.0s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0037_stand_2.0s_run_right_45_1.2s_run_left_90_1.2s_left_45_2.6s_stand_2.0s_motion.npz",
+          "size": 1788962,
+          "sha256": "dc137d1bfa224818ab320d35eda55d9b52548e16ab402296a84203249466ed00"
+        },
+        {
+          "path": "cfg0037_stand_2.0s_run_right_45_1.2s_run_left_90_1.2s_left_45_2.6s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "d2e8fc24504c769858be30a3bed66ddeb8e4e43493054cadf78ab2ed8ae7d3df"
+        },
+        {
+          "path": "cfg0038_stand_2.0s_right_45_2.5s_right_45_0.8s_left_45_2.1s_run_forward_2.3s_forward_1.2s_run_right_90_2.4s_run_right_45_3.0s_right_45_1.4s_run_right_90_1.4s_right_45_2.6s_stand_2.0s_motion.npz",
+          "size": 4684754,
+          "sha256": "ece21345c5a88eb0d2fea911e3226bdd76828761d8632b23318326152378b14f"
+        },
+        {
+          "path": "cfg0038_stand_2.0s_right_45_2.5s_right_45_0.8s_left_45_2.1s_run_forward_2.3s_forward_1.2s_run_right_90_2.4s_run_right_45_3.0s_right_45_1.4s_run_right_90_1.4s_right_45_2.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0039_stand_2.0s_forward_2.4s_left_45_0.8s_forward_1.8s_right_45_1.3s_left_45_1.5s_stand_2.0s_motion.npz",
+          "size": 2307198,
+          "sha256": "d8a8fed660c7469666d84489115d766e37cee2ba8d10e9a1bb1d4a51b7e58adb"
+        },
+        {
+          "path": "cfg0039_stand_2.0s_forward_2.4s_left_45_0.8s_forward_1.8s_right_45_1.3s_left_45_1.5s_stand_2.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "717bdb483aa0451a84929e2296f2f6de05da00335dbf1f0958445e4973ced05c"
+        },
+        {
+          "path": "cfg0040_stand_2.0s_forward_2.8s_stand_2.0s_motion.npz",
+          "size": 1341934,
+          "sha256": "234ae735bbfa6cd7993129b4b96a8369149543ce13db2eadfef9a553ca42277f"
+        },
+        {
+          "path": "cfg0040_stand_2.0s_forward_2.8s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0041_stand_2.0s_run_forward_1.3s_left_45_2.9s_run_right_45_2.1s_right_45_1.2s_right_90_2.2s_run_left_90_2.5s_right_45_0.7s_run_right_45_1.2s_left_90_1.6s_run_right_90_1.4s_stand_2.0s_motion.npz",
+          "size": 4150694,
+          "sha256": "a14810f56249bc247a0ab9b71e0b0ae62f4706282fd263353191c13ae383be2b"
+        },
+        {
+          "path": "cfg0041_stand_2.0s_run_forward_1.3s_left_45_2.9s_run_right_45_2.1s_right_45_1.2s_right_90_2.2s_run_left_90_2.5s_right_45_0.7s_run_right_45_1.2s_left_90_1.6s_run_right_90_1.4s_stand_2.0s_terrain.npy",
+          "size": 8128,
+          "sha256": "31322a30c2ce14e0dbb5ab696f418785bc4488a3b584601002ccb08e8a42da70"
+        },
+        {
+          "path": "cfg0042_stand_2.0s_run_right_90_1.2s_run_left_90_2.0s_stand_2.0s_motion.npz",
+          "size": 1436878,
+          "sha256": "fdcbfcb6ab7ccde0160179c2713c4672a95f19728f2253de55c6f705dad53d1c"
+        },
+        {
+          "path": "cfg0042_stand_2.0s_run_right_90_1.2s_run_left_90_2.0s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0043_stand_2.0s_right_45_0.7s_run_left_90_1.2s_run_left_45_2.3s_stand_2.0s_motion.npz",
+          "size": 1618854,
+          "sha256": "7bad6ed7e3fefd4e213c72c8ba2cbaef05e3ec8d0ef72e3d624cab0397034b75"
+        },
+        {
+          "path": "cfg0043_stand_2.0s_right_45_0.7s_run_left_90_1.2s_run_left_45_2.3s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "8ba4e7c6d349049e619d879c6a7904b4c2e4766581b3dd8fa00513f91939077a"
+        },
+        {
+          "path": "cfg0044_stand_2.0s_right_45_0.7s_left_45_1.4s_left_45_2.5s_run_left_45_3.0s_run_forward_1.4s_stand_2.0s_motion.npz",
+          "size": 2584118,
+          "sha256": "757b875b3d48063c4def4bef972df4378ea4820e98a45f3d7ef98646fb78a33d"
+        },
+        {
+          "path": "cfg0044_stand_2.0s_right_45_0.7s_left_45_1.4s_left_45_2.5s_run_left_45_3.0s_run_forward_1.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0045_stand_2.0s_run_left_45_2.4s_run_left_45_1.6s_run_left_90_1.2s_forward_0.5s_left_45_0.6s_stand_2.0s_motion.npz",
+          "size": 2050058,
+          "sha256": "7a25fa96078364d0f7e24662f34b061245903f9400da671cdb4a189e05fc4082"
+        },
+        {
+          "path": "cfg0045_stand_2.0s_run_left_45_2.4s_run_left_45_1.6s_run_left_90_1.2s_forward_0.5s_left_45_0.6s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "dbc377955b1341aa2b3cc20a379bd252a23f7dba34393c11ef45121aa867668a"
+        },
+        {
+          "path": "cfg0046_stand_2.0s_forward_0.8s_run_left_45_2.4s_run_forward_2.9s_left_45_1.2s_right_45_1.1s_right_45_0.5s_right_45_0.6s_run_right_45_1.8s_run_left_90_1.2s_left_90_2.9s_stand_2.0s_motion.npz",
+          "size": 3830258,
+          "sha256": "83a0628769449688868e0da5f2f3cd9f295730b3488577bb0fca652e24a18370"
+        },
+        {
+          "path": "cfg0046_stand_2.0s_forward_0.8s_run_left_45_2.4s_run_forward_2.9s_left_45_1.2s_right_45_1.1s_right_45_0.5s_right_45_0.6s_run_right_45_1.8s_run_left_90_1.2s_left_90_2.9s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0047_stand_2.0s_run_left_45_2.1s_left_90_1.6s_right_90_2.0s_run_left_90_1.2s_right_45_2.9s_left_45_1.6s_run_left_90_1.2s_run_right_45_1.7s_left_45_2.0s_stand_2.0s_motion.npz",
+          "size": 3992454,
+          "sha256": "557656d347ae3fe4c6e21f3544ca99a4a15a037fc96f1b07b49915291d0ad20c"
+        },
+        {
+          "path": "cfg0047_stand_2.0s_run_left_45_2.1s_left_90_1.6s_right_90_2.0s_run_left_90_1.2s_right_45_2.9s_left_45_1.6s_run_left_90_1.2s_run_right_45_1.7s_left_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "9a9d610883aa93fad2ad399563ea0bc47f43dfeefb78f749316db29af1825a4e"
+        },
+        {
+          "path": "cfg0048_stand_2.0s_forward_2.9s_run_right_45_2.2s_forward_1.3s_left_45_2.2s_right_45_2.8s_left_90_2.9s_run_left_45_2.0s_run_left_90_2.8s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 4815302,
+          "sha256": "03becab5af3b8380f40363cd41d4f97d9eddd7a5444fea6c022e34974bf9eb33"
+        },
+        {
+          "path": "cfg0048_stand_2.0s_forward_2.9s_run_right_45_2.2s_forward_1.3s_left_45_2.2s_right_45_2.8s_left_90_2.9s_run_left_45_2.0s_run_left_90_2.8s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0049_stand_2.0s_right_45_1.4s_run_left_45_3.0s_forward_2.0s_left_90_2.9s_run_left_45_2.6s_forward_1.5s_run_left_45_1.2s_right_90_2.5s_run_left_90_3.0s_right_90_2.4s_stand_2.0s_motion.npz",
+          "size": 5254418,
+          "sha256": "bdd082f4de7aab5004d8ab42a18d44c4cea4ec227867de8e2bfca94767870516"
+        },
+        {
+          "path": "cfg0049_stand_2.0s_right_45_1.4s_run_left_45_3.0s_forward_2.0s_left_90_2.9s_run_left_45_2.6s_forward_1.5s_run_left_45_1.2s_right_90_2.5s_run_left_90_3.0s_right_90_2.4s_stand_2.0s_terrain.npy",
+          "size": 11328,
+          "sha256": "d4f934283989bdf57bf49525c219076dea6a220536d1282e901451e51cd30ac9"
+        },
+        {
+          "path": "cfg0050_stand_2.0s_run_left_45_2.6s_run_right_45_1.6s_stand_2.0s_motion.npz",
+          "size": 1634678,
+          "sha256": "34e58256ecb0f6e5c2f33d3de29658554805952923015f265c1f231c22b372a9"
+        },
+        {
+          "path": "cfg0050_stand_2.0s_run_left_45_2.6s_run_right_45_1.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0051_stand_2.0s_run_left_90_2.9s_left_90_1.1s_right_45_2.0s_right_90_0.8s_right_45_1.8s_forward_1.8s_run_right_90_1.9s_run_right_45_2.7s_forward_0.8s_stand_2.0s_motion.npz",
+          "size": 3913334,
+          "sha256": "d14f3bb0e8e6de738dabec8c51bd64e804cab09c44f24b0533d48a988a769ba6"
+        },
+        {
+          "path": "cfg0051_stand_2.0s_run_left_90_2.9s_left_90_1.1s_right_45_2.0s_right_90_0.8s_right_45_1.8s_forward_1.8s_run_right_90_1.9s_run_right_45_2.7s_forward_0.8s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "e6b43473ae2fefa00d1123c6120376a935468066ee0a5aa8b2ea0b05e0673179"
+        },
+        {
+          "path": "cfg0052_stand_2.0s_run_forward_2.4s_forward_2.3s_forward_0.8s_stand_2.0s_motion.npz",
+          "size": 1879950,
+          "sha256": "fb69e3903434fb024544d3e08c3bc21b96cc6f5a436db1daff24453a3c3f3f08"
+        },
+        {
+          "path": "cfg0052_stand_2.0s_run_forward_2.4s_forward_2.3s_forward_0.8s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0053_stand_2.0s_run_right_90_1.4s_run_left_90_1.5s_run_right_45_2.8s_run_right_45_1.8s_left_90_1.5s_forward_2.7s_run_right_45_1.2s_left_45_1.7s_left_90_1.6s_left_45_1.7s_stand_2.0s_motion.npz",
+          "size": 4312890,
+          "sha256": "c46db78c115ee43927caf4d71d7193ed8f9fe2325bb3aab11c634a52a39b0395"
+        },
+        {
+          "path": "cfg0053_stand_2.0s_run_right_90_1.4s_run_left_90_1.5s_run_right_45_2.8s_run_right_45_1.8s_left_90_1.5s_forward_2.7s_run_right_45_1.2s_left_45_1.7s_left_90_1.6s_left_45_1.7s_stand_2.0s_terrain.npy",
+          "size": 10528,
+          "sha256": "9fd4dc2d092dfd50674525c5785ac21d196d943fcbcc2d1447ee37350bc40a47"
+        },
+        {
+          "path": "cfg0054_stand_2.0s_run_right_90_2.1s_left_45_0.7s_stand_2.0s_motion.npz",
+          "size": 1345890,
+          "sha256": "d09febfbfb0b974dd966b60c6600c543783b7ed2ac9acbcdf11fbba3470552e8"
+        },
+        {
+          "path": "cfg0054_stand_2.0s_run_right_90_2.1s_left_45_0.7s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0055_stand_2.0s_right_45_0.8s_run_left_45_1.2s_left_45_1.0s_run_right_90_2.7s_right_45_2.2s_run_right_90_1.2s_stand_2.0s_motion.npz",
+          "size": 2592030,
+          "sha256": "f0aa6ef7c78e8eceec87d78223116092dd0cf16196e32a540879b9262f7768eb"
+        },
+        {
+          "path": "cfg0055_stand_2.0s_right_45_0.8s_run_left_45_1.2s_left_45_1.0s_run_right_90_2.7s_right_45_2.2s_run_right_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "ac32720d59b35ff61cc3434b8d1419f978fbb854339603092809a1aa031ed354"
+        },
+        {
+          "path": "cfg0056_stand_2.0s_run_right_90_1.2s_forward_0.9s_stand_2.0s_motion.npz",
+          "size": 1219298,
+          "sha256": "99c528de01976456187726a36bd43f32f2f4600cebc657c44221d5bfbade2e87"
+        },
+        {
+          "path": "cfg0056_stand_2.0s_run_right_90_1.2s_forward_0.9s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0057_stand_2.0s_run_right_90_1.2s_left_45_1.0s_run_left_45_1.8s_run_right_90_1.2s_run_right_90_2.1s_stand_2.0s_motion.npz",
+          "size": 2224122,
+          "sha256": "901ca754f1da4186d1629b3c3b21629f9add3ef2cfdc8f768b5feddbbe0a1696"
+        },
+        {
+          "path": "cfg0057_stand_2.0s_run_right_90_1.2s_left_45_1.0s_run_left_45_1.8s_run_right_90_1.2s_run_right_90_2.1s_stand_2.0s_terrain.npy",
+          "size": 8128,
+          "sha256": "d43ec59e5cb4da8b458667ae468cbbdd0fac76acd48b8e47e3d166267b29fd8a"
+        },
+        {
+          "path": "cfg0058_stand_2.0s_run_right_45_2.7s_run_forward_1.2s_right_90_2.5s_right_45_1.0s_run_forward_1.4s_right_45_2.0s_right_90_1.7s_run_left_45_1.2s_left_90_2.3s_right_90_1.8s_stand_2.0s_motion.npz",
+          "size": 4297066,
+          "sha256": "cb37b3b040290be6a332c1351d53ae664dfed476eadb2d8f45bc7e85eee25265"
+        },
+        {
+          "path": "cfg0058_stand_2.0s_run_right_45_2.7s_run_forward_1.2s_right_90_2.5s_right_45_1.0s_run_forward_1.4s_right_45_2.0s_right_90_1.7s_run_left_45_1.2s_left_90_2.3s_right_90_1.8s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0059_stand_2.0s_run_left_90_1.2s_run_forward_1.8s_left_45_1.2s_forward_0.6s_run_left_90_1.2s_run_right_90_1.2s_run_right_90_2.0s_left_45_2.5s_left_45_0.7s_run_right_45_2.0s_stand_2.0s_motion.npz",
+          "size": 3620590,
+          "sha256": "ed53885799faea8e55b02412c8b624a57f3bf3f3d9924dce182eeb1dffc3b82e"
+        },
+        {
+          "path": "cfg0059_stand_2.0s_run_left_90_1.2s_run_forward_1.8s_left_45_1.2s_forward_0.6s_run_left_90_1.2s_run_right_90_1.2s_run_right_90_2.0s_left_45_2.5s_left_45_0.7s_run_right_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 8128,
+          "sha256": "66e2f33c108b788be4da8a3d96a09245f1793142757bd7a6d1c22dd932394128"
+        },
+        {
+          "path": "cfg0060_stand_2.0s_right_45_1.6s_stand_2.0s_motion.npz",
+          "size": 1108530,
+          "sha256": "c057fa3bdeef1d44970684b176d262e636e8c6280652455cc283e43e9fc9c761"
+        },
+        {
+          "path": "cfg0060_stand_2.0s_right_45_1.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0061_stand_2.0s_run_right_45_1.2s_right_90_2.1s_left_90_1.4s_run_forward_2.0s_left_45_0.8s_right_45_1.1s_run_forward_1.2s_right_90_0.9s_left_90_0.7s_run_left_90_1.5s_stand_2.0s_motion.npz",
+          "size": 3347626,
+          "sha256": "4716e60017d4ca4c9be285582aabf0a3e16e36df5d7544b51ccde51671fb1721"
+        },
+        {
+          "path": "cfg0061_stand_2.0s_run_right_45_1.2s_right_90_2.1s_left_90_1.4s_run_forward_2.0s_left_45_0.8s_right_45_1.1s_run_forward_1.2s_right_90_0.9s_left_90_0.7s_run_left_90_1.5s_stand_2.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "e176c210987d885f40ce1ba736341ebcad95fdbc906930578ccd400e359b0b4d"
+        },
+        {
+          "path": "cfg0062_stand_2.0s_run_right_45_1.2s_right_90_2.9s_run_right_90_2.5s_run_right_45_1.2s_forward_2.8s_run_right_45_1.9s_right_90_2.4s_left_45_1.3s_left_90_1.8s_right_90_0.8s_stand_2.0s_motion.npz",
+          "size": 4526514,
+          "sha256": "64e57e89b56af5fe07c2324e0c1d40171ceb2193982924c2d9b1a4a121b8600c"
+        },
+        {
+          "path": "cfg0062_stand_2.0s_run_right_45_1.2s_right_90_2.9s_run_right_90_2.5s_run_right_45_1.2s_forward_2.8s_run_right_45_1.9s_right_90_2.4s_left_45_1.3s_left_90_1.8s_right_90_0.8s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0063_stand_2.0s_left_45_1.2s_left_45_0.9s_run_right_45_1.8s_stand_2.0s_motion.npz",
+          "size": 1571382,
+          "sha256": "eddbbf80806001aab9896208b68b50f5d3ba938931faeb30f380eea72b379108"
+        },
+        {
+          "path": "cfg0063_stand_2.0s_left_45_1.2s_left_45_0.9s_run_right_45_1.8s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "741fb3d81880de85ffb45f412e861a8392df4f6044dba0c392d6c1e61bb5ab43"
+        },
+        {
+          "path": "cfg0064_stand_2.0s_left_90_1.3s_stand_2.0s_motion.npz",
+          "size": 1061058,
+          "sha256": "ee2f3b80e8628bd2a64fca04e530feef9d18815b1f5bcabee76cd009400d9fc7"
+        },
+        {
+          "path": "cfg0064_stand_2.0s_left_90_1.3s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0065_stand_2.0s_right_90_0.7s_right_90_1.3s_run_right_90_1.2s_right_45_2.4s_run_forward_1.7s_right_45_1.4s_right_90_2.6s_run_right_45_1.2s_run_left_90_2.8s_right_90_0.7s_stand_2.0s_motion.npz",
+          "size": 3929158,
+          "sha256": "9a78ead73a07789a6bdb21174ff65c6c35aa3fcfbed2a083976b2927c4118040"
+        },
+        {
+          "path": "cfg0065_stand_2.0s_right_90_0.7s_right_90_1.3s_run_right_90_1.2s_right_45_2.4s_run_forward_1.7s_right_45_1.4s_right_90_2.6s_run_right_45_1.2s_run_left_90_2.8s_right_90_0.7s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "896c2788141f3bc1117b674fd467ea45fde05b50770237cb2e09965b26eae19e"
+        },
+        {
+          "path": "cfg0066_stand_2.0s_forward_1.9s_left_45_0.8s_run_left_45_1.2s_right_90_0.9s_forward_2.2s_forward_1.4s_run_forward_1.5s_left_90_1.6s_right_90_1.7s_left_90_2.4s_stand_2.0s_motion.npz",
+          "size": 3857950,
+          "sha256": "a358a493346d42c0c324117a23077943e9754f87887793e5faa9a7c9df486204"
+        },
+        {
+          "path": "cfg0066_stand_2.0s_forward_1.9s_left_45_0.8s_run_left_45_1.2s_right_90_0.9s_forward_2.2s_forward_1.4s_run_forward_1.5s_left_90_1.6s_right_90_1.7s_left_90_2.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0067_stand_2.0s_run_left_90_1.2s_run_right_45_1.5s_run_left_45_2.8s_run_right_45_1.2s_forward_2.1s_left_45_0.8s_left_45_2.1s_left_90_2.7s_run_right_45_1.2s_forward_1.1s_stand_2.0s_motion.npz",
+          "size": 4083442,
+          "sha256": "9a933f3e1080873f4a2dc46441c90181951b6c6f0f144815210dc120d0ad578e"
+        },
+        {
+          "path": "cfg0067_stand_2.0s_run_left_90_1.2s_run_right_45_1.5s_run_left_45_2.8s_run_right_45_1.2s_forward_2.1s_left_45_0.8s_left_45_2.1s_left_90_2.7s_run_right_45_1.2s_forward_1.1s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "4c3557f13d094183a81ee41e82018ce4d25bc6b432aa11feb5a88b739c4d942d"
+        },
+        {
+          "path": "cfg0068_stand_2.0s_run_forward_1.2s_run_right_90_2.4s_run_right_45_1.4s_left_90_0.8s_run_left_45_1.2s_left_90_2.5s_stand_2.0s_motion.npz",
+          "size": 2659282,
+          "sha256": "c2af8b596178d0e43b4b65072fdff025fa469518a3c4271c6aad72ffa5ce1490"
+        },
+        {
+          "path": "cfg0068_stand_2.0s_run_forward_1.2s_run_right_90_2.4s_run_right_45_1.4s_left_90_0.8s_run_left_45_1.2s_left_90_2.5s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0069_stand_2.0s_forward_1.1s_right_90_2.3s_run_forward_2.2s_forward_1.1s_run_forward_1.2s_right_45_2.0s_right_45_1.7s_left_45_0.9s_run_forward_1.8s_run_right_45_1.2s_stand_2.0s_motion.npz",
+          "size": 3834214,
+          "sha256": "8a79873f5f3cb6fcb892010de06756b18dd52a46ad144abda9719d66b95e32ac"
+        },
+        {
+          "path": "cfg0069_stand_2.0s_forward_1.1s_right_90_2.3s_run_forward_2.2s_forward_1.1s_run_forward_1.2s_right_45_2.0s_right_45_1.7s_left_45_0.9s_run_forward_1.8s_run_right_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 11328,
+          "sha256": "04b1e41d3765b4a192c7ec762adce9575e3e944688d44961753433df08b1f6b7"
+        },
+        {
+          "path": "cfg0070_stand_2.0s_run_left_45_2.8s_run_right_90_2.2s_left_90_2.3s_right_45_1.9s_left_90_1.6s_left_90_2.8s_run_left_45_1.6s_stand_2.0s_motion.npz",
+          "size": 3814434,
+          "sha256": "b24f2ef7387456a79884e021b042b81fd17163e62110e6a209ad3e9cae034618"
+        },
+        {
+          "path": "cfg0070_stand_2.0s_run_left_45_2.8s_run_right_90_2.2s_left_90_2.3s_right_45_1.9s_left_90_1.6s_left_90_2.8s_run_left_45_1.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0071_stand_2.0s_forward_3.0s_left_90_0.8s_run_forward_2.7s_run_left_45_2.0s_right_45_0.6s_right_90_2.5s_stand_2.0s_motion.npz",
+          "size": 3074662,
+          "sha256": "003645a647db77427963198b194398d3f39a9aeef085e07e5431fa248fc3e690"
+        },
+        {
+          "path": "cfg0071_stand_2.0s_forward_3.0s_left_90_0.8s_run_forward_2.7s_run_left_45_2.0s_right_45_0.6s_right_90_2.5s_stand_2.0s_terrain.npy",
+          "size": 6528,
+          "sha256": "4553d3c93f3514f74150f1c109bcc84a673ad73efe3afbbce900940d0986c392"
+        },
+        {
+          "path": "cfg0072_stand_2.0s_left_90_1.3s_left_45_1.8s_run_left_45_1.4s_forward_2.3s_run_left_90_1.2s_right_45_0.9s_right_45_1.7s_run_left_90_2.8s_run_forward_2.0s_right_90_0.5s_stand_2.0s_motion.npz",
+          "size": 3941026,
+          "sha256": "7ef3b29e473f41e92afa665944761e1547c9e7837d029c55338131754f517a15"
+        },
+        {
+          "path": "cfg0072_stand_2.0s_left_90_1.3s_left_45_1.8s_run_left_45_1.4s_forward_2.3s_run_left_90_1.2s_right_45_0.9s_right_45_1.7s_run_left_90_2.8s_run_forward_2.0s_right_90_0.5s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0073_stand_2.0s_right_45_0.9s_right_45_0.9s_forward_0.7s_right_45_1.8s_run_left_45_1.2s_run_forward_1.2s_right_90_1.0s_left_45_0.6s_right_90_1.9s_stand_2.0s_motion.npz",
+          "size": 2801698,
+          "sha256": "a3608cdc0b4f69822d5eb9592614c15e400ddf814787b08b7f4141168939c790"
+        },
+        {
+          "path": "cfg0073_stand_2.0s_right_45_0.9s_right_45_0.9s_forward_0.7s_right_45_1.8s_run_left_45_1.2s_run_forward_1.2s_right_90_1.0s_left_45_0.6s_right_90_1.9s_stand_2.0s_terrain.npy",
+          "size": 4128,
+          "sha256": "f12d5e1b156959008fdf0034dc1d005e4885011d7d234a130cabcb740d5dcf7a"
+        },
+        {
+          "path": "cfg0074_stand_2.0s_run_forward_2.4s_run_right_45_1.8s_run_left_45_1.5s_run_right_45_1.2s_run_forward_2.7s_forward_1.4s_left_45_2.1s_right_90_0.6s_left_90_2.3s_run_right_90_1.2s_stand_2.0s_motion.npz",
+          "size": 4186298,
+          "sha256": "da218bdc1fa34636f9bfe536ffb268e420cb8e3b1694e8c7b1dc858d75660c09"
+        },
+        {
+          "path": "cfg0074_stand_2.0s_run_forward_2.4s_run_right_45_1.8s_run_left_45_1.5s_run_right_45_1.2s_run_forward_2.7s_forward_1.4s_left_45_2.1s_right_90_0.6s_left_90_2.3s_run_right_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0075_stand_2.0s_right_90_1.1s_forward_0.5s_stand_2.0s_motion.npz",
+          "size": 1116442,
+          "sha256": "ec9810359260fb97953517a6cc353a863fcaa77531a592646110ca0e06754203"
+        },
+        {
+          "path": "cfg0075_stand_2.0s_right_90_1.1s_forward_0.5s_stand_2.0s_terrain.npy",
+          "size": 7328,
+          "sha256": "533efa8786a1f4a022dbfc4e1db7dee5cdc8a762e6f41c489e066d043ecdbe91"
+        },
+        {
+          "path": "cfg0076_stand_2.0s_left_45_2.5s_run_right_90_2.1s_run_left_45_1.2s_run_forward_2.3s_run_forward_2.6s_run_left_45_2.2s_run_right_90_1.2s_run_right_45_1.2s_stand_2.0s_motion.npz",
+          "size": 3814434,
+          "sha256": "ef7ebd87a98432517f41fe89313f2449bc566f906f6b84f34681aa754c15244d"
+        },
+        {
+          "path": "cfg0076_stand_2.0s_left_45_2.5s_run_right_90_2.1s_run_left_45_1.2s_run_forward_2.3s_run_forward_2.6s_run_left_45_2.2s_run_right_90_1.2s_run_right_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0077_stand_2.0s_left_45_1.0s_stand_2.0s_motion.npz",
+          "size": 997762,
+          "sha256": "5a5c5885c34bd8fc277dd67d907d476ef6b9ace6b0ba0a28812156678c5796fe"
+        },
+        {
+          "path": "cfg0077_stand_2.0s_left_45_1.0s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "eb1d00d86aa1d7abcafade6a639fd0af123e294aad955f3dc43c5ddd0454d07c"
+        },
+        {
+          "path": "cfg0078_stand_2.0s_run_left_45_1.2s_run_right_90_1.6s_right_45_2.5s_right_90_1.1s_forward_2.0s_run_left_45_2.1s_forward_1.9s_run_right_45_1.2s_run_right_45_2.4s_stand_2.0s_motion.npz",
+          "size": 3948938,
+          "sha256": "d7db77ac32789c5e7a6789edc288090fd2fb251676bf1a980b37847cd2cf0914"
+        },
+        {
+          "path": "cfg0078_stand_2.0s_run_left_45_1.2s_run_right_90_1.6s_right_45_2.5s_right_90_1.1s_forward_2.0s_run_left_45_2.1s_forward_1.9s_run_right_45_1.2s_run_right_45_2.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0079_stand_2.0s_right_45_2.7s_run_forward_2.7s_run_left_45_1.6s_stand_2.0s_motion.npz",
+          "size": 2172694,
+          "sha256": "ca38df1a01de83e0d65bdb254cb2b418effe7f92b561421b8db20bdcdca169a6"
+        },
+        {
+          "path": "cfg0079_stand_2.0s_right_45_2.7s_run_forward_2.7s_run_left_45_1.6s_stand_2.0s_terrain.npy",
+          "size": 7328,
+          "sha256": "0560c5e65832407e3785ea6a729ec22f2e154c37b0ac95f2f368cb53e3d47cab"
+        },
+        {
+          "path": "cfg0080_stand_2.0s_left_45_1.2s_run_forward_2.1s_run_right_90_1.2s_run_forward_3.0s_left_45_0.9s_right_90_0.5s_run_right_45_1.2s_right_90_1.2s_run_left_45_2.1s_run_forward_1.2s_stand_2.0s_motion.npz",
+          "size": 3675974,
+          "sha256": "beb7cb942c718a7b7de2c59788bf748e8d97ea8c9bbf1eb60e3ea2b802993c1c"
+        },
+        {
+          "path": "cfg0080_stand_2.0s_left_45_1.2s_run_forward_2.1s_run_right_90_1.2s_run_forward_3.0s_left_45_0.9s_right_90_0.5s_run_right_45_1.2s_right_90_1.2s_run_left_45_2.1s_run_forward_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0081_stand_2.0s_run_left_45_1.2s_right_90_2.7s_run_right_45_2.0s_left_90_0.9s_right_45_1.5s_run_left_45_1.8s_stand_2.0s_motion.npz",
+          "size": 2801698,
+          "sha256": "db669c1b516641cdfb7994d8996ea343a98e963a205a8057354a3e1cfc140a28"
+        },
+        {
+          "path": "cfg0081_stand_2.0s_run_left_45_1.2s_right_90_2.7s_run_right_45_2.0s_left_90_0.9s_right_45_1.5s_run_left_45_1.8s_stand_2.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "2dbb41b742809c1b4f7289e295c543363635f20057bc4f5008a420f1bb95e654"
+        },
+        {
+          "path": "cfg0082_stand_2.0s_run_left_45_1.2s_left_90_0.7s_run_right_90_1.2s_run_right_90_1.2s_right_90_2.3s_run_left_45_1.9s_run_right_45_2.2s_forward_2.3s_right_90_0.6s_right_90_2.0s_stand_2.0s_motion.npz",
+          "size": 3865862,
+          "sha256": "06c753a07e891ab1d263b341e77e65e5a67dc710b0e7ff221044b34030395cda"
+        },
+        {
+          "path": "cfg0082_stand_2.0s_run_left_45_1.2s_left_90_0.7s_run_right_90_1.2s_run_right_90_1.2s_right_90_2.3s_run_left_45_1.9s_run_right_45_2.2s_forward_2.3s_right_90_0.6s_right_90_2.0s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0083_stand_2.0s_right_45_1.7s_run_left_45_1.3s_run_right_90_1.2s_stand_2.0s_motion.npz",
+          "size": 1642590,
+          "sha256": "9b50d9a42786a157d538259389ad270d10a648f0e792e6d808a72deba351c947"
+        },
+        {
+          "path": "cfg0083_stand_2.0s_right_45_1.7s_run_left_45_1.3s_run_right_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 8128,
+          "sha256": "4dbf3be9d9fc87097f01af177da1845f9b78eb3eddeeaab3aef6d6d4a32855c5"
+        },
+        {
+          "path": "cfg0084_stand_2.0s_run_right_90_2.3s_run_forward_2.2s_run_left_90_1.2s_run_left_90_2.5s_run_left_90_1.2s_right_45_1.4s_stand_2.0s_motion.npz",
+          "size": 2936202,
+          "sha256": "51ac4869ae0d2a566d79ae0683ef5a4dd2b4b60cb37fe58882b1e2528766fad1"
+        },
+        {
+          "path": "cfg0084_stand_2.0s_run_right_90_2.3s_run_forward_2.2s_run_left_90_1.2s_run_left_90_2.5s_run_left_90_1.2s_right_45_1.4s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0085_stand_2.0s_run_right_45_2.8s_stand_2.0s_motion.npz",
+          "size": 1349846,
+          "sha256": "e720f53e47a4e0d3e4cc38e2061504731beb2ad46804c1f03926bf59d0f25af8"
+        },
+        {
+          "path": "cfg0085_stand_2.0s_run_right_45_2.8s_stand_2.0s_terrain.npy",
+          "size": 9728,
+          "sha256": "8b68cf528c0a420126809f517b0b1b658c9045f96b5344bae3e9b104a0169da2"
+        },
+        {
+          "path": "cfg0086_stand_2.0s_run_left_90_2.9s_left_90_1.0s_left_45_2.7s_right_90_2.5s_run_right_45_2.2s_run_right_90_1.2s_run_forward_1.2s_left_45_2.9s_stand_2.0s_motion.npz",
+          "size": 4051794,
+          "sha256": "a554f84e197e3948cd0e2c32114ac52fbf056949443f6c94e25cc2433e0800a1"
+        },
+        {
+          "path": "cfg0086_stand_2.0s_run_left_90_2.9s_left_90_1.0s_left_45_2.7s_right_90_2.5s_run_right_45_2.2s_run_right_90_1.2s_run_forward_1.2s_left_45_2.9s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0087_stand_2.0s_right_45_2.3s_right_90_1.0s_right_45_2.8s_stand_2.0s_motion.npz",
+          "size": 1982806,
+          "sha256": "baca0eceba819a7122b48a4875da8fd4b374e07297e7ae92357ff48ad83823de"
+        },
+        {
+          "path": "cfg0087_stand_2.0s_right_45_2.3s_right_90_1.0s_right_45_2.8s_stand_2.0s_terrain.npy",
+          "size": 12128,
+          "sha256": "c5fbb911135473b19d7f022285ecd750998c86e7ff7ac9cf60953403c6d636a3"
+        },
+        {
+          "path": "cfg0088_stand_2.0s_right_45_2.2s_left_90_2.8s_forward_2.9s_forward_2.7s_right_45_1.3s_run_left_90_1.2s_run_right_90_1.2s_stand_2.0s_motion.npz",
+          "size": 3608722,
+          "sha256": "f4d39335893896c0af8df6d6dd1781403f3f4deb67498db77256016d49be36c5"
+        },
+        {
+          "path": "cfg0088_stand_2.0s_right_45_2.2s_left_90_2.8s_forward_2.9s_forward_2.7s_right_45_1.3s_run_left_90_1.2s_run_right_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0089_stand_2.0s_left_45_0.7s_run_left_90_1.3s_run_left_45_1.2s_run_right_90_1.8s_right_45_1.3s_run_left_45_2.7s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 2821478,
+          "sha256": "92c0fd3eeaf273825e9c1fda20ef62f907b81a86a75f76b43d112de733d11361"
+        },
+        {
+          "path": "cfg0089_stand_2.0s_left_45_0.7s_run_left_90_1.3s_run_left_45_1.2s_run_right_90_1.8s_right_45_1.3s_run_left_45_2.7s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "5b70a56d2b5be93fd432066b4601ef1056bef0295343b6a9df00e30b0b4e7760"
+        },
+        {
+          "path": "cfg0090_stand_2.0s_run_left_45_2.7s_stand_2.0s_motion.npz",
+          "size": 1326110,
+          "sha256": "96bc8bc4716046071b0c10d8c09eeb7ae417977e8a9d2e28dd107fce84e8299d"
+        },
+        {
+          "path": "cfg0090_stand_2.0s_run_left_45_2.7s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0091_stand_2.0s_right_45_2.7s_left_90_2.8s_forward_3.0s_left_45_2.4s_run_left_45_1.7s_right_45_2.7s_left_90_2.4s_run_right_45_1.6s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 4842994,
+          "sha256": "d3229e2173dbea2b6362ef7e06d043b9a338045f2a47e8b492adff00549532c0"
+        },
+        {
+          "path": "cfg0091_stand_2.0s_right_45_2.7s_left_90_2.8s_forward_3.0s_left_45_2.4s_run_left_45_1.7s_right_45_2.7s_left_90_2.4s_run_right_45_1.6s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 8928,
+          "sha256": "7f9dff2d326fd891aa52ac733b1d9ba8bd3484636d160018b71302aada337e75"
+        },
+        {
+          "path": "cfg0092_stand_2.0s_forward_1.4s_run_right_45_1.2s_right_45_0.6s_stand_2.0s_motion.npz",
+          "size": 1432922,
+          "sha256": "b4625af9ae757bf8a32f77a6a20ef5a498f1315e140ca39134a78e559a48ae69"
+        },
+        {
+          "path": "cfg0092_stand_2.0s_forward_1.4s_run_right_45_1.2s_right_45_0.6s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0093_stand_2.0s_left_45_3.0s_run_left_90_1.5s_left_90_1.0s_run_left_90_2.5s_stand_2.0s_motion.npz",
+          "size": 2362582,
+          "sha256": "f05c89631fe9a5d33a4fc2f418bc2aab502ccd2fcc29b857cee619cd806f6047"
+        },
+        {
+          "path": "cfg0093_stand_2.0s_left_45_3.0s_run_left_90_1.5s_left_90_1.0s_run_left_90_2.5s_stand_2.0s_terrain.npy",
+          "size": 6528,
+          "sha256": "bef70804482e1d5a40d15fe47b3c88b6cc0d7efc95cb44adafc46b65894c309e"
+        },
+        {
+          "path": "cfg0094_stand_2.0s_run_right_45_1.5s_run_right_45_2.9s_run_right_90_2.0s_run_forward_3.0s_run_left_90_2.9s_run_right_90_2.0s_run_right_45_1.2s_run_left_45_1.2s_run_right_45_2.4s_run_left_90_1.2s_stand_2.0s_motion.npz",
+          "size": 4811346,
+          "sha256": "83f27aa3aeb1b3603300762066d61f341fcd52c547fa6c0b02b5dbed00a64d06"
+        },
+        {
+          "path": "cfg0094_stand_2.0s_run_right_45_1.5s_run_right_45_2.9s_run_right_90_2.0s_run_forward_3.0s_run_left_90_2.9s_run_right_90_2.0s_run_right_45_1.2s_run_left_45_1.2s_run_right_45_2.4s_run_left_90_1.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0095_stand_2.0s_left_90_2.7s_run_left_90_3.0s_run_left_90_1.5s_right_90_2.2s_right_45_2.5s_right_90_1.1s_run_right_45_2.0s_run_left_90_1.2s_right_45_1.2s_stand_2.0s_motion.npz",
+          "size": 4221902,
+          "sha256": "a3ee1f74de4427f39fafe9e84096c439446680f1dea064ac81819946f1fa8540"
+        },
+        {
+          "path": "cfg0095_stand_2.0s_left_90_2.7s_run_left_90_3.0s_run_left_90_1.5s_right_90_2.2s_right_45_2.5s_right_90_1.1s_run_right_45_2.0s_run_left_90_1.2s_right_45_1.2s_stand_2.0s_terrain.npy",
+          "size": 9728,
+          "sha256": "11ccca899c77b2178d1749140743e9aa01909f3dca7d96ce53c8197ccaa94ffa"
+        },
+        {
+          "path": "cfg0096_stand_2.0s_right_90_2.7s_run_left_90_2.7s_left_45_2.1s_right_90_0.7s_right_45_1.4s_right_90_2.3s_run_forward_1.2s_run_forward_2.2s_stand_2.0s_motion.npz",
+          "size": 3830258,
+          "sha256": "b4c7e58a53741442a9f498408e3fe01edd6aaf411a1a0fdc3339cd08a6216294"
+        },
+        {
+          "path": "cfg0096_stand_2.0s_right_90_2.7s_run_left_90_2.7s_left_45_2.1s_right_90_0.7s_right_45_1.4s_right_90_2.3s_run_forward_1.2s_run_forward_2.2s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0097_stand_2.0s_run_right_45_2.6s_left_45_1.7s_left_90_2.6s_left_90_2.2s_right_45_1.2s_run_left_45_2.5s_left_90_2.6s_right_45_2.3s_left_45_2.2s_run_left_45_2.0s_stand_2.0s_motion.npz",
+          "size": 5119914,
+          "sha256": "7a1d7e3c5c52533120cee38b7122f0bf41b9ccaa03f6db20a1f96fce6d96595d"
+        },
+        {
+          "path": "cfg0097_stand_2.0s_run_right_45_2.6s_left_45_1.7s_left_90_2.6s_left_90_2.2s_right_45_1.2s_run_left_45_2.5s_left_90_2.6s_right_45_2.3s_left_45_2.2s_run_left_45_2.0s_stand_2.0s_terrain.npy",
+          "size": 7328,
+          "sha256": "76ebecb9666b2090e0435dafeb2d5ecdc5f4877c717f1b98c7752fd131a18970"
+        },
+        {
+          "path": "cfg0098_stand_2.0s_run_left_45_1.2s_run_forward_2.7s_stand_2.0s_motion.npz",
+          "size": 1563470,
+          "sha256": "3d289f8770de58237fa35a815c576b80cd6011f7339fa6615aead5f0247015c1"
+        },
+        {
+          "path": "cfg0098_stand_2.0s_run_left_45_1.2s_run_forward_2.7s_stand_2.0s_terrain.npy",
+          "size": 128,
+          "sha256": "786cfc497279cf8f9e6108a1c9162192d99c11482dd43d35c75f65f7427a4492"
+        },
+        {
+          "path": "cfg0099_stand_2.0s_run_right_45_2.6s_stand_2.0s_motion.npz",
+          "size": 1302374,
+          "sha256": "52551287a01adfdc4a4836446b7fc010e92b2a64fc162d1c922256fef7c2769a"
+        },
+        {
+          "path": "cfg0099_stand_2.0s_run_right_45_2.6s_stand_2.0s_terrain.npy",
+          "size": 6528,
+          "sha256": "dec3cd8a183ce93defdc74caf64571dd52fd0b81dc2a90ff79b5210213bdf3b0"
+        }
+      ]
+    },
+    "motions-low-step": {
+      "status": "ready",
+      "description": "Low-speed step: 56 prepared G1 motion/terrain pairs at 50 FPS.",
+      "motion_count": 56,
+      "fps": 50,
+      "total_frames": 25676,
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-low-step-v1.tar.gz",
+        "size": 41817697,
+        "sha256": "1f63ee82004d6e705d64b293a9ff6988304ea757394d309209eeabb1b5ee8809"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1068,
+          "sha256": "5d33c63d69e7f4100638022fa755760957fc657873e439077527bdca01de3c57"
+        },
+        {
+          "path": "forward_walk0.5s_step0.5s_motion.npz",
+          "size": 1808742,
+          "sha256": "12d526429c718a581779ab833406db018e89f7d1977ef86cb56dad895b4c4154"
+        },
+        {
+          "path": "forward_walk0.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "39ff22e79f8a2a83408b8bad52fa542189d85cee2ee11065aea1b45c3e521471"
+        },
+        {
+          "path": "forward_walk0.5s_step0s_motion.npz",
+          "size": 1444790,
+          "sha256": "cd23725e7a21a321f397ecde52024e43da9b4dba7bff95a79a5797973d6924dd"
+        },
+        {
+          "path": "forward_walk0.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "a87f6c918d40a91049e3bcef4cfabf863514b07dffc8fb24c973a11c677fd986"
+        },
+        {
+          "path": "forward_walk0.5s_step1.0s_motion.npz",
+          "size": 1907642,
+          "sha256": "2d38ad33d5e6162491cba0fddfe6607980b2812c6e0bf84f443f8a3b21fd820d"
+        },
+        {
+          "path": "forward_walk0.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "12b734f3fcc706e3419d654488c548e11de2f5f3b4c8f846450d2bd3c8128a7c"
+        },
+        {
+          "path": "forward_walk0.8s_step0.5s_motion.npz",
+          "size": 1796874,
+          "sha256": "8a39a2c286c804fd82e9e277c994a781ca2edd680cc38d9dfb687d26299efdf6"
+        },
+        {
+          "path": "forward_walk0.8s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "5de5b353422c9ba80cbfe4df87e2224daa9b03cf1c1b1e0204b0f4caa6b2ef7b"
+        },
+        {
+          "path": "forward_walk0.8s_step0s_motion.npz",
+          "size": 1539734,
+          "sha256": "2ba8bea58ef9b5cc8d40a79a8cb80b96a73dd4fd4a260abc7dc29137a8a9da0e"
+        },
+        {
+          "path": "forward_walk0.8s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "34f7e1f0312f0cc7783e1b97c76e25533655805df174901266aac9d8d8aa6587"
+        },
+        {
+          "path": "forward_walk0.8s_step1.0s_motion.npz",
+          "size": 1895774,
+          "sha256": "d841189c2bad57bcbabbbc1185b8577200b20400f2c85055fb50556fb1a77046"
+        },
+        {
+          "path": "forward_walk0.8s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "1ec8b12baeb372de4a15cfcc25680c7a68e90cdb6ff0ef1e21d47f12c446969d"
+        },
+        {
+          "path": "forward_walk1.2s_step0.5s_motion.npz",
+          "size": 1943246,
+          "sha256": "8196da3b49adc16004b82bc27e68adf292d4dcbf51a46d470911c884725d3184"
+        },
+        {
+          "path": "forward_walk1.2s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "c9849a7aae386c5b0f9eaeb8d4d8fedfbe89c7d2a45c4dc725ecfedf4ee985c0"
+        },
+        {
+          "path": "forward_walk1.2s_step0s_motion.npz",
+          "size": 1642590,
+          "sha256": "5775f6195744e74935bb54f637778665e77f720693e332b9ebae046168ca7b1a"
+        },
+        {
+          "path": "forward_walk1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "5277701031166849ddcb196fad6bb70b5713423165c49e9ff021093e91b5c88b"
+        },
+        {
+          "path": "forward_walk1.2s_step1.0s_motion.npz",
+          "size": 2006542,
+          "sha256": "c5c143099c19b1555d0f1b2843e82ff163c9875965c89311c410391c79853dfd"
+        },
+        {
+          "path": "forward_walk1.2s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "4be351fba9857f32a28d6fbf5875db5f49b1e7c19d46bee4f683c63d2ec9d40f"
+        },
+        {
+          "path": "forward_walk1.5s_step0.5s_motion.npz",
+          "size": 2002586,
+          "sha256": "f034f9664db6ad6046f8352ec68aae128fcb4d77ee337d34f4e183ef2831482d"
+        },
+        {
+          "path": "forward_walk1.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "dbeea11d5f63b65277710978d0b1cb54e636a061c94f8be6b670432cfced0651"
+        },
+        {
+          "path": "forward_walk1.5s_step0s_motion.npz",
+          "size": 1670282,
+          "sha256": "161c894086f31a65e39d3e418b86961fc63d54699ec48a85a2a72c3d7019446d"
+        },
+        {
+          "path": "forward_walk1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "f869507e3187e70ca54805ec7b3eba7d40d886076b78a89d7407ef540890e08c"
+        },
+        {
+          "path": "forward_walk1.5s_step1.0s_motion.npz",
+          "size": 2105442,
+          "sha256": "770533a620d9dec3d0f5bf4f2d8967a8226cf14683af95ef888155196e8b3ba6"
+        },
+        {
+          "path": "forward_walk1.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "ec79713b9cc6db63ad7571707866aad8c135544ad1389881898137834a7fe1ee"
+        },
+        {
+          "path": "left_45_walk0.5s_step0.5s_motion.npz",
+          "size": 1824566,
+          "sha256": "5fa8435de770725f436ce3286af35efeb83547008ba5dd5d216bb29c85c3deb4"
+        },
+        {
+          "path": "left_45_walk0.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "d20b572ab94ca26cb8c57f5dcb4e91ed586af94707fc42c23d99ad790ab237ab"
+        },
+        {
+          "path": "left_45_walk0.5s_step0s_motion.npz",
+          "size": 1504130,
+          "sha256": "3e284590fd3c18803f2f96a2d4ddc40c56f2181ed982ec858e50c7c4092fc550"
+        },
+        {
+          "path": "left_45_walk0.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "263bf0a7c5cfcdda00f692cb3e085d55261b7bf80f08fdb94016926bea066af6"
+        },
+        {
+          "path": "left_45_walk0.5s_step1.0s_motion.npz",
+          "size": 1872038,
+          "sha256": "98808d8fa3be0b9b49cf3996ef1ca4ade36008a28b8243fba12b3af2b8f1b461"
+        },
+        {
+          "path": "left_45_walk0.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "5772e4a4633debebc7189134ef2ab642dee9b8d2699413e43347cfb59034a846"
+        },
+        {
+          "path": "left_45_walk0.8s_step0.5s_motion.npz",
+          "size": 1765226,
+          "sha256": "056e409e500e6d7b725589dc84612bb0806813219ffc4df914eec8a177ad8f0a"
+        },
+        {
+          "path": "left_45_walk0.8s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "191c731d8f677e07c32f7913b88cab8d950893ed25fdee200f8cbf8fa9f55b9e"
+        },
+        {
+          "path": "left_45_walk0.8s_step0s_motion.npz",
+          "size": 1555558,
+          "sha256": "73157c9344952abcb64e1981be5ff0069f9fefca0b1dee5ea193e484a2b7f5d3"
+        },
+        {
+          "path": "left_45_walk0.8s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "5f69e5b2b4811591983095b952fb0eb866dbeb339dfb4441f87e6d51bb093e08"
+        },
+        {
+          "path": "left_45_walk0.8s_step1.0s_motion.npz",
+          "size": 1879950,
+          "sha256": "37f25636b34febc811b6024ac5d45462082fe02303e881233747109ba168b93c"
+        },
+        {
+          "path": "left_45_walk0.8s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "512a06b5b04193dcb70abc35c6b64014217d68e242007b86a7c0ef81db502d55"
+        },
+        {
+          "path": "left_45_walk1.2s_step0.5s_motion.npz",
+          "size": 1840390,
+          "sha256": "aeb7c0bbef0600cd70352644f59887c8152e59495e5bd3c7dc512d89a7b9c128"
+        },
+        {
+          "path": "left_45_walk1.2s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "d0e3758e25015040860d48b263ef194d7b5848f69290e69695dc27ce7ac7bc15"
+        },
+        {
+          "path": "left_45_walk1.2s_step0s_motion.npz",
+          "size": 1559514,
+          "sha256": "3ed7c9e4c5d0a0a90924699f6c3314801e01b3f1874aa4895a677a83c9493b6e"
+        },
+        {
+          "path": "left_45_walk1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "f0b5f785d32d8dc248886bf2c5954de806c77b4d8055d3f24547bb417f3ac970"
+        },
+        {
+          "path": "left_45_walk1.2s_step1.0s_motion.npz",
+          "size": 1951158,
+          "sha256": "d4e708247da68b34f6b5bae085485f6459e051ccf0e67fc3af6892eca1a00a03"
+        },
+        {
+          "path": "left_45_walk1.2s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "9e2cebaf8afc97b78525c7d1dc89c8eb89a130e0b912c4278e41aa4722abafba"
+        },
+        {
+          "path": "left_45_walk1.5s_step0.5s_motion.npz",
+          "size": 2006542,
+          "sha256": "9c9e128a9f95aa9ad3f770156079c60c377a7561a907199b082cd6ef5a80de3d"
+        },
+        {
+          "path": "left_45_walk1.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "c7be9fcdca4dd938277ae861fa315ba8d1aff9f178dba5dba04522439c54e14e"
+        },
+        {
+          "path": "left_45_walk1.5s_step0s_motion.npz",
+          "size": 1686106,
+          "sha256": "38a3a14de7ba831f02ccb110e114fdcef4472df2595b24c09e3abd7a6212492b"
+        },
+        {
+          "path": "left_45_walk1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "d36fc9453b7ca1e59a7d5152901f7f720cc57f3d2cd6b155fd55f818d971ac3e"
+        },
+        {
+          "path": "left_45_walk1.5s_step1.0s_motion.npz",
+          "size": 2042146,
+          "sha256": "946484cd1d64ec836db82cef2b36d5ef0e1524217f1b30c5d4d8bbd466b03b8c"
+        },
+        {
+          "path": "left_45_walk1.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "01724445683873450dd82f9e353f86330dd7d007f442e51cac31f8c85715dde9"
+        },
+        {
+          "path": "left_90_walk0.5s_step0.5s_motion.npz",
+          "size": 1808742,
+          "sha256": "22da243e288302488e6692b69fe08b123b83d37377ce92ce4827d0a9d6c35bdf"
+        },
+        {
+          "path": "left_90_walk0.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "11b2c70dd52a3bd92b1e8797c23e8fd0dcb14de7c69e8ef30a20ae919447001f"
+        },
+        {
+          "path": "left_90_walk0.5s_step1.0s_motion.npz",
+          "size": 1923466,
+          "sha256": "85f6dd91c37fd1bcca251a87f3f41352ab3e21d11e6494ca9b875eac7ccf3e2f"
+        },
+        {
+          "path": "left_90_walk0.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "1e0fd35abe69401de66b590072448b35ffbeb69cb12cd174a1f21c18a8c94778"
+        },
+        {
+          "path": "left_90_walk0.8s_step0.5s_motion.npz",
+          "size": 1824566,
+          "sha256": "516e3231b56d70368200c0854a999ef955176d47384eedf58e102d2b0108e25a"
+        },
+        {
+          "path": "left_90_walk0.8s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "9d825e45a68af60fa616d7014591d86338fa7c11a1d10f331ab6bf5726b1fcbb"
+        },
+        {
+          "path": "left_90_walk0.8s_step1.0s_motion.npz",
+          "size": 1907642,
+          "sha256": "9b2ce0b75d9659fa33f6a3d41ec0bac7ea28e64b23dacf41a9a0b4b0a1307c59"
+        },
+        {
+          "path": "left_90_walk0.8s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "e5cb2f072c257df8f9ef17c37b9a6d98b77323f75172c833684763738c855483"
+        },
+        {
+          "path": "left_90_walk1.2s_step0.5s_motion.npz",
+          "size": 1899730,
+          "sha256": "b7bcd893ae3b19cdf4c3d2a7850f5d91d0e5183be19bf272f70fd40634051fe2"
+        },
+        {
+          "path": "left_90_walk1.2s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "3d802440e0f0548d5607242d5202cbfc20bb573562fe2b2d1d24d32c2e0714b8"
+        },
+        {
+          "path": "left_90_walk1.2s_step1.0s_motion.npz",
+          "size": 1986762,
+          "sha256": "528aa6dd49b6dcfd6f29b5192402c1b86708d1a9bf1149bfa32253615b9025f9"
+        },
+        {
+          "path": "left_90_walk1.2s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "12af51d4bce666a0d45c86780647711811187f5b18949e51d224ffc968cbffd4"
+        },
+        {
+          "path": "left_90_walk1.5s_step0.5s_motion.npz",
+          "size": 1955114,
+          "sha256": "f8fe1dbfd2ee71f4d1cd22b7e9a8ad58aa2473f0f4ab3b610d737d13ab5c1571"
+        },
+        {
+          "path": "left_90_walk1.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "35eb3f1c91f99002f5c015ca456b11002344e267da293af1f61839baa2877f3c"
+        },
+        {
+          "path": "left_90_walk1.5s_step1.0s_motion.npz",
+          "size": 2137090,
+          "sha256": "e97b9962ccaca0a3687026768281a9d648f0b31343d01749f0c2e23f46d25602"
+        },
+        {
+          "path": "left_90_walk1.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "df8335a99e85a3ad8fdf71d98dce2972becb42aa3325e9c7842a0a16eb0b8e68"
+        },
+        {
+          "path": "right_45_walk0.5s_step0.5s_motion.npz",
+          "size": 1725666,
+          "sha256": "c7ec7c5cd8f41c772026faaa0a6b208ab11f85d2bc4c83191c0e1e45ed3da6bf"
+        },
+        {
+          "path": "right_45_walk0.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "a250623d72e12d76baee937e890e790291ed19a8b9bfa3c94716329a0c09753b"
+        },
+        {
+          "path": "right_45_walk0.5s_step0s_motion.npz",
+          "size": 1492262,
+          "sha256": "6975e32cd2cb7a367dd17d76b19c8b016b9d15a9e0d73089acb49f35c0d0c4a0"
+        },
+        {
+          "path": "right_45_walk0.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "154808759a7ad2cd8088b901a38fe0b1d388a23e8235c4efcf5e34909372d309"
+        },
+        {
+          "path": "right_45_walk0.5s_step1.0s_motion.npz",
+          "size": 1848302,
+          "sha256": "0cdff346c42c06a06513c26aecbd479af8049d43b0e4573b4127af7ce2aee73f"
+        },
+        {
+          "path": "right_45_walk0.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "ba3173dd623b58549d055eeceede9bc8c3aec20ce10a1de7780cfbe75da560bb"
+        },
+        {
+          "path": "right_45_walk0.8s_step0.5s_motion.npz",
+          "size": 1848302,
+          "sha256": "fab5dde5ee662f823d16b32a431d0f99806dcbf90d06d016e3ee00391015a5d9"
+        },
+        {
+          "path": "right_45_walk0.8s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "b617ad80fed54c86e6e722c69e2a655b5a046bedd064e85cbee64c8b0401b783"
+        },
+        {
+          "path": "right_45_walk0.8s_step0s_motion.npz",
+          "size": 1492262,
+          "sha256": "1f11acc7bce1d77bdf59478c9ab38a62021f50b8aeedfc84f1a3ea1f27961e5c"
+        },
+        {
+          "path": "right_45_walk0.8s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "77a65f05af7e3abde18c2f34b4443c53f6b35027d323fd019bc46fa614d90f07"
+        },
+        {
+          "path": "right_45_walk0.8s_step1.0s_motion.npz",
+          "size": 1927422,
+          "sha256": "44ec9e2a3b541e5cd4ee1e45eca4e9adee172dc29e5b01b3fe5653ec6f9a2fc7"
+        },
+        {
+          "path": "right_45_walk0.8s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "5e962a1a7264d333bb1b23adfe5b2aaff211547638106aec7449b27408153dbc"
+        },
+        {
+          "path": "right_45_walk1.2s_step0.5s_motion.npz",
+          "size": 1943246,
+          "sha256": "11bac3e6a158e52f0b3713b39a01625b970ac96615b7e3a99a72dabc944caa82"
+        },
+        {
+          "path": "right_45_walk1.2s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "9cb3250e1bc012ea27092f131e9ac4e5c55343515837d17238a9032584b5206e"
+        },
+        {
+          "path": "right_45_walk1.2s_step0s_motion.npz",
+          "size": 1626766,
+          "sha256": "06ac1647ebcef09304da6f183ce89a3595553abca892e24d9e287178d7216ccc"
+        },
+        {
+          "path": "right_45_walk1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "4926e751df0c44dd9270f3301b7c1060999376852c5ae72ea466a19268344bf3"
+        },
+        {
+          "path": "right_45_walk1.2s_step1.0s_motion.npz",
+          "size": 2046102,
+          "sha256": "574762d917939b0e32f556ec06383747d0bd067d40b2dda29f12d8eb3b3fb66e"
+        },
+        {
+          "path": "right_45_walk1.2s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "b1ff3172a293958f09d4ef47a83800652c6b5ba65ab520eedd1fa2b8fc5b5688"
+        },
+        {
+          "path": "right_45_walk1.5s_step0.5s_motion.npz",
+          "size": 1978850,
+          "sha256": "5909b28ec19556600db4700fe99ff08ea163e98a1091192e625466e808557aac"
+        },
+        {
+          "path": "right_45_walk1.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "5bec8627543066a2691907567fa45cd0249377095a17ffd18c99b7e870acd146"
+        },
+        {
+          "path": "right_45_walk1.5s_step0s_motion.npz",
+          "size": 1666326,
+          "sha256": "f5a9c4a4d1fe452e5c7ce6a08fb89444274dcf7c4e115928b1067862cb7d0a11"
+        },
+        {
+          "path": "right_45_walk1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "c818410b279da122a56bdef36872376c54837a379e5f85190f44d8fb15b952fe"
+        },
+        {
+          "path": "right_45_walk1.5s_step1.0s_motion.npz",
+          "size": 2105442,
+          "sha256": "cfe382ac71f400bffc7b2d74814fbd0bb51548f8126b4ab44bf1eb077425f9a9"
+        },
+        {
+          "path": "right_45_walk1.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "903bbefb11df0814dde04144dd3b150ef27e9da2f772d38037ac0780ea5d31a5"
+        },
+        {
+          "path": "right_90_walk0.5s_step0.5s_motion.npz",
+          "size": 1812698,
+          "sha256": "8bdcbcd982d2a7f7c8e8bf350b0700e3d36acedc4def45af14cb5a439e4741a1"
+        },
+        {
+          "path": "right_90_walk0.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "0a6e3acf61aefa2d3d81941fdb1f2745b33745d2647274c7649cbe997d634146"
+        },
+        {
+          "path": "right_90_walk0.5s_step0s_motion.npz",
+          "size": 1440834,
+          "sha256": "733cbe29f4fa5e7ab5ae5c989a2a6e287068614dc69b2389e639548fe8fde6a0"
+        },
+        {
+          "path": "right_90_walk0.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "112eaf78e85c2dcfc25864582787c1946784def5161198dbce00b32e8f939a23"
+        },
+        {
+          "path": "right_90_walk0.5s_step1.0s_motion.npz",
+          "size": 1919510,
+          "sha256": "9fd8f03727664164b7bd5c74f38234590918a54a9e8735b9bfbe301dbc9cd9e8"
+        },
+        {
+          "path": "right_90_walk0.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "9cc1ecbe7fece49904ba87254dfb12f075795e1b398cbefd58988c68795eb666"
+        },
+        {
+          "path": "right_90_walk0.8s_step0.5s_motion.npz",
+          "size": 1777094,
+          "sha256": "43108e60f44a654e048db25b3920d3632b711fdada9e085648e997a173853c36"
+        },
+        {
+          "path": "right_90_walk0.8s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "b73dcdc1defed0ff21edf845b156d516641454d9255c25be59d99ceee610ca43"
+        },
+        {
+          "path": "right_90_walk0.8s_step0s_motion.npz",
+          "size": 1551602,
+          "sha256": "0b7b4825a7027ebf7338fe69c5b9299a224b80ec2bac2d75e8359cce64bb03ef"
+        },
+        {
+          "path": "right_90_walk0.8s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "70a97d8534632a02bdd6d21c44eef321693b8264a38d1d66b7dd48ebebe80c20"
+        },
+        {
+          "path": "right_90_walk0.8s_step1.0s_motion.npz",
+          "size": 1955114,
+          "sha256": "a03d3094bbe677d3e92b9c5113d2e70fc681f108ed634f51f8fbe561d59ce7a8"
+        },
+        {
+          "path": "right_90_walk0.8s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "b07edf9f6a1bbb3dcc88d90c580d0ea9271596e3b831ea52161da8ffff45b473"
+        },
+        {
+          "path": "right_90_walk1.2s_step0.5s_motion.npz",
+          "size": 1927422,
+          "sha256": "4b708b039afeb94a998587e67cc2eead45a525a476a3c68bdd037aa0052eed6c"
+        },
+        {
+          "path": "right_90_walk1.2s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "776dd501a98660f18c8a8f8ac4da04c926fa9a0713c564e7f8dcc67e82fb1bb9"
+        },
+        {
+          "path": "right_90_walk1.2s_step0s_motion.npz",
+          "size": 1591162,
+          "sha256": "018523d91215cf1637d49d5464f3d11a2ac555990b02f62d48bfd8c2980106ee"
+        },
+        {
+          "path": "right_90_walk1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "93418cb6daf87ba4ad4bf3594bb51869778cc98d31b2af67d77b7f30c7c9f3f1"
+        },
+        {
+          "path": "right_90_walk1.2s_step1.0s_motion.npz",
+          "size": 1998630,
+          "sha256": "976df52b1311cb22aeeb38d55289551a90651b32ac7d9848055185227b609be7"
+        },
+        {
+          "path": "right_90_walk1.2s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "9aea760c0d4b30de2a7ace8efa3ae7d39385600d7d263bdd1060316cef125e12"
+        },
+        {
+          "path": "right_90_walk1.5s_step0.5s_motion.npz",
+          "size": 1927422,
+          "sha256": "4da9b5c4f5c953cacecaf5990166c11e22d269f342cde87e30e5e62501823fe3"
+        },
+        {
+          "path": "right_90_walk1.5s_step0.5s_terrain.npy",
+          "size": 1728,
+          "sha256": "e70e64fd86c7a3cd86a4ce3d9d544c484c89922cccbb1bd6b757729358457b61"
+        },
+        {
+          "path": "right_90_walk1.5s_step0s_motion.npz",
+          "size": 1658414,
+          "sha256": "24aa46ba768517a00d5817cfb23926ffb2485680f37802e40d6f7f3f0040b0e2"
+        },
+        {
+          "path": "right_90_walk1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "a6ae726ef98c3d16902c96972838af43934f4dc64aaf8bff5d5971b99d0be083"
+        },
+        {
+          "path": "right_90_walk1.5s_step1.0s_motion.npz",
+          "size": 2109398,
+          "sha256": "b2318eca71163f4029af497ece2116d23808f44702d3340e821e6cafc0954ea5"
+        },
+        {
+          "path": "right_90_walk1.5s_step1.0s_terrain.npy",
+          "size": 2528,
+          "sha256": "254662e20856880a357074b2cbb03c7658980daf3ccfcabcd87e6134d8508a3c"
+        }
+      ]
+    },
+    "motions-high-step": {
+      "status": "ready",
+      "description": "High-speed step: 60 prepared G1 motion/terrain pairs at 50 FPS.",
+      "motion_count": 60,
+      "fps": 50,
+      "total_frames": 26513,
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-high-step-v1.tar.gz",
+        "size": 44821246,
+        "sha256": "c4cf035cf2a81336a42277584ef65ee16044f9c5f9d921b08e84c1adaab7381d"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1070,
+          "sha256": "d0201f0b5b420daa9a50ffa7fcfad8b2037dae518810ebfa8427c0eb33eec703"
+        },
+        {
+          "path": "run_forward_0.6s_step0.5s_motion.npz",
+          "size": 1618854,
+          "sha256": "5af94effd9f8d09e74fec3386d0ba92ced5c81db9b2294e354b3e4b8dd93ac72"
+        },
+        {
+          "path": "run_forward_0.6s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "21f656fe1786f081f86a97a79215f99c95f19d78a1bea654c972256ef7788703"
+        },
+        {
+          "path": "run_forward_0.6s_step0s_motion.npz",
+          "size": 1527866,
+          "sha256": "fa21c99af54071cdec74a52876657f91d05221127214ee09a23398554544bfc3"
+        },
+        {
+          "path": "run_forward_0.6s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "02cedc432b9e1dd8f4871dc49f42d4a969b9da8532264fc60bc54c0cb9455cfa"
+        },
+        {
+          "path": "run_forward_0.6s_step1.0s_motion.npz",
+          "size": 1812698,
+          "sha256": "d3ea84b02dd95b8311ddd762ec631bfca9342846c973da1655e376f47eb75cdb"
+        },
+        {
+          "path": "run_forward_0.6s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "a35552ea1bb2fcbcc6be4800fb284c07b6960089acc845a38e0e3cb9c8d84297"
+        },
+        {
+          "path": "run_forward_0.9s_step0.5s_motion.npz",
+          "size": 1721710,
+          "sha256": "be78e08f2eac94092a9747044cd48a5ebe78ad872a6f313cbdcf6dee3c7f23cd"
+        },
+        {
+          "path": "run_forward_0.9s_step0.5s_terrain.npy",
+          "size": 4128,
+          "sha256": "2710ce25d3446f78e0da9eba05e8996e3f77fb6a07965d820ca6eaa42e249ef0"
+        },
+        {
+          "path": "run_forward_0.9s_step0s_motion.npz",
+          "size": 1646546,
+          "sha256": "cf58738d53b99790a445212dfd645788a7358eb0fc4a6531dd5f7bcb956c598c"
+        },
+        {
+          "path": "run_forward_0.9s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "663e19f01679c5f3ba37bf35a7c0bc603b8f27357acc5ed82c81f09f3e63a71d"
+        },
+        {
+          "path": "run_forward_0.9s_step1.0s_motion.npz",
+          "size": 1808742,
+          "sha256": "09f79e13d6523691092c8f063c7da626cbe5a367484ce181a957c55ef16c64ab"
+        },
+        {
+          "path": "run_forward_0.9s_step1.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "fc59092d05f03bc0dc3cdcaecd2f65dda5128198c608374f7653fdddf2b879b6"
+        },
+        {
+          "path": "run_forward_1.2s_step0.5s_motion.npz",
+          "size": 1816654,
+          "sha256": "da5a8681f8a0e8506e38ffba913ace54af3b30052c30be5e9b146bf33100b919"
+        },
+        {
+          "path": "run_forward_1.2s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "bb7d7c6d54bbae08a6d925d50594f15ce60b53ac29c46baeb6dd28434957c317"
+        },
+        {
+          "path": "run_forward_1.2s_step0s_motion.npz",
+          "size": 1701930,
+          "sha256": "bffdc412a61460a8f07d0192f05325fe875fd5119a145fdefd1e5fb934d68240"
+        },
+        {
+          "path": "run_forward_1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "c15b806bb1b6b26d5cf56b1477f1229cec98c90c4391420cb20e447dd9611a0a"
+        },
+        {
+          "path": "run_forward_1.2s_step1.0s_motion.npz",
+          "size": 1907642,
+          "sha256": "99f53af53578b58e0a2cb019f771d684d36da1bf219c0975f1d49276b98f3677"
+        },
+        {
+          "path": "run_forward_1.2s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "a060dc28dc89110c1e61da1439588834611a254fc72bfcb92a64ccf035a764b3"
+        },
+        {
+          "path": "run_forward_1.5s_step0.5s_motion.npz",
+          "size": 1875994,
+          "sha256": "c84984442b796832d567261d63f9bee3a1cc7743824277d93e0eaea3806314f7"
+        },
+        {
+          "path": "run_forward_1.5s_step0.5s_terrain.npy",
+          "size": 4128,
+          "sha256": "ab8f6bdc36cea6553f84655a8b4fe31c7369cf47b5dafec8b33b5beaf5c029c4"
+        },
+        {
+          "path": "run_forward_1.5s_step0s_motion.npz",
+          "size": 1785006,
+          "sha256": "67541130de8619de05b3c2c672438067a2c53bd4c5ea97f0c35c01e44ccbdf80"
+        },
+        {
+          "path": "run_forward_1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "89b2da8adc914e4affa4af83a42c3ff4876fed37417ebfa7a70b06700482087a"
+        },
+        {
+          "path": "run_forward_1.5s_step1.0s_motion.npz",
+          "size": 1935334,
+          "sha256": "7b23a9308cdd67ebbee67b0d446de323bbcf33af8b03b25879bff2a4d1b1a6f9"
+        },
+        {
+          "path": "run_forward_1.5s_step1.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "947d39e8b736d8838a810ca84ce005ae7c5dce4be9dc0f4269861d7b74e38944"
+        },
+        {
+          "path": "run_left_45_0.6s_step0.5s_motion.npz",
+          "size": 1650502,
+          "sha256": "83daf87653b4b218fee623c7770f5cfacacb7ad2e23f76ce7fa850dceadca743"
+        },
+        {
+          "path": "run_left_45_0.6s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "61c045ba98b9228046b37a22ad2ed7cb129f098a5c9e0bbd193d87aae15faabf"
+        },
+        {
+          "path": "run_left_45_0.6s_step0s_motion.npz",
+          "size": 1531822,
+          "sha256": "58a03a84dd4f5a14ae5c7fae53283d027dcd1c5737c94450ad76e07d64f70a02"
+        },
+        {
+          "path": "run_left_45_0.6s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "1a17fb829d29992e90f242e151c2b02ee94e39151870552f3523543125a2ab9f"
+        },
+        {
+          "path": "run_left_45_0.6s_step1.0s_motion.npz",
+          "size": 1848302,
+          "sha256": "ecfc64e77ac8b822cb7ba800d4f91edf80ecfb0443b53abfebae90da777e3ae1"
+        },
+        {
+          "path": "run_left_45_0.6s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "933f4e5b2c38bfbfa3addd695358f8a0fc5d8f5bd8b7f33344826f9cd709198c"
+        },
+        {
+          "path": "run_left_45_0.9s_step0.5s_motion.npz",
+          "size": 1686106,
+          "sha256": "03fe6e9733b95c46f49f83f4e74d3f160536d5d901e2aa40bf213a14b4b254ef"
+        },
+        {
+          "path": "run_left_45_0.9s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "111591832b84006c00b0fdcc5890b64057499dae99cc446b4cb5c8e5220cef06"
+        },
+        {
+          "path": "run_left_45_0.9s_step0s_motion.npz",
+          "size": 1614898,
+          "sha256": "3071771ca7d42f7345fda693dce6c0beb332fec155cf1fcdcca17cfb2458f94e"
+        },
+        {
+          "path": "run_left_45_0.9s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "f1957d8425053505ac5df5caeb7760122ac5720d9ff352cb7d6057b54c4707f5"
+        },
+        {
+          "path": "run_left_45_0.9s_step1.0s_motion.npz",
+          "size": 1856214,
+          "sha256": "4561e04faef3ccb40ddc4e702ff747c3c0e9b61b07ec9e82b16c514699925432"
+        },
+        {
+          "path": "run_left_45_0.9s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "81c0a836b619a2cce382c3730753cecbef4b8e2be3540b8dd4021d1e202c57b5"
+        },
+        {
+          "path": "run_left_45_1.2s_step0.5s_motion.npz",
+          "size": 1753358,
+          "sha256": "6f71b4b8c33bb080bd1f9c6844ee1486ca3a7ef3c40110f414b603d79bf92044"
+        },
+        {
+          "path": "run_left_45_1.2s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "6c661cd72288712aa7fcdee1d90ad37cb61575d468841a5057677861fdb6e7ec"
+        },
+        {
+          "path": "run_left_45_1.2s_step0s_motion.npz",
+          "size": 1690062,
+          "sha256": "70f8a5354b9508da1af296bab901ccb0b87068b72af8d52f891cff6923249d87"
+        },
+        {
+          "path": "run_left_45_1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "7d1e72653a529e6b298ccaab265699ba8565d7583fea2062577194040626e5a8"
+        },
+        {
+          "path": "run_left_45_1.2s_step1.0s_motion.npz",
+          "size": 1895774,
+          "sha256": "cbad7dec1b37cc9e57192feaf7d47c03ed4c0023d1dac2e8ec9b4655376eec60"
+        },
+        {
+          "path": "run_left_45_1.2s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "f3c9594f135c095404af1c1ae5a4928494702cbc8b6f54286898b9d70badd7ac"
+        },
+        {
+          "path": "run_left_45_1.5s_step0.5s_motion.npz",
+          "size": 1883906,
+          "sha256": "88f77666038b6877262c00c57248d5a266efa83eb5ddb615b3a51e7740cb03fd"
+        },
+        {
+          "path": "run_left_45_1.5s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "faa316dccdd9fcc3725f228db18b7b975f44cc52a1388a7ac253b48f8c6ffc05"
+        },
+        {
+          "path": "run_left_45_1.5s_step0s_motion.npz",
+          "size": 1690062,
+          "sha256": "52afb715b5a77ce1d72e5f42dcf53ef3a0037e24d91dca0523bc6250758cc5de"
+        },
+        {
+          "path": "run_left_45_1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "cef60d8d88b580c402f437ee1ed027069fd9dabb3b16c02f6db4b1b117d4b13d"
+        },
+        {
+          "path": "run_left_45_1.5s_step1.0s_motion.npz",
+          "size": 1982806,
+          "sha256": "d0b65ee36aaa4f8657248105a5dda167a191bd0ecdd6729919a8a15b0428124e"
+        },
+        {
+          "path": "run_left_45_1.5s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "ae47d80117cfca45709818c0a08bd4379864ebf6e413a45a3a1cfb79790b3b62"
+        },
+        {
+          "path": "run_left_90_0.6s_step0.5s_motion.npz",
+          "size": 1634678,
+          "sha256": "51cd46957c1c3619d5f358eb9fc2d598266b2547fe7eae26ba7bce63bc15637b"
+        },
+        {
+          "path": "run_left_90_0.6s_step0.5s_terrain.npy",
+          "size": 4128,
+          "sha256": "b305407b9b4ce0a74b2403e219e578e8bea831a3e1f84650b94a1a7ddb14c271"
+        },
+        {
+          "path": "run_left_90_0.6s_step0s_motion.npz",
+          "size": 1531822,
+          "sha256": "6990c0154c508e2a95446930ddf80831602c3ab12c491f191734aace3b5b41ad"
+        },
+        {
+          "path": "run_left_90_0.6s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "181ae728c88ee71ab09ef329672fcc2c3dc032cb8110823a41781bb523ea5986"
+        },
+        {
+          "path": "run_left_90_0.6s_step1.0s_motion.npz",
+          "size": 1765226,
+          "sha256": "7a7ae4d398694598e80a519b6a5b8ced3b526c9d852be25d2d14e0e2589b94ad"
+        },
+        {
+          "path": "run_left_90_0.6s_step1.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "bcf84bb9cf047b7fdefb326202e1f046ffb8536b1b141e9393a1859037da6267"
+        },
+        {
+          "path": "run_left_90_0.9s_step0.5s_motion.npz",
+          "size": 1713798,
+          "sha256": "c273235e0e341b8d306aff605be32cae86906bb73212153887ec6ab34baffea3"
+        },
+        {
+          "path": "run_left_90_0.9s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "f0ca14195d1e9be0aef3c5ef0503adf2d82ca65d11b8ce54646d48a4f4237a61"
+        },
+        {
+          "path": "run_left_90_0.9s_step0s_motion.npz",
+          "size": 1587206,
+          "sha256": "ad3811c2f0ee9a46f85c293d810c8ccacf1fdbeb8e89add745007783990bd1db"
+        },
+        {
+          "path": "run_left_90_0.9s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "b19051728984b84c0ce1e32ce50eba63230ed29f009faf9c5af341200e36c69d"
+        },
+        {
+          "path": "run_left_90_0.9s_step1.0s_motion.npz",
+          "size": 1800830,
+          "sha256": "41f7c559a46c14ebb40133ff20e344910beb30cef1c736eb90e937ff66f2c7c2"
+        },
+        {
+          "path": "run_left_90_0.9s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "c387015e3718f8a537848ed3dbad6004cafdf506f8afd9f6b0b09fade0820b4b"
+        },
+        {
+          "path": "run_left_90_1.2s_step0.5s_motion.npz",
+          "size": 1761270,
+          "sha256": "cff90abfd866d7e7e0f22bf431ff737bc259d3dc11263300acf1d1ece143bf18"
+        },
+        {
+          "path": "run_left_90_1.2s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "f41649ce61fbc8ae6573d018b6b8e774d73987bcd0a8d4c0f0d292e5b420d275"
+        },
+        {
+          "path": "run_left_90_1.2s_step0s_motion.npz",
+          "size": 1670282,
+          "sha256": "7b8d2072943c64b0a1d7c7764bd5e2a5a7c9aa4b568c0ea5db74903820b0745f"
+        },
+        {
+          "path": "run_left_90_1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "885ce26f3caa0aea058404a955370af50dfed0293305fd3b8b7b5d1669be9c53"
+        },
+        {
+          "path": "run_left_90_1.2s_step1.0s_motion.npz",
+          "size": 1931378,
+          "sha256": "2975301f1c7352c8dfb551894f048ecc9be9653d45b5c5c0e51d9aa7f09a0ec2"
+        },
+        {
+          "path": "run_left_90_1.2s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "2ef0625a1b7b42774002c939ba04cc3c3e464e24e106843dd81ff30e3fb1f7f4"
+        },
+        {
+          "path": "run_left_90_1.5s_step0.5s_motion.npz",
+          "size": 1844346,
+          "sha256": "7b91dba1633a501194f45f6d10a3243df031aecbe12c63e1fb80690d42066d8e"
+        },
+        {
+          "path": "run_left_90_1.5s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "0eee2cda8c3612368fb8a2e4f6f812927102fae5fd13651b8c528b3f3377446b"
+        },
+        {
+          "path": "run_left_90_1.5s_step0s_motion.npz",
+          "size": 1729622,
+          "sha256": "51394a7ba87bb06c06ccd76350d5cea451a7689c71c88ce574791877d5e11a06"
+        },
+        {
+          "path": "run_left_90_1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "4ca1e0a07e3f784cab44eaa441758639702d0765105492e6afbd40ff095071c7"
+        },
+        {
+          "path": "run_left_90_1.5s_step1.0s_motion.npz",
+          "size": 1982806,
+          "sha256": "e4fde0e996913a7334dd02ca48ed7f278dc6b84305ca09cf4f992f78fc715fcf"
+        },
+        {
+          "path": "run_left_90_1.5s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "2803ca23cedc3fdc08ad96b20c393c72d5596121568ccf7ac8a4a57ce882e601"
+        },
+        {
+          "path": "run_right_45_0.6s_step0.5s_motion.npz",
+          "size": 1686106,
+          "sha256": "f59875903f4e2b9ce8187b5ee437b092bd4adae4c02627506e4dfba3fadc5666"
+        },
+        {
+          "path": "run_right_45_0.6s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "ebbcddf948e60b2a616d7fd9c3849bdc850c4e51f476fd26d7f8f7052df730a7"
+        },
+        {
+          "path": "run_right_45_0.6s_step0s_motion.npz",
+          "size": 1587206,
+          "sha256": "5b09e681c5347460b600e428b33ed7fca60cf938394ddf15c4238a17d970c7ad"
+        },
+        {
+          "path": "run_right_45_0.6s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "1479caf9cb1e82bff48efa77575f6fe5eac1c4a1a30c78b40baf0288421945b9"
+        },
+        {
+          "path": "run_right_45_0.6s_step1.0s_motion.npz",
+          "size": 1773138,
+          "sha256": "18679b96bb638ca221e27635e53d543e977169c27397143f30ba620b9a2abd5a"
+        },
+        {
+          "path": "run_right_45_0.6s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "276a738e482245df40fec5b77662e41f85ff045905d2a8533d54a59a313e7ddd"
+        },
+        {
+          "path": "run_right_45_0.9s_step0.5s_motion.npz",
+          "size": 1713798,
+          "sha256": "f3af29f307369d1efecd404cb21e58aee8f61bc585152b8b8bd04201532d44bb"
+        },
+        {
+          "path": "run_right_45_0.9s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "03414d46ef94a17a3506839cc3901aefafdf8a329a1b492f8f068680c3b2b723"
+        },
+        {
+          "path": "run_right_45_0.9s_step0s_motion.npz",
+          "size": 1579294,
+          "sha256": "7ac2101f30c8ed720e4e00d6ed3c4304b43493fa7c0cfbb640cdeee4a6b7ffbd"
+        },
+        {
+          "path": "run_right_45_0.9s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "dff02c5b6683ff5cf4dc44a68e8ef3defcf28edfe3c1e2bf1185fa0254903c41"
+        },
+        {
+          "path": "run_right_45_0.9s_step1.0s_motion.npz",
+          "size": 1868082,
+          "sha256": "932c93ffc08e464fdc8e747cb95b91c5e9da0731d37272524cf853ddc5d9c8d6"
+        },
+        {
+          "path": "run_right_45_0.9s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "92d05cd01d4f6a9c77ecd1fd5be28471427e93c3eb83bf678e6fdee31375b0c2"
+        },
+        {
+          "path": "run_right_45_1.2s_step0.5s_motion.npz",
+          "size": 1788962,
+          "sha256": "5b377414571d3c25fa4096bded8f464329cc5fae2272653b9de0968f7bb914b6"
+        },
+        {
+          "path": "run_right_45_1.2s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "84c634d892c4412ccd38cb996b9e2ce38b4ff3f24b8389252f6aefbc1d238d6e"
+        },
+        {
+          "path": "run_right_45_1.2s_step0s_motion.npz",
+          "size": 1666326,
+          "sha256": "ee1c74d19a388fa9dff9052edd3ab40b68e6ad729d7334d22ca65cdff349a989"
+        },
+        {
+          "path": "run_right_45_1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "cec76b86590a832a2a275b532fd6cdbb06ba08e44026b5893ac12083c8a0554c"
+        },
+        {
+          "path": "run_right_45_1.2s_step1.0s_motion.npz",
+          "size": 1856214,
+          "sha256": "e18d83432b1394ef8c68cb4de7245171a52df7cdc1b4f771d596d7bcb965e48f"
+        },
+        {
+          "path": "run_right_45_1.2s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "b0901d2341b3687085cb15a9ab415a8255e64f7f08e10337990a05fdd448861e"
+        },
+        {
+          "path": "run_right_45_1.5s_step0.5s_motion.npz",
+          "size": 1860170,
+          "sha256": "29412456488ef1eefb9d4cbd52256a6502add1332d3c506d176d804ab6311dd4"
+        },
+        {
+          "path": "run_right_45_1.5s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "ffbfe8f6dc92a1e8ef2c3c8c385387b8aa9816c60a8118375be1648fcf697e1c"
+        },
+        {
+          "path": "run_right_45_1.5s_step0s_motion.npz",
+          "size": 1769182,
+          "sha256": "5566a6e01261fc42781012499651b6aa21f9ede17bf5735c6f8f227edbb3e00a"
+        },
+        {
+          "path": "run_right_45_1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "9d9d3c39f21d46660e90335c0e619a4634b861edd17ffa981020cdb175f45173"
+        },
+        {
+          "path": "run_right_45_1.5s_step1.0s_motion.npz",
+          "size": 2002586,
+          "sha256": "09174d1489f72bfaeb3afef08cca2e84596584c4edcc743c8b165dd425cdec68"
+        },
+        {
+          "path": "run_right_45_1.5s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "c9eb428394f3cff1e9786de24b2064ac9b66d45cccaeae2a2834e091d7241a16"
+        },
+        {
+          "path": "run_right_90_0.6s_step0.5s_motion.npz",
+          "size": 1646546,
+          "sha256": "ecaf6a9e44333a7f8edc5e1e2720f5cf84c4ab73cc0ca898f50d47c65826a519"
+        },
+        {
+          "path": "run_right_90_0.6s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "cd3f681b0a4b3591b9ffd2558a63fffe96f0220a02d97b6d1eba333f53a395db"
+        },
+        {
+          "path": "run_right_90_0.6s_step0s_motion.npz",
+          "size": 1599074,
+          "sha256": "72c9349b57377960b74ac9f8879c803a991f4fef8a4d5a505af6b841342990b8"
+        },
+        {
+          "path": "run_right_90_0.6s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "c0bf979f130791acb0a03733345853e46d3cfb41b924a2065aee7d26a8538e1d"
+        },
+        {
+          "path": "run_right_90_0.6s_step1.0s_motion.npz",
+          "size": 1737534,
+          "sha256": "e24c062e215445afdd6cc4a08a56f7867a8b991e680917127c2d2a673a9de4be"
+        },
+        {
+          "path": "run_right_90_0.6s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "9534b83c4f1b9263ac3bd8ca32d8cfe4a15f2e0938704b888c0f470a7c34b3fe"
+        },
+        {
+          "path": "run_right_90_0.9s_step0.5s_motion.npz",
+          "size": 1749402,
+          "sha256": "a558cca0c56921c5f85efdd93032910e2d8977224cff40d45902bd666e272ed4"
+        },
+        {
+          "path": "run_right_90_0.9s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "ee1f4b88cb568392ece17addf97a87e880f821fb32eaa6ce336e491096777781"
+        },
+        {
+          "path": "run_right_90_0.9s_step0s_motion.npz",
+          "size": 1606986,
+          "sha256": "af161fcf6cbb430ccac0668967a629d618347d3d66eb8c412751296072224748"
+        },
+        {
+          "path": "run_right_90_0.9s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "a9b44dcb3b881ca42b1c707076e2024765fa547f847935388b8ee6da6684b6d3"
+        },
+        {
+          "path": "run_right_90_0.9s_step1.0s_motion.npz",
+          "size": 1891818,
+          "sha256": "d9a48a5f804f8c0eb6fc6b028d91e8cdbb624724965d45e40b620d42cb37d792"
+        },
+        {
+          "path": "run_right_90_0.9s_step1.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "bd1ee9810d40bba015a092fab836d1d47878d81a0a45a24f97b21107e297f131"
+        },
+        {
+          "path": "run_right_90_1.2s_step0.5s_motion.npz",
+          "size": 1765226,
+          "sha256": "c8e884e4574f2181dd22a85f082cfa1b60717b6a0850ce42bdf21538ce9e3070"
+        },
+        {
+          "path": "run_right_90_1.2s_step0.5s_terrain.npy",
+          "size": 3328,
+          "sha256": "23e69d1e597899e0e739743178b635a56eb904d0782099e2ea0cab2609ebbec3"
+        },
+        {
+          "path": "run_right_90_1.2s_step0s_motion.npz",
+          "size": 1650502,
+          "sha256": "a15de6075e316e2cb001c75ab2251aa9267bc51e9929a69bec772721c465c429"
+        },
+        {
+          "path": "run_right_90_1.2s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "187e6ea181aab9d58f0259619e94177c3f3b35d406b9d75f2046c93a0be85646"
+        },
+        {
+          "path": "run_right_90_1.2s_step1.0s_motion.npz",
+          "size": 1852258,
+          "sha256": "95881ddca5ce8ee278ba770467569b76675fd9a1985a15eda4d28a901ce91b33"
+        },
+        {
+          "path": "run_right_90_1.2s_step1.0s_terrain.npy",
+          "size": 4928,
+          "sha256": "97ef55d6a10bbc91111bff7554ed693cb7ce97e3fd46fb8f38c5792cdd92c4f0"
+        },
+        {
+          "path": "run_right_90_1.5s_step0.5s_motion.npz",
+          "size": 1943246,
+          "sha256": "ca98759518067690e9cff1d0c859fbfc19747003206ab90488ff7549cb2c3f96"
+        },
+        {
+          "path": "run_right_90_1.5s_step0.5s_terrain.npy",
+          "size": 4128,
+          "sha256": "707c216d3ad3cdab5b3a6b9970ebedfed1645b5de58751e12ae757d5e5a5bb44"
+        },
+        {
+          "path": "run_right_90_1.5s_step0s_motion.npz",
+          "size": 1690062,
+          "sha256": "c1d1d136158b241cef6c24041f7f3fb33671aabf79215c7153318243f08de4bf"
+        },
+        {
+          "path": "run_right_90_1.5s_step0s_terrain.npy",
+          "size": 928,
+          "sha256": "a63238da99f5f8a4036cc4125a2aee998297aa43d4f435a276b73b4ba8dcd59a"
+        },
+        {
+          "path": "run_right_90_1.5s_step1.0s_motion.npz",
+          "size": 1931378,
+          "sha256": "31d187da5756b2aa83ffd2775bb2ad812255fcf7fac8d7334d6aa33253765e0c"
+        },
+        {
+          "path": "run_right_90_1.5s_step1.0s_terrain.npy",
+          "size": 5728,
+          "sha256": "22b6e47e923d9bffc2ea208784891f3372cdb8933769d23c9f7711f2433dd158"
+        }
+      ]
+    },
+    "motions-low-climb-76": {
+      "status": "ready",
+      "description": "Low-speed climb-76: 40 prepared G1 motion/terrain pairs at 50 FPS.",
+      "motion_count": 40,
+      "fps": 50,
+      "total_frames": 32814,
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-low-climb-76-v1.tar.gz",
+        "size": 57352434,
+        "sha256": "1d94450645e5f6ae457c65425bd06b56851ca3793b1e2d9fdd80bba4821e533a"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1076,
+          "sha256": "d9d605e4de4688c69491cad953e9eeb124cde17c08f23804b0a0e41bdd0f06d4"
+        },
+        {
+          "path": "forward_walk0.6s_step0.7s_motion.npz",
+          "size": 3173562,
+          "sha256": "75f1a79e2c45fef570ad6ac170825449fc4aaf8dce888cfd4b83532ad85dded9"
+        },
+        {
+          "path": "forward_walk0.6s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "8727d2812506c87c72b46fe226bb487875d67eff762375a713cd20d10784ca8e"
+        },
+        {
+          "path": "forward_walk0.6s_step1.2s_motion.npz",
+          "size": 3319934,
+          "sha256": "882f4cef0413252265d6f3ad1f05355dd68c866afb5f5d82061dd3563cd82931"
+        },
+        {
+          "path": "forward_walk0.6s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "db1a0e35f8c1d6a4f81cbd8b8bc0b6e3917f0540c195ed0c0262d2765b6de3fb"
+        },
+        {
+          "path": "forward_walk0.9s_step0.7s_motion.npz",
+          "size": 2987630,
+          "sha256": "0b309f4058fa4fd420d9c12ed9cd92c4ca08dbd06ee02796dac7a93ab115c286"
+        },
+        {
+          "path": "forward_walk0.9s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "48ec8c5354f584b650a3dac0038efedbe5806fc9ce7cd7937889ab3669a7caf3"
+        },
+        {
+          "path": "forward_walk0.9s_step1.2s_motion.npz",
+          "size": 3130046,
+          "sha256": "98c74c6538a1d89e095485a3819788114ed67a1457c04aa8fe3c6b02f10e5790"
+        },
+        {
+          "path": "forward_walk0.9s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "1f5df7ae27ca1c10897c1d23f9ae1219444c39359b4add209abde0d348fc03cf"
+        },
+        {
+          "path": "forward_walk1.2s_step0.7s_motion.npz",
+          "size": 3177518,
+          "sha256": "c86a55d805c6c33992f48384f6d3952272f4a990de91fffba94472edf7b9604e"
+        },
+        {
+          "path": "forward_walk1.2s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "5930053bebdf37489b94de4f60abc640d1adb451079b82cfd8da0cbcdebccc44"
+        },
+        {
+          "path": "forward_walk1.2s_step1.2s_motion.npz",
+          "size": 3173562,
+          "sha256": "602f54fd7c1356c622208c1ff35530a586ce2969751a548a3c2c9ba876fddc80"
+        },
+        {
+          "path": "forward_walk1.2s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "6ae8a0e0212464ac47c49d1483c31c35eae1d00cabdcd6a75f25d5d7b4e368e5"
+        },
+        {
+          "path": "forward_walk1.5s_step0.7s_motion.npz",
+          "size": 3304110,
+          "sha256": "1ddbff2661f327dfc2113564d7048d6aedce48067215a665278e6397c6ab9e01"
+        },
+        {
+          "path": "forward_walk1.5s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "70bd71ea5eb4b264d1629fd2edf79eb81eb1d31d3a44ad43f83565e52bb08327"
+        },
+        {
+          "path": "forward_walk1.5s_step1.2s_motion.npz",
+          "size": 3545426,
+          "sha256": "6d92af0e6771b1dc4bd25b184a00ae2b1ba5b040a86ec37f56b6d2d3a303e7ea"
+        },
+        {
+          "path": "forward_walk1.5s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "9ff38160580f7f8f3fb3e1f9d507240e334c0b2652ed4ab4aa2505bce0d51fc8"
+        },
+        {
+          "path": "left_45_walk0.6s_step0.7s_motion.npz",
+          "size": 3252682,
+          "sha256": "2bc03f462b48f56bafa143e9a4161664c932ea4ba953dcfaf2be0b7986eeac9f"
+        },
+        {
+          "path": "left_45_walk0.6s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "6b7017fcb5874d7e50740c12e4f866a40fb586161529daa739ff7fec508dbf92"
+        },
+        {
+          "path": "left_45_walk0.6s_step1.2s_motion.npz",
+          "size": 3371362,
+          "sha256": "8f1589a2845a9837a4184d2bd2cfbe247f1be5b600960376417ee6a9ce477037"
+        },
+        {
+          "path": "left_45_walk0.6s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "80421576c023d349a6e2c5a25ed96560a4f3fe14ab90bbed57556137b4a4e39e"
+        },
+        {
+          "path": "left_45_walk0.9s_step0.7s_motion.npz",
+          "size": 3224990,
+          "sha256": "f7e279b9d0d8d149355eaac7e995b1d7506f6db73c8ce431f4454ea21b5e689c"
+        },
+        {
+          "path": "left_45_walk0.9s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "9d05d99773cbccaabfeffc696629f083b265717f7e75efef736fb7db5167d691"
+        },
+        {
+          "path": "left_45_walk0.9s_step1.2s_motion.npz",
+          "size": 3244770,
+          "sha256": "17b3c1f768ebd0d650d895c565d38015dd576224bebcbc225b5526c02ffe5386"
+        },
+        {
+          "path": "left_45_walk0.9s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "6bd43bc0242e40e7b2d66bd2618e525063ff8fd66df21b006288bb63f778aece"
+        },
+        {
+          "path": "left_45_walk1.2s_step0.7s_motion.npz",
+          "size": 3252682,
+          "sha256": "3dec62aaede136cceb537784a07056d61d4d2d019dffb2b898e52dbb919e8e94"
+        },
+        {
+          "path": "left_45_walk1.2s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "edbf1d3129e2b04471a82f5a3b0fe06214cf484df7b72b5c333c5d7c4b571b8d"
+        },
+        {
+          "path": "left_45_walk1.2s_step1.2s_motion.npz",
+          "size": 3106310,
+          "sha256": "03393c24d044287623ab67df37d3f56bf6eb6cc6b919ff3a3262812ccd3493df"
+        },
+        {
+          "path": "left_45_walk1.2s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "9a9dfb958dbdf7d53b85fa79cd43eff04523b007a3ac0b70d8e911c808555931"
+        },
+        {
+          "path": "left_45_walk1.5s_step0.7s_motion.npz",
+          "size": 3228946,
+          "sha256": "e0fe2c9e1e7073e55f4e89057c95df118bab98c9a77c1324435c4de916da1642"
+        },
+        {
+          "path": "left_45_walk1.5s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "5cfc3cc6041c7a4bd0fc5e7f58bc04184c74af54e74c08631535bf2d07099add"
+        },
+        {
+          "path": "left_45_walk1.5s_step1.2s_motion.npz",
+          "size": 3450482,
+          "sha256": "da9a2ed0320f8953c30f34e6659acf93f47ef8d144aa52c02d7d613dc2a6149e"
+        },
+        {
+          "path": "left_45_walk1.5s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "b42c2e7bbd00bbd39e1645d398adcb54561fe3436a09d0fcc5df46e96e14ecfc"
+        },
+        {
+          "path": "left_90_walk0.6s_step0.7s_motion.npz",
+          "size": 3134002,
+          "sha256": "f12494ff4dd20704d8314b51bb9973df2e819385a97a2c9fecc8881238e32e89"
+        },
+        {
+          "path": "left_90_walk0.6s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "a037719f65752ddfd52113159e7d7842a318cf28f7e38fe5941354b9a5e5a116"
+        },
+        {
+          "path": "left_90_walk0.6s_step1.2s_motion.npz",
+          "size": 3264550,
+          "sha256": "5efe1c16c3ed09622063a65a62d2648c59a5decd10f38fdc08964a3c497f5f5c"
+        },
+        {
+          "path": "left_90_walk0.6s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "7746afe6eaffa4863db4c42289700b874b92bbc2a9403052645a158c74bfcb27"
+        },
+        {
+          "path": "left_90_walk0.9s_step0.7s_motion.npz",
+          "size": 3323890,
+          "sha256": "3cc238b82cf8aed00fa40b002da03fdd7c47af57b79ba37a462f311da316cdbf"
+        },
+        {
+          "path": "left_90_walk0.9s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "156eec3ac5c4af469b548704dd6e38091b97d0ecf2f53eda1f10187395431f3e"
+        },
+        {
+          "path": "left_90_walk0.9s_step1.2s_motion.npz",
+          "size": 3240814,
+          "sha256": "1780b6d88f4e4f2c5b507b1189343dcd28840fb0edb637113fcc358d50c97b5d"
+        },
+        {
+          "path": "left_90_walk0.9s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "a86dff93c7766e26fd85e034b96f58e0293287206994d1218ceb6eb6e381b65f"
+        },
+        {
+          "path": "left_90_walk1.2s_step0.7s_motion.npz",
+          "size": 3201254,
+          "sha256": "ee2151037295345ae3887b4bf6ce065e9e6016a1f32a56a29ba44ee1ce18e875"
+        },
+        {
+          "path": "left_90_walk1.2s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "d64efb2c3bfd57ed7097f54d000ee2875f616dbfd5aecda34d3627ec0fc058f2"
+        },
+        {
+          "path": "left_90_walk1.2s_step1.2s_motion.npz",
+          "size": 3414878,
+          "sha256": "cfa1ce26146898b45dc00c12ac3ba17eaf813345a5ffdd9ac9b6a5c2e381f65a"
+        },
+        {
+          "path": "left_90_walk1.2s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "dc8d152ce6a8e7b76d54ac696adc5dc6d2f4429c487bf7ab2014573d5b28245a"
+        },
+        {
+          "path": "left_90_walk1.5s_step0.7s_motion.npz",
+          "size": 3359494,
+          "sha256": "89a77b0690fb78b696dff3640dfdac524ce1fbd93dc08887bf2438fe5977653e"
+        },
+        {
+          "path": "left_90_walk1.5s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "81247b6dedfed4e7dc81650e5833d3b6bea0abcabd97d3b3ef6c1d885aa6b459"
+        },
+        {
+          "path": "left_90_walk1.5s_step1.2s_motion.npz",
+          "size": 3248726,
+          "sha256": "c9e933b4779c8e497e2d5590c84a3d26b929d4995b49d1474e61b43fbff9a84d"
+        },
+        {
+          "path": "left_90_walk1.5s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "56bc8eeae81c318aa9100520aa41e931108bc179611a208439fbce2c3cad2019"
+        },
+        {
+          "path": "right_45_walk0.6s_step0.7s_motion.npz",
+          "size": 3205210,
+          "sha256": "afa8ee4a4a961277113a7aa6cf65996e23c4b2337a60dea5babe61e354e8f183"
+        },
+        {
+          "path": "right_45_walk0.6s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "65360adefe0dafd7c332176c8a212e1d06c70ab98b92d6226bd7fdb34a150edf"
+        },
+        {
+          "path": "right_45_walk0.6s_step1.2s_motion.npz",
+          "size": 3153782,
+          "sha256": "dbd274ecdb1c7e541f53c2eb6450efc0ee0ede421df81df0985601eec48b10da"
+        },
+        {
+          "path": "right_45_walk0.6s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "9a7bf7c8342cf01d2d87ec852001209532fab348926c5bf156951f9900d601ac"
+        },
+        {
+          "path": "right_45_walk0.9s_step0.7s_motion.npz",
+          "size": 3149826,
+          "sha256": "e0b92f695d092ec6257d6728d5ae305661cfd54383d0d7e7274998033039f8a1"
+        },
+        {
+          "path": "right_45_walk0.9s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "fe201b8ddbdf1b55404d5ff2f3de38e93f8b9bef57cfde5f09fe74e96a30a6e8"
+        },
+        {
+          "path": "right_45_walk0.9s_step1.2s_motion.npz",
+          "size": 3244770,
+          "sha256": "c51cee2bb24abb0c293516a8b79bb701d34803eaeadc8b6e0431e00712c20b5a"
+        },
+        {
+          "path": "right_45_walk0.9s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "1abe20b9ed216458091cd1fc584ffa2e12e74ad338777fff9adb27659bcda1f8"
+        },
+        {
+          "path": "right_45_walk1.2s_step0.7s_motion.npz",
+          "size": 3244770,
+          "sha256": "245ea139444d55efe7cdef890354e692dfa31a02795f81200a261dd22728de2d"
+        },
+        {
+          "path": "right_45_walk1.2s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "dd09f3c09671c48bb3ddabdfa7bdb2064e36fced18821dd225232d6305eba8ee"
+        },
+        {
+          "path": "right_45_walk1.2s_step1.2s_motion.npz",
+          "size": 3312022,
+          "sha256": "7da1957275c58991bdb081c485adf1d6146bd2f3839bc1d6f4b444c48a592423"
+        },
+        {
+          "path": "right_45_walk1.2s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "5676a8c382b33cb0c1fb4bdf33500a9c638fac950a704d1f2be76ae42228cb82"
+        },
+        {
+          "path": "right_45_walk1.5s_step0.7s_motion.npz",
+          "size": 3260594,
+          "sha256": "8b8ca04c571a145b10083f0755ff6833ffbc895b91ecfc9a2503cae95e0daa0f"
+        },
+        {
+          "path": "right_45_walk1.5s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "17a829d2e4fd8a77181d4de2993005fdee63705beb0bc78697cf6e0b352134c6"
+        },
+        {
+          "path": "right_45_walk1.5s_step1.2s_motion.npz",
+          "size": 3256638,
+          "sha256": "116ee7f6cebaead08c59f335c8f41c4efdc68f6df42c16f2a18be6bc071be8e0"
+        },
+        {
+          "path": "right_45_walk1.5s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "6ed3feeb1521107087f5619d1a6b4a2b81cea34769157fb5a215307a3e2e02b9"
+        },
+        {
+          "path": "right_90_walk0.6s_step0.7s_motion.npz",
+          "size": 2916422,
+          "sha256": "a990e4da834e151fe2def681ea7b9498212eec9e2bb13ae097f942de92528202"
+        },
+        {
+          "path": "right_90_walk0.6s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "515736bf139ac966ced30a173c440277e98846cd33159ac535579be4c2acfe25"
+        },
+        {
+          "path": "right_90_walk0.6s_step1.2s_motion.npz",
+          "size": 3339714,
+          "sha256": "c7669e06811af66fc40a55eb3451a64cdca05c0ac50df7d95ed2c5cc1314a841"
+        },
+        {
+          "path": "right_90_walk0.6s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "4e84e1862edc81aef56bd0eea1208756f5dbd2a0941fd053e7102d61aadce4bb"
+        },
+        {
+          "path": "right_90_walk0.9s_step0.7s_motion.npz",
+          "size": 3054882,
+          "sha256": "b514d120c41462612537f1deb72e478b5207ca5f5c6dbf07486a897c966d2738"
+        },
+        {
+          "path": "right_90_walk0.9s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "f60f525ea07af67bc26675e403297c9ebcba308f97a5406a09ef1bb487b18094"
+        },
+        {
+          "path": "right_90_walk0.9s_step1.2s_motion.npz",
+          "size": 3379274,
+          "sha256": "d256885a100a885aa7625e2246a5b38547710c0410a8f38117486284d2f46c3a"
+        },
+        {
+          "path": "right_90_walk0.9s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "2337441b7b4571208859511eef64e0fda695ed32c1bad75533bdbdfce28d950a"
+        },
+        {
+          "path": "right_90_walk1.2s_step0.7s_motion.npz",
+          "size": 3371362,
+          "sha256": "aef0f0b4d7bf99132558ff1df1454c745d2babe7f7cd9d7eee540605b9065f70"
+        },
+        {
+          "path": "right_90_walk1.2s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "394d228d8a66aa348649080ad1846e6ef5f91f21721c2ad88c0b64dea1ae11b4"
+        },
+        {
+          "path": "right_90_walk1.2s_step1.2s_motion.npz",
+          "size": 3430702,
+          "sha256": "5ea90f2b420c78263a9a91f36ed6e8345648a4767ee74d6c957534e277e54a7c"
+        },
+        {
+          "path": "right_90_walk1.2s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "874000592e0eb96bbe1b0d6b5e9a91879c088ba057ee8b35c2ce429374af3000"
+        },
+        {
+          "path": "right_90_walk1.5s_step0.7s_motion.npz",
+          "size": 3312022,
+          "sha256": "bd3c7c4ef5db52c762fb8d47a8d2c0bdfe74cf72e124e7c5de37ba6e8a7d8274"
+        },
+        {
+          "path": "right_90_walk1.5s_step0.7s_terrain.npy",
+          "size": 1728,
+          "sha256": "a8488b65d658a0e69c62764f4292249820bdd9c9f5e555457e8f2e35ac8e05cb"
+        },
+        {
+          "path": "right_90_walk1.5s_step1.2s_motion.npz",
+          "size": 3399054,
+          "sha256": "a535718f9af152811ded4764aab8c0df531ed33a459bd5c52d74e77db3930496"
+        },
+        {
+          "path": "right_90_walk1.5s_step1.2s_terrain.npy",
+          "size": 2528,
+          "sha256": "ab9d13c879f6b1a92a4ce4a5c30d250d888fccb4b14e7573038cb0f12f54b3fe"
+        }
+      ]
+    },
+    "motions-high-climb-76": {
+      "status": "ready",
+      "description": "High-speed climb-76: 40 prepared G1 motion/terrain pairs at 50 FPS.",
+      "motion_count": 40,
+      "fps": 50,
+      "total_frames": 25191,
+      "archive": {
+        "url": "https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-high-climb-76-v1.tar.gz",
+        "size": 44443617,
+        "sha256": "045b7ef2ce2231fc8a27aaba16e86d67bb43435d40754df4e0f1ad02ad6e6e05"
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "size": 1078,
+          "sha256": "388d970803ee1406541dfbb232bd33184cc89f402487dc53403ffa42686990b5"
+        },
+        {
+          "path": "run_forward_0.6s_step0.8s_motion.npz",
+          "size": 2520822,
+          "sha256": "da4e8e3b08520271dcc3d31859b1c6e97c1e43d9644f9f40894d4c2853795d7c"
+        },
+        {
+          "path": "run_forward_0.6s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "bff58abcd6ab8130e56f7d73cb36b6e1be8424cdba8ef95ae8ce1b5674ab93fd"
+        },
+        {
+          "path": "run_forward_0.6s_step0s_motion.npz",
+          "size": 2263682,
+          "sha256": "be1c3e810a031d9bdefc4af226314614b9ea04e2b4eb66bec6f6d84d29f76d11"
+        },
+        {
+          "path": "run_forward_0.6s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "4a8fa1b93eb6dd9c414e4d8972015355014f7d2fd0445d4f12d655423da74346"
+        },
+        {
+          "path": "run_forward_1.0s_step0.8s_motion.npz",
+          "size": 2611810,
+          "sha256": "c043123688c633d4c9c2e2c9af0cb9718fac1c55c51cad1f1b11ad3839661d47"
+        },
+        {
+          "path": "run_forward_1.0s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "bd067b7984b6f077d7d81da3005f33cb1f808547ccb9b58b9ac9ab21f7a4efc3"
+        },
+        {
+          "path": "run_forward_1.0s_step0s_motion.npz",
+          "size": 2346758,
+          "sha256": "28df4db89a2fb8b40fd3c7cfea9b536ba1323a75fe66286ff98d738e2d24add1"
+        },
+        {
+          "path": "run_forward_1.0s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "4bf9f63b5f769ad27bb8bbc70af2a46bc52e0586ffb74beee4a12b33abfa314f"
+        },
+        {
+          "path": "run_forward_1.2s_step0.8s_motion.npz",
+          "size": 2639502,
+          "sha256": "c57326263056206d52b31d7d105e53ae16a22937ab274b6ce8b2c0d9c1d08cc9"
+        },
+        {
+          "path": "run_forward_1.2s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "3e8b5776bc1a365aea26f23deab78ef57512c859d452a7a014be22987d517ed5"
+        },
+        {
+          "path": "run_forward_1.2s_step0s_motion.npz",
+          "size": 2386318,
+          "sha256": "97990df196e3c6ea56b41eab2ab6cd194eb0d330c2b746916fb98394fc1fa054"
+        },
+        {
+          "path": "run_forward_1.2s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "5374ae2f8040964179c6591a003359aa719ad9324beee918bd7a2689888507a6"
+        },
+        {
+          "path": "run_forward_1.5s_step0.8s_motion.npz",
+          "size": 2698842,
+          "sha256": "cfd65a51969a6dd957b9722632c30fb86da15a944cb21de416a42a5d2af885bc"
+        },
+        {
+          "path": "run_forward_1.5s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "771b692126758d78a60916679d60227d7f482d958b5df9cc8048558facb1692b"
+        },
+        {
+          "path": "run_forward_1.5s_step0s_motion.npz",
+          "size": 2445658,
+          "sha256": "86d7e7edde26f42e6a8f65b68ea70f4aed3c139e7e2bb139fa633cccc16c77b5"
+        },
+        {
+          "path": "run_forward_1.5s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "d1a38e700cf276bcf4512ab2acece01f64ec733cce39c8147f792986154fa610"
+        },
+        {
+          "path": "run_left_45_0.6s_step0.8s_motion.npz",
+          "size": 2516866,
+          "sha256": "a83077d8419fbaa28873ad23eb5c1283fc95c3e0ba89c7c2c2779ccc75572a7b"
+        },
+        {
+          "path": "run_left_45_0.6s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "db223d188c28b08406e79c7b2978c49dc737c30bf1f1aa3b931d27a0402ea0da"
+        },
+        {
+          "path": "run_left_45_0.6s_step0s_motion.npz",
+          "size": 2271594,
+          "sha256": "4b4e3a8e67785b6e46428332cada5426c405512637c29aaa08d5079f0fb1ba82"
+        },
+        {
+          "path": "run_left_45_0.6s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "920aef83c69ba3d70f2f4c0598c18c21f2296fd21baef249d52552b0397206cd"
+        },
+        {
+          "path": "run_left_45_1.0s_step0.8s_motion.npz",
+          "size": 2655326,
+          "sha256": "3de8a2b73f293bb1ad87768708df4a2eedfb4ee3a294b657d2ca65d5972bddb8"
+        },
+        {
+          "path": "run_left_45_1.0s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "9f82a2e76a8147a51350b983dc5ffa8aba6e2d1d18297d0124f97fc379aec28f"
+        },
+        {
+          "path": "run_left_45_1.0s_step0s_motion.npz",
+          "size": 2402142,
+          "sha256": "b8464660b6951c6f15bf60fc50601a675d472be4a5dd6beef1285f97ca587c1c"
+        },
+        {
+          "path": "run_left_45_1.0s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "fe6dfa49cbb723a769e94e186f4236335c5734486b0e4902de8c9e4fb548729a"
+        },
+        {
+          "path": "run_left_45_1.2s_step0.8s_motion.npz",
+          "size": 2635546,
+          "sha256": "50e1cce03660a1a1ad7fe878e7251dda20fa42c71802a8a4e450056bf2f6d6c0"
+        },
+        {
+          "path": "run_left_45_1.2s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "8bcb405878a6febf77c957ade1fcd71680e95b14e3444214fe279af2264cabc4"
+        },
+        {
+          "path": "run_left_45_1.2s_step0s_motion.npz",
+          "size": 2386318,
+          "sha256": "a1b2c4c165d9d579da07193d13b10d8aff4fa34666db99a18d1bed623e222796"
+        },
+        {
+          "path": "run_left_45_1.2s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "0340da48a5d307a0e4bdac8affe25c237e65d52441ac903e3445a7283a08e94f"
+        },
+        {
+          "path": "run_left_45_1.5s_step0.8s_motion.npz",
+          "size": 2702798,
+          "sha256": "53caf9b46918eb907b1a48870ba6e28dc2fe12e4a3c94141e0c451e86b62a7d1"
+        },
+        {
+          "path": "run_left_45_1.5s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "e3c1172e6ac6f7809011bb7ff813ec057c6c8e883589ebe164d3a998158ab41a"
+        },
+        {
+          "path": "run_left_45_1.5s_step0s_motion.npz",
+          "size": 2449614,
+          "sha256": "dd100d5ab7b86589fefdcc4eeb8e3e38de52c584e5af9c0a27f2ca72b3275615"
+        },
+        {
+          "path": "run_left_45_1.5s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "8147b033f3dcaf62287503b51ab6e60ece657a2410597a0bfba2061e06d8abbe"
+        },
+        {
+          "path": "run_left_90_0.6s_step0.8s_motion.npz",
+          "size": 2540602,
+          "sha256": "ecc0718273cec84da010a374374eba83ac5eeb6a3e5cbc6aa7bbf68e901ee447"
+        },
+        {
+          "path": "run_left_90_0.6s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "2904667d0ecc3398afe9df86dce229697a8961836b920b4396d10e371a71d6db"
+        },
+        {
+          "path": "run_left_90_0.6s_step0s_motion.npz",
+          "size": 2295330,
+          "sha256": "ab0142b925ed16ed44d7b06f0252cc909b9247132318cd6130ebed2e9536dc81"
+        },
+        {
+          "path": "run_left_90_0.6s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "e7fa1a29135054fe94061143f318539357a44d879188ded4894fd9d4efbe46ca"
+        },
+        {
+          "path": "run_left_90_1.0s_step0.8s_motion.npz",
+          "size": 2647414,
+          "sha256": "beeb3fad25db0fcf54865f3ccac79c8ab938cb2e8d416396076e9f77a417a24d"
+        },
+        {
+          "path": "run_left_90_1.0s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "cc99b128c96f77e2e05c95a60534a6313df7cb20a948ba5b5b74d0f9ee81ec68"
+        },
+        {
+          "path": "run_left_90_1.0s_step0s_motion.npz",
+          "size": 2402142,
+          "sha256": "de89a5a9b4a6dfe9848ee421a23b5fe1ced76c8af920bf4798f2aeb11955ba9b"
+        },
+        {
+          "path": "run_left_90_1.0s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "c0c60d701fce35c53c3dd5d8fc05ef38285117dc90cb9de0ab71ee5fc2db322a"
+        },
+        {
+          "path": "run_left_90_1.2s_step0.8s_motion.npz",
+          "size": 2667194,
+          "sha256": "2ddcc20868e6c44c0659488d70b0a07e51a28544385658148ac18459c6c39f33"
+        },
+        {
+          "path": "run_left_90_1.2s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "c57c46f547b4ded548d657dd85b7e907bc570621c08ac8a146a57d06eedb35d0"
+        },
+        {
+          "path": "run_left_90_1.2s_step0s_motion.npz",
+          "size": 2414010,
+          "sha256": "0ec8544313adddd728bb909e426fc66a54aaf717ddaaa860b3a3b262c02dd55c"
+        },
+        {
+          "path": "run_left_90_1.2s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "08ec547f21e501970a45f55bbeb2d00f4d9dd07a7a7f53aa4b2cb5e8e34913f2"
+        },
+        {
+          "path": "run_left_90_1.5s_step0.8s_motion.npz",
+          "size": 2694886,
+          "sha256": "42e718480f3e3ce88aae0cd7c05012d608091bf51297412e22bf8d1fb994beff"
+        },
+        {
+          "path": "run_left_90_1.5s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "405f3af734aea9a10da5963bc950226bae854b36862e00b19446a1e68c64930a"
+        },
+        {
+          "path": "run_left_90_1.5s_step0s_motion.npz",
+          "size": 2445658,
+          "sha256": "b63e9b7200901d439b714cf40897585503faed637531017f4227441ab6a3fa4e"
+        },
+        {
+          "path": "run_left_90_1.5s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "85663acf10780dc4e7c3d98cb3cbeea928b6541a66b8706f408b6be6ac5f9426"
+        },
+        {
+          "path": "run_right_45_0.6s_step0.8s_motion.npz",
+          "size": 2520822,
+          "sha256": "4dd78054d2f4bac36747aa43bd78332b2fb98d73cca7ddc69e900c115b5e076b"
+        },
+        {
+          "path": "run_right_45_0.6s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "d27d92061917cc1b5ab9dcd200384ca62791069a839c0a9151d0de46eca00e02"
+        },
+        {
+          "path": "run_right_45_0.6s_step0s_motion.npz",
+          "size": 2267638,
+          "sha256": "b0edb61712c47dbbc4a9ded8419cd59cf6838dea22e7df216eb70cca3baf2ad4"
+        },
+        {
+          "path": "run_right_45_0.6s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "8957466d7c532d8de7a96eb7575c8b5cd3459391a1010af50e7df1e48b2a1ec7"
+        },
+        {
+          "path": "run_right_45_1.0s_step0.8s_motion.npz",
+          "size": 2599942,
+          "sha256": "da599cc0e04b3f27d3774ab159d94721dc951c6ce8ffc0dcf4be3ad31ff5c088"
+        },
+        {
+          "path": "run_right_45_1.0s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "2a4f591e75a7b4e5a9722a8fdb3be133fb51c64ea9f1a70f150bf9736cea71df"
+        },
+        {
+          "path": "run_right_45_1.0s_step0s_motion.npz",
+          "size": 2354670,
+          "sha256": "d5b85601f29c65a366d548493e1937127fa251391c347d18c4abef49cb8f0dcd"
+        },
+        {
+          "path": "run_right_45_1.0s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "52198608caa141c30dc764fd62091ee7e00c0d84b29696a697914cbdc3404da0"
+        },
+        {
+          "path": "run_right_45_1.2s_step0.8s_motion.npz",
+          "size": 2694886,
+          "sha256": "7099634c6be1ddc32310578a423fa8e15313f89a22377f6ab3a84877d2089ccc"
+        },
+        {
+          "path": "run_right_45_1.2s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "7da78bada750742a5145537a1b933872cfd68c466f2861616478124794352e03"
+        },
+        {
+          "path": "run_right_45_1.2s_step0s_motion.npz",
+          "size": 2441702,
+          "sha256": "d113883279ca9b9a26bee1f54481120766b0a7f60c2486a36814e163a1a87e3f"
+        },
+        {
+          "path": "run_right_45_1.2s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "265e3801bef13dabb6e06163484d2a0781074fedf120cb6d185aee0dd3391994"
+        },
+        {
+          "path": "run_right_45_1.5s_step0.8s_motion.npz",
+          "size": 2690930,
+          "sha256": "076deb873810dd0dadee9b2dd409681120a48d638a353e8837028e9e1e8dc1be"
+        },
+        {
+          "path": "run_right_45_1.5s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "0e36cee754459882480cc931e39f2b13e4aee9be099f63bf8f2492530989dd82"
+        },
+        {
+          "path": "run_right_45_1.5s_step0s_motion.npz",
+          "size": 2433790,
+          "sha256": "7469a24542f078884208daada74465cc2107acf1407ed5a4aee5f5eacb9be77f"
+        },
+        {
+          "path": "run_right_45_1.5s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "5cc9916f79501cd2317e9ae5e35fcca43c64799139c002405810b3e9637aec6c"
+        },
+        {
+          "path": "run_right_90_0.6s_step0.8s_motion.npz",
+          "size": 2520822,
+          "sha256": "ed37a063271498ec53f9420b5441a5657e9f74c7be95df34736b3b40662cc694"
+        },
+        {
+          "path": "run_right_90_0.6s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "88e0dc69bc1bbcd6d1127511bfd66084afd3a7611ae333edfe925b1ebedb5331"
+        },
+        {
+          "path": "run_right_90_0.6s_step0s_motion.npz",
+          "size": 2255770,
+          "sha256": "670074232b1a6450a9197ba0f62ad9adf0edad682fabe4188df93c276a3690ad"
+        },
+        {
+          "path": "run_right_90_0.6s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "0afc652ba414df4431e733d9e3b5ee11ede298f15ea22ebe458bbf33298d7178"
+        },
+        {
+          "path": "run_right_90_1.0s_step0.8s_motion.npz",
+          "size": 2643458,
+          "sha256": "9880b41556581cf0430e922c0fd2c0d9a093cfba6411a78aaeb7542157cb45aa"
+        },
+        {
+          "path": "run_right_90_1.0s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "8bd99bbafe37165c3fe6b54f1e7d8c498117e7fc403db74f1f843efe0ca0300b"
+        },
+        {
+          "path": "run_right_90_1.0s_step0s_motion.npz",
+          "size": 2386318,
+          "sha256": "9b8fe89a9187c5effd47d83cba497e3ca918a8b76cbd66188e4a931bc0045b49"
+        },
+        {
+          "path": "run_right_90_1.0s_step0s_terrain.npy",
+          "size": 1728,
+          "sha256": "eae57907681b86e296eedfb3843758aefb0496aa7d28bb67fc301b1f20567a2b"
+        },
+        {
+          "path": "run_right_90_1.2s_step0.8s_motion.npz",
+          "size": 2631590,
+          "sha256": "c71f7ef19842ca21970ef13e2067282fe7660736c69a8a6c41dab4a618c6b9e9"
+        },
+        {
+          "path": "run_right_90_1.2s_step0.8s_terrain.npy",
+          "size": 4928,
+          "sha256": "6d0738f6b1a220ac0ca8ec55e20c9373854184cbe7a377ab39372467a477f95f"
+        },
+        {
+          "path": "run_right_90_1.2s_step0s_motion.npz",
+          "size": 2374450,
+          "sha256": "601b52c7d36465d132234125183ba4844e3ef6e2d2fdc0992b8cbee50638da3b"
+        },
+        {
+          "path": "run_right_90_1.2s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "b42102555fbf68847ae8caaa5106dcc0d4456e55792699d3fb6696988bdf25fd"
+        },
+        {
+          "path": "run_right_90_1.5s_step0.8s_motion.npz",
+          "size": 2702798,
+          "sha256": "8c690b367c7fdfcfc06cbd3910eb1fc0717acf551f652d898df55c4c744b1071"
+        },
+        {
+          "path": "run_right_90_1.5s_step0.8s_terrain.npy",
+          "size": 5728,
+          "sha256": "a159f22c9cf5e0823225f40e232add5778d733f353e276967e04fb78b374fd93"
+        },
+        {
+          "path": "run_right_90_1.5s_step0s_motion.npz",
+          "size": 2445658,
+          "sha256": "f02fc46bd483055a69ee540ca385227d4bf99d82130e2f8bf956565b95e97196"
+        },
+        {
+          "path": "run_right_90_1.5s_step0s_terrain.npy",
+          "size": 2528,
+          "sha256": "b70347cdfcbd19ffc33a923a559b2931bc134e602acf40f77d73d78e06ee616e"
+        }
+      ]
     }
   }
 }

@@ -4,6 +4,9 @@
 
 Generate parkour motion/terrain datasets for the Unitree G1.
 
+To skip generation, use the [prepared example motion/terrain bundles](../wbt_training/README.md#example-motionterrain-datasets)
+and follow the [teacher-training instructions](../wbt_training/README.md#train-a-teacher).
+
 ## Setup
 
 From the PHP checkout root, with Conda installed:

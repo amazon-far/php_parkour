@@ -42,9 +42,9 @@ from the
 [`jinkunc/php-release-port`](https://github.com/amazon-far/holosoma/tree/jinkunc/php-release-port)
 branch. The recursive clone checks out that exact revision.
 
-Choose a guide below for environment setup and commands. For the full pipeline,
-generate a dataset first, then train and evaluate a policy. If you already have
-an exported ONNX pair, go directly to sim2sim.
+Choose a guide below for environment setup and commands. For training, use the
+[prepared example datasets](wbt_training/README.md#example-motionterrain-datasets) or generate your own
+with motion matching. If you already have an exported ONNX pair, go directly to sim2sim.
 
 | Guide | Workflow | Requirements |
 |---|---|---|

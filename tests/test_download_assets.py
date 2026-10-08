@@ -6,6 +6,8 @@ import hashlib
 import importlib.util
 import io
 import json
+import subprocess
+import sys
 import tarfile
 from pathlib import Path
 
@@ -110,3 +112,33 @@ def test_manifest_file_digest_is_checked_before_install(tmp_path):
     with pytest.raises(ValueError, match="checksum"):
         assets.fetch(component, dest)
     assert not dest.exists()
+
+
+@pytest.mark.parametrize("name", assets.MOTION_COMPONENTS)
+def test_motion_bundle_cli_download_and_offline_verification(tmp_path, name):
+    component = make_bundle(tmp_path, {"example_motion.npz": b"motion", "example_terrain.npy": b"terrain"})
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({"schema_version": 1, "components": {name: component}}))
+    destination = tmp_path / name
+    command = [
+        sys.executable,
+        str(Path(assets.__file__)),
+        name,
+        "--manifest", str(manifest),
+        "--destination", str(destination),
+    ]
+    subprocess.run(command, check=True, capture_output=True, text=True)
+    assert assets.verify(component, destination) == []
+    (tmp_path / "assets.tar.gz").unlink()
+    subprocess.run(command + ["--verify"], check=True, capture_output=True, text=True)
+
+
+@pytest.mark.parametrize("name", assets.MOTION_COMPONENTS)
+def test_unpublished_motion_bundle_has_clear_readiness_error(tmp_path, name):
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({
+        "schema_version": 1,
+        "components": {name: {"status": "pending", "message": "Awaiting release publication"}},
+    }))
+    with pytest.raises(ValueError, match="Awaiting release publication"):
+        assets.read_component(manifest, name)

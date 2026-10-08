@@ -27,22 +27,76 @@ for local-only logging; checkpoints go under `logs/`. The Python training
 presets also default to W&B; use `logger:disabled` when invoking Python directly.
 Set `WANDB_BASE_URL` if you use a custom W&B server.
 
-## Train a teacher
+## Example motion/terrain datasets
 
-Generate and upload a dataset using the
-[motion-matching guide](../motion_matching/README.md#upload-to-a-wb-registry).
-Choose a registry as the training dataset:
+Use these prepared datasets to **skip motion matching and start teacher training**.
+They contain the motion/terrain pairs used by the current five-teacher training setup:
+locomotion, low- and high-speed step, and low- and high-speed climb-76.
+The motion files are already converted to the Holosoma training format at 50 FPS.
+Each `*_motion.npz` has its matching `*_terrain.npy`; no generation, conversion,
+or W&B dataset access is needed after download.
+
+The bundles are available in the [training-motion-examples-v1 release](https://github.com/amazon-far/php_parkour/releases/tag/training-motion-examples-v1).
+
+| Dataset | Download component | Motion/terrain pairs | Archive |
+|---|---|---:|---:|
+| Locomotion | `motions-locomotion` | 100 | [118.3 MB](https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-locomotion-v1.tar.gz) |
+| Low-speed step | `motions-low-step` | 56 | [41.8 MB](https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-low-step-v1.tar.gz) |
+| High-speed step | `motions-high-step` | 60 | [44.8 MB](https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-high-step-v1.tar.gz) |
+| Low-speed climb-76 | `motions-low-climb-76` | 40 | [57.4 MB](https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-low-climb-76-v1.tar.gz) |
+| High-speed climb-76 | `motions-high-climb-76` | 40 | [44.4 MB](https://github.com/amazon-far/php_parkour/releases/download/training-motion-examples-v1/php-motions-high-climb-76-v1.tar.gz) |
+
+Download and extract a dataset from the PHP checkout root:
 
 ```bash
-wandb login
-export WANDB_ENTITY=your-team WANDB_PROJECT=php-experiments
-export REGISTRY='your-org/wandb-registry-terrains-motions/high-speed-climb-76:latest'
+python scripts/download_assets.py motions-locomotion
+```
 
-NGPUS=1 \
+Choose another download component from the table and use its directory in `REGISTRY`
+to train that skill. The downloader verifies the archive and every extracted file against
+[release-assets.json](../release-assets.json). Use `--destination DIR` for another
+location. To verify a bundle already extracted above without network access:
+
+```bash
+python scripts/download_assets.py motions-locomotion --verify
+```
+
+These downloads provide training data, not pretrained teacher checkpoints.
+[Train a teacher](#train-a-teacher) for each dataset, then [distill the teachers](#distill-a-student)
+into a student. To generate different motions, follow the [motion-matching guide](../motion_matching/README.md).
+
+## Train a teacher
+
+After downloading an [example dataset](#example-motionterrain-datasets), point
+`REGISTRY` at its directory:
+
+```bash
+REGISTRY="file://$HOME/.cache/php-parkour/motions-locomotion" \
+LOGGER=disabled NGPUS=1 \
 bash wbt_training/training_runs/run_terrain_teacher.sh \
+    --training.headless True --training.num-envs 4096 \
+    --training.name example-locomotion-teacher
+```
+
+Use `motions-low-step`, `motions-high-step`, `motions-low-climb-76`, or
+`motions-high-climb-76` in both the download command and directory to train the
+other skills. Train one teacher for each dataset you want the student to learn.
+These bundles already contain the native Holosoma motion fields, so no conversion
+or W&B dataset lookup is needed. `LOGGER=disabled` also disables W&B run logging;
+omit it to use the default W&B logger after `wandb login`.
+
+For data you prepared yourself, set `REGISTRY=file:///absolute/path/to/bundle`.
+The directory must contain native Holosoma motion NPZ files and their matching
+terrain NPY files. An explicit W&B artifact reference is also supported:
+
+```bash
+REGISTRY='your-team/your-project/your-motion-artifact:v0' \
+NGPUS=1 bash wbt_training/training_runs/run_terrain_teacher.sh \
     --training.headless True --training.num-envs 4096 \
     --training.name my-teacher
 ```
+
+To generate new datasets, follow the [motion-matching guide](../motion_matching/README.md).
 
 For IsaacSim evaluation, use `CHECKPOINT=wandb://your-team/php-experiments/TEACHER_RUN_ID`
 for the run's latest checkpoint, or `CHECKPOINT=/path/to/model_N.pt` for a local
