@@ -35,7 +35,7 @@ into them so imports resolve here. This replaces their existing editable install
     -m pip install --no-deps -e ./thirdparty/holosoma/src/holosoma_inference
 ```
 
-See the [Holosoma inference guide](https://github.com/amazon-far/holosoma/blob/deeab8038ab76097a23fb90c1f6a31914c49f883/src/holosoma_inference/README.md)
+See the [Holosoma inference guide](https://github.com/amazon-far/holosoma/blob/jinkunc/php-release-port/src/holosoma_inference/README.md)
 for supported systems and runtime dependencies. This standalone route uses
 Holosoma's local simulator bridge and depth shared memory; it does not require
 FAR-pi.
@@ -121,6 +121,6 @@ Press `Backspace` in the MuJoCo window to reset the environment.
 | 90° left / right | `q` / `e` |
 | Toggle speed mode | `=` |
 
-The [Sim-to-Sim Depth Locomotion workflow](https://github.com/amazon-far/holosoma/blob/deeab8038ab76097a23fb90c1f6a31914c49f883/src/holosoma_inference/docs/workflows/sim-to-sim-depth-locomotion.md)
+The [Sim-to-Sim Depth Locomotion workflow](https://github.com/amazon-far/holosoma/blob/jinkunc/php-release-port/src/holosoma_inference/docs/workflows/sim-to-sim-depth-locomotion.md)
 shows the underlying Holosoma commands, depth image configuration, and
 keyboard controls.

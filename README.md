@@ -36,11 +36,10 @@ git clone --recurse-submodules https://github.com/amazon-far/php_parkour.git
 cd php_parkour
 ```
 
-PHP pins Holosoma to commit
-[`deeab803`](https://github.com/amazon-far/holosoma/commit/deeab8038ab76097a23fb90c1f6a31914c49f883)
-from the
+PHP uses Holosoma's
 [`jinkunc/php-release-port`](https://github.com/amazon-far/holosoma/tree/jinkunc/php-release-port)
-branch. The recursive clone checks out that exact revision.
+branch. The exact tested revision is pinned by the `thirdparty/holosoma`
+submodule and checked out by the recursive clone.
 
 Choose a guide below for environment setup and commands. For training, use the
 [prepared example datasets](wbt_training/README.md#example-motionterrain-datasets) or generate your own
