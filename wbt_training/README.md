@@ -42,9 +42,6 @@ Set `WANDB_BASE_URL` if you use a custom W&B server.
 Use these prepared datasets to **skip motion matching and start teacher training**.
 They contain the motion/terrain pairs used by the current five-teacher training setup:
 locomotion, low- and high-speed step, and low- and high-speed climb-76.
-The motion files are already converted to the Holosoma training format at 50 FPS.
-Each `*_motion.npz` has its matching `*_terrain.npy`; no generation, conversion,
-or W&B dataset access is needed after download.
 
 The bundles are available in the [training-motion-examples-v1 release](https://github.com/amazon-far/php_parkour/releases/tag/training-motion-examples-v1).
 

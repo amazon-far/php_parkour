@@ -36,11 +36,6 @@ git clone --recurse-submodules https://github.com/amazon-far/php_parkour.git
 cd php_parkour
 ```
 
-PHP uses Holosoma's
-[`jinkunc/php-release-port`](https://github.com/amazon-far/holosoma/tree/jinkunc/php-release-port)
-branch. The exact tested revision is pinned by the `thirdparty/holosoma`
-submodule and checked out by the recursive clone.
-
 Choose a guide below for environment setup and commands. For training, use the
 [prepared example datasets](wbt_training/README.md#example-motionterrain-datasets) or generate your own
 with motion matching. If you already have an exported ONNX pair, go directly to sim2sim.
@@ -51,11 +46,11 @@ with motion matching. If you already have an exported ONNX pair, go directly to 
 | [Training and evaluation](wbt_training/README.md) | Train teachers, distill a student, evaluate checkpoints, and export ONNX | Linux/NVIDIA with IsaacSim |
 | [Sim2sim](wbt_training/DEPLOY.md) | Run the exported depth policy in MuJoCo | Holosoma's MuJoCo and inference environments |
 
-## Example results
+## 🏃 Try the demo
 
 To try the example student policy in MuJoCo, download the validated ONNX pair
-once it is available in [release-assets.json](release-assets.json). Run from
-the PHP checkout root:
+from the [student release](https://github.com/amazon-far/php_parkour/releases/tag/student-assets-v1).
+Run from the PHP checkout root:
 
 ```bash
 python scripts/download_assets.py student
@@ -64,8 +59,8 @@ python scripts/download_assets.py student
 The release contains sanitized `depth_backbone.onnx` and `student.onnx` files,
 without raw `.pt` or teacher checkpoints. Files default to
 `~/.cache/php-parkour/student`; pass `--destination DIR` to choose another
-directory. If the student is marked `pending`, the downloader reports that it
-is not yet available rather than substituting an intermediate model.
+directory. The downloader verifies the archive and both model files against
+[release-assets.json](release-assets.json).
 
 Follow the [sim2sim guide](wbt_training/DEPLOY.md) to run the policy. You can
 also use the [automatically exported ONNX pair](wbt_training/README.md#export-to-onnx)

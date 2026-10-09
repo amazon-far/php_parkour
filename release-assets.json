@@ -428,7 +428,7 @@
       ]
     },
     "student": {
-      "status": "pending",
+      "status": "ready",
       "description": "Validated RealSense D435i depth locomotion ONNX pair.",
       "archive": {
         "url": "https://github.com/amazon-far/php_parkour/releases/download/student-assets-v1/php-student-v1.tar.gz",
@@ -446,8 +446,7 @@
           "size": 13841549,
           "sha256": "e426c4206181d511b838c76efc48e43636299b76cb5a15183977011589931628"
         }
-      ],
-      "message": "The selected student archive is prepared but awaiting release upload."
+      ]
     },
     "motions-locomotion": {
       "status": "ready",
