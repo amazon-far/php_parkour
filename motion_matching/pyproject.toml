@@ -17,7 +17,7 @@ dependencies = [
     "tyro==1.0.13",
     "tqdm==4.67.3",
     "rich==14.3.4",
-    "pillow==12.2.0",
+    "pillow==12.3.0",
     "pycollada==0.9.3",
     "shapely==2.1.2",
     "networkx==3.4.2",
