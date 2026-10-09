@@ -129,7 +129,7 @@ def _attach_depth_viewer(algo: BaseAlgo) -> None:
 
 def _load_student_only(algo: BaseAlgo, ckpt_path: str) -> None:
     """Load ``student`` + ``depth_backbone`` weights from a distill checkpoint,
-    skipping ``teachers.*``.
+    skipping frozen teachers and their observation-normalization buffers.
 
     Distillation training saves the whole composite policy
     (student + teachers + depth backbone) under ``model_state_dict``. At eval
@@ -152,7 +152,7 @@ def _load_student_only(algo: BaseAlgo, ckpt_path: str) -> None:
     skipped_inference_irrelevant = 0
     other_keys: list[str] = []
     for k, v in state.items():
-        if k.startswith(("teacher.", "teachers.")):
+        if k.startswith(("teacher.", "teachers.", "teacher_obs_normalizers.")):
             skipped_teacher += 1
         elif k.startswith("student."):
             student_state[k[len("student.") :]] = v
@@ -214,64 +214,66 @@ def run_eval(
 
     env, device, simulation_app = setup_simulation_environment(tyro_config)
 
-    eval_log_dir = get_experiment_dir(
-        tyro_config.logger, tyro_config.training, get_timestamp(), task_name="eval"
-    )
-    eval_log_dir.mkdir(parents=True, exist_ok=True)
-    logger.info(f"Saving eval logs to {eval_log_dir}")
-    tyro_config.save_config(str(eval_log_dir / CONFIG_NAME))
+    try:
+        eval_log_dir = get_experiment_dir(
+            tyro_config.logger, tyro_config.training, get_timestamp(), task_name="eval"
+        )
+        eval_log_dir.mkdir(parents=True, exist_ok=True)
+        logger.info(f"Saving eval logs to {eval_log_dir}")
+        tyro_config.save_config(str(eval_log_dir / CONFIG_NAME))
 
-    if eval_cbs_cfg is not None:
-        cb_configs = eval_cbs_cfg.collect_active_callbacks()
-        if cb_configs:
-            object.__setattr__(tyro_config.algo.config, "eval_callbacks", cb_configs)
+        if eval_cbs_cfg is not None:
+            cb_configs = eval_cbs_cfg.collect_active_callbacks()
+            if cb_configs:
+                object.__setattr__(tyro_config.algo.config, "eval_callbacks", cb_configs)
 
-    assert checkpoint_cfg.checkpoint is not None
-    checkpoint = load_checkpoint(checkpoint_cfg.checkpoint, str(eval_log_dir))
+        assert checkpoint_cfg.checkpoint is not None
+        checkpoint = load_checkpoint(checkpoint_cfg.checkpoint, str(eval_log_dir))
 
-    algo_class = get_class(tyro_config.algo._target_)
-    algo: BaseAlgo = algo_class(
-        device=device,
-        env=env,
-        config=tyro_config.algo.config,
-        log_dir=str(eval_log_dir),
-        multi_gpu_cfg=None,
-    )
-    algo.setup()
-    algo.attach_checkpoint_metadata(saved_config, saved_wandb_path)
+        algo_class = get_class(tyro_config.algo._target_)
+        algo: BaseAlgo = algo_class(
+            device=device,
+            env=env,
+            config=tyro_config.algo.config,
+            log_dir=str(eval_log_dir),
+            multi_gpu_cfg=None,
+        )
+        algo.setup()
+        algo.attach_checkpoint_metadata(saved_config, saved_wandb_path)
 
-    _load_student_only(algo, str(checkpoint))
+        _load_student_only(algo, str(checkpoint))
 
-    if depth_viz_cfg is not None and depth_viz_cfg.show_depth:
-        _attach_depth_viewer(algo)
+        if depth_viz_cfg is not None and depth_viz_cfg.show_depth:
+            _attach_depth_viewer(algo)
 
-    algo.evaluate_policy(max_eval_steps=tyro_config.training.max_eval_steps)
+        algo.evaluate_policy(max_eval_steps=tyro_config.training.max_eval_steps)
 
-    # Report video output paths BEFORE close_simulation_app — Isaac Sim's
-    # simulation_app.close() can kill the process abruptly (it patches in a
-    # noop close_stage and disables a SimulationContext callback to dodge a
-    # known shutdown hang), so anything after it may never reach stdout.
-    video_dir = eval_log_dir / "renderings_training"
-    print(f"\n[VIDEO] eval log dir: {eval_log_dir}", flush=True)
-    if video_dir.exists():
-        videos = sorted(video_dir.glob("*.mp4"))
-        if videos:
-            print(f"[VIDEO] {len(videos)} video(s) saved to {video_dir}:", flush=True)
-            for v in videos:
-                print(f"[VIDEO]   {v}", flush=True)
+        # Report video output paths BEFORE close_simulation_app — Isaac Sim's
+        # simulation_app.close() can kill the process abruptly (it patches in a
+        # noop close_stage and disables a SimulationContext callback to dodge a
+        # known shutdown hang), so anything after it may never reach stdout.
+        video_dir = eval_log_dir / "renderings_training"
+        print(f"\n[VIDEO] eval log dir: {eval_log_dir}", flush=True)
+        if video_dir.exists():
+            videos = sorted(video_dir.glob("*.mp4"))
+            if videos:
+                print(f"[VIDEO] {len(videos)} video(s) saved to {video_dir}:", flush=True)
+                for v in videos:
+                    print(f"[VIDEO]   {v}", flush=True)
+            else:
+                print(
+                    f"[VIDEO] {video_dir} exists but contains no .mp4 files yet", flush=True
+                )
         else:
             print(
-                f"[VIDEO] {video_dir} exists but contains no .mp4 files yet", flush=True
+                f"[VIDEO] {video_dir} not found — video recording may not have been enabled "
+                "(check --logger.video.enabled)",
+                flush=True,
             )
-    else:
-        print(
-            f"[VIDEO] {video_dir} not found — video recording may not have been enabled "
-            "(check --logger.video.enabled)",
-            flush=True,
-        )
 
-    if simulation_app:
-        close_simulation_app(simulation_app)
+    finally:
+        if simulation_app:
+            close_simulation_app(simulation_app)
 
 
 def main() -> None:

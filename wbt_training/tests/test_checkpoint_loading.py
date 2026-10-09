@@ -201,6 +201,12 @@ def student_state(algo):
     state.update(
         {
             "teachers.4.weight": torch.ones(8),
+            "teacher_obs_normalizers.0.mean": torch.zeros(3),
+            "teacher_obs_normalizers.0.std": torch.ones(3),
+            "teacher_obs_normalizers.0.eps": torch.tensor(1e-6),
+            "teacher_obs_normalizers.4.mean": torch.zeros(3),
+            "teacher_obs_normalizers.4.std": torch.ones(3),
+            "teacher_obs_normalizers.4.eps": torch.tensor(1e-6),
             "critic.weight": torch.ones(8),
             "std": torch.ones(2),
         }
@@ -432,3 +438,29 @@ def test_pure_dagger_recovers_actual_algorithm_type_and_exact_recipe(
     assert overridden.algo.config.learning_rate == 0.0008
     assert overridden.algo.config.init_noise_std == recipe["init_noise_std"]
     assert config.algo.config.learning_rate == recipe["learning_rate"]
+
+
+def test_student_eval_closes_simulation_after_checkpoint_error(tmp_path, monkeypatch):
+    app = object()
+    closed = []
+    config = SimpleNamespace(
+        logger=None, training=SimpleNamespace(max_eval_steps=1),
+        algo=SimpleNamespace(_target_="fake", config=object()),
+        save_config=lambda path: None,
+    )
+    class FakeAlgo:
+        def __init__(self, **kwargs): pass
+        def setup(self): pass
+        def attach_checkpoint_metadata(self, *args): pass
+    def invalid_checkpoint(*args):
+        raise RuntimeError("invalid checkpoint")
+    monkeypatch.setattr(eval_student, "apply_preprocess_hook", lambda cfg: cfg)
+    monkeypatch.setattr(eval_student, "setup_simulation_environment", lambda cfg: (object(), "cpu", app))
+    monkeypatch.setattr(eval_student, "get_experiment_dir", lambda *a, **kw: tmp_path)
+    monkeypatch.setattr(eval_student, "load_checkpoint", lambda *args: tmp_path / "student.pt")
+    monkeypatch.setattr(eval_student, "get_class", lambda name: FakeAlgo)
+    monkeypatch.setattr(eval_student, "_load_student_only", invalid_checkpoint)
+    monkeypatch.setattr(eval_student, "close_simulation_app", closed.append)
+    with pytest.raises(RuntimeError, match="invalid checkpoint"):
+        eval_student.run_eval(config, CheckpointConfig(checkpoint="student.pt"), config, None)
+    assert closed == [app]
