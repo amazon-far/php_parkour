@@ -48,6 +48,10 @@ with motion matching. If you already have an exported ONNX pair, go directly to 
 
 ## 🏃 Try the demo
 
+<p align="center">
+  <img src="assets/php-demo-480p.gif" width="800" alt="PHP depth locomotion demo in MuJoCo">
+</p>
+
 To try the example student policy in MuJoCo, download the validated ONNX pair
 from the [student release](https://github.com/amazon-far/php_parkour/releases/tag/student-assets-v1).
 Run from the PHP checkout root:
